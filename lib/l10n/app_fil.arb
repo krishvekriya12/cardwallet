@@ -1,0 +1,342 @@
+{
+  "appTitle": "Card Wallet App",
+  "addCard": "Magdagdag ng Card",
+  "hiThere": "Kumusta, ayan 👋",
+  "settingsTitle": "Mga setting",
+  "appLock": "Lock ng App",
+  "appLockSubtitle": "Mangangailangan ng biometrics upang mabuksan ang app",
+  "language": "Wika",
+  "backupRestore": "I-backup at I-restore",
+  "backupRestoreSubtitle": "I-export at i-import ang iyong mga card nang lokal",
+  "clearAllData": "I-clear ang Lahat ng Data",
+  "goodMorning": "Magandang umaga po",
+  "goodAfternoon": "Magandang hapon po",
+  "goodEvening": "Magandang gabi po",
+  "hiName": "Kumusta, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "Magdagdag ng Bagong Card",
+  "scan": "I-scan",
+  "scanDesc": "I-scan ang mga detalye ng card\nkaagad",
+  "manually": "Manu-manong",
+  "manuallyDesc": "Ipasok ang mga detalye ng card\nmano-mano",
+  "nfc": "NFC",
+  "nfcDesc": "I-tap ang card para idagdag\ngamit ang NFC",
+  "tools": "Mga gamit",
+  "binChecker": "Tagasuri ng BIN",
+  "binCheckerDesc": "Suriin ang mga detalye ng card mula sa BIN",
+  "cardVerify": "Pagpapatunay ng Card",
+  "cardVerifyDesc": "Patunayan ang isang numero ng card",
+  "frequentlyAdded": "Madalas Idinagdag",
+  "cardsTitle": "Mga kard",
+  "yourCardsManage": "Ang iyong mga card dito upang pamahalaan",
+  "cardCountText": "{count, plural, other{Na-save ang {count} card}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, other{{count} card}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "Lahat",
+  "noCardsYet": "Wala pang card",
+  "noCardsYetDesc": "Pumunta sa Home o i-tap ang scanner para magdagdag ng card",
+  "noCardsCategory": "Walang mga card sa kategoryang ito",
+  "tryDifferentFilter": "Subukang pumili ng ibang filter",
+  "addFirstCardStart": "Idagdag ang iyong unang card upang makapagsimula",
+  "rateUs": "I-rate Kami",
+  "rateUsThanks": "Salamat sa suporta!",
+  "shareApp": "Ibahagi ang App",
+  "shareAppSoon": "Malapit nang magbahagi",
+  "help": "Tulong",
+  "supportSoon": "Paparating na ang suporta",
+  "privacyPolicy": "Patakaran sa Privacy",
+  "privacyPolicySoon": "Binubuksan ang patakaran sa privacy",
+  "termsOfUse": "Mga Tuntunin sa Paggamit",
+  "termsOfUseSoon": "Binubuksan ang mga tuntunin ng paggamit",
+  "clearDataTitle": "I-clear ang lahat ng data?",
+  "clearDataDesc": "Permanente nitong tinatanggal ang bawat naka-save na card. Hindi na ito maaaring bawiin.",
+  "cancel": "Kanselahin",
+  "clearDataConfirm": "I-clear ang Data",
+  "clearDataToast": "Na-clear ang lahat ng data",
+  "splashSubtitle": "Ang iyong mga card, ligtas at simple",
+  "unlockPrompt": "I-unlock ang Card Wallet upang magpatuloy",
+  "tapToUnlock": "I-tap para I-unlock",
+  "authFailed": "Nabigo ang pagpapatotoo",
+  "binCheckerTitle": "BIN Checker",
+  "enterMin6Digits": "Maglagay ng hindi bababa sa 6 na digit",
+  "binNotVerified": "Hindi ma-verify ang BIN na ito",
+  "lookupFailed": "Nabigo ang paghahanap. Suriin ang iyong koneksyon at subukang muli.",
+  "binLookupPlaceholder": "BIN / IIN LOOKUP",
+  "enterDigitsLabel": "Ipasok ang unang 6–8 digit",
+  "checkButton": "Suriin",
+  "binResultTitle": "Resulta ng BIN",
+  "cardNetwork": "Network",
+  "cardType": "Uri",
+  "cardBrandCategory": "Brand/Kategorya",
+  "cardBank": "Bangko",
+  "cardCountry": "Bansa",
+  "cardCountryCode": "Code ng Bansa",
+  "cardCurrency": "Pera",
+  "cardValid": "Wasto",
+  "yes": "Oo",
+  "no": "Hindi",
+  "cardValidatorTitle": "Validator ng Card",
+  "cardValidatorPreviewName": "CARD VALIDATOR",
+  "enterCardNumberLabel": "Ipasok ang numero ng card",
+  "validCardNumber": "Wastong numero ng card",
+  "invalidCardNumber": "Di-wastong numero ng card — tingnan ang mga digit",
+  "backupRestoreTitle": "I-backup at I-restore",
+  "createBackupPass": "Lumikha ng Backup Password",
+  "backupPassWarning": "MAHALAGA: Isulat ang password na ito. Hindi namin ito mababawi o maibabalik ang iyong backup kung nakalimutan mo ito.",
+  "enterPassLabel": "Ipasok ang Password",
+  "confirmPassLabel": "Kumpirmahin ang Password",
+  "passEmptyError": "Hindi maaaring walang laman ang password",
+  "passMismatchError": "Hindi tugma ang mga password",
+  "doneBtn": "Tapos na",
+  "enterBackupPass": "Ipasok ang Backup Password",
+  "noCardsToBackup": "Walang mga card na i-backup",
+  "backupSuccess": "Matagumpay na nagawa ang backup!",
+  "backupFailed": "Nabigo ang pag-backup: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "Ibalik ang backup?",
+  "restoreBackupWarning": "BABALA: Ang pagpapanumbalik ng backup ay o-overwrite ang lahat ng kasalukuyang card at transaksyon. Hindi na ito maaaring bawiin.",
+  "continueBtn": "Magpatuloy",
+  "restoreSuccess": "Matagumpay na naibalik ang backup!",
+  "incorrectPasswordError": "Maling password o sirang backup file.",
+  "restoreFailed": "Nabigo ang pag-restore: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "Tanggalin ang backup?",
+  "deleteBackupConfirmText": "Tanggalin ang \"{name}\"? Hindi na ito maaaring bawiin.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "Tanggalin",
+  "backupDeleted": "Tinanggal ang backup",
+  "failedShareBackup": "Nabigong ibahagi ang backup: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "Nabigong pumili ng file: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "Huling Backup",
+  "neverBackedUp": "Hindi kailanman nag-back up",
+  "backupType": "Uri ng Backup",
+  "localBackupDesc": "Lokal — naka-save sa device na ito lamang",
+  "createBackupBtn": "Gumawa ng Backup",
+  "importExternalBackupBtn": "Mag-import ng Panlabas na Backup",
+  "savedBackupsHeader": "Mga Naka-save na Backup",
+  "noBackupsYet": "Wala pang backup",
+  "tapCreateBackupDesc": "I-tap ang \"Gumawa ng Backup\" para i-save ang iyong mga card",
+  "restoreTooltip": "Ibalik",
+  "shareTooltip": "Ibahagi",
+  "cardNotFound": "Hindi nakita ang card",
+  "editCardTitle": "I-edit ang Card",
+  "addCardTitle": "Magdagdag ng Card",
+  "cardTypeLabel": "Uri ng card",
+  "cardColorLabel": "Kulay ng card",
+  "fieldRequiredError": "Kinakailangan ang field na ito",
+  "bankNameLabel": "Pangalan ng Bangko",
+  "expiryLabel": "Expiry (MM/YY)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "Mga Larawan sa Card",
+  "frontSideLabel": "Front Side",
+  "backSideLabel": "Likod na Gilid",
+  "notesLabel": "Mga Tala",
+  "saveChangesBtn": "I-save ang Mga Pagbabago",
+  "saveCardBtn": "I-save ang Card",
+  "deleteCardBtn": "Tanggalin ang card",
+  "takePhotoLabel": "Kumuha ng litrato",
+  "chooseGalleryLabel": "Pumili mula sa gallery",
+  "deleteCardPrompt": "Tanggalin ang card?",
+  "deleteCardWarning": "Ang pagkilos na ito ay hindi maaaring i-undo.",
+  "cardNumberLabel": "Numero ng Card",
+  "pointCardNumberLabel": "Numero ng Point Card",
+  "membershipIdLabel": "Membership ID",
+  "couponCodeLabel": "Code ng Kupon",
+  "giftCardNumberLabel": "Numero ng Gift Card",
+  "ticketPnrLabel": "Numero ng Ticket / PNR",
+  "numberLabel": "Numero",
+  "cardholderNameLabel": "Pangalan ng Cardholder",
+  "cardNameLabel": "Pangalan ng Card",
+  "enterValidCardNumberError": "Maglagay ng wastong numero ng card",
+  "cardNumberInvalidError": "Mukhang di-wasto ang numero ng card",
+  "enterMin3CharsError": "Maglagay ng hindi bababa sa 3 character",
+  "cardAlreadyExistsError": "Naka-save na ang card na may ganitong numero",
+  "revealCvv": "Ibunyag ang CVV",
+  "cardDetailsHeader": "Mga Detalye ng Card:",
+  "typePrefix": "Uri:",
+  "bankPrefix": "Bangko:",
+  "cardNumberPrefix": "Numero ng Card:",
+  "cardholderPrefix": "Cardholder:",
+  "expiryPrefix": "Expiry:",
+  "notesPrefix": "Mga Tala:",
+  "detailsSuffix": "Mga Detalye",
+  "cardDetailsTitle": "Mga Detalye ng Card",
+  "hideBtn": "Magtago",
+  "revealBtn": "Ibunyag",
+  "editBtn": "I-edit",
+  "cardInformationHeader": "Impormasyon sa Card",
+  "cardholderLabel": "Cardholder",
+  "nameLabel": "Pangalan",
+  "bankLabel": "Bangko",
+  "pnrNumberLabel": "Numero ng PNR",
+  "venueLabel": "Venue",
+  "eventDateLabel": "Petsa ng Kaganapan",
+  "seatLabel": "upuan",
+  "classLabel": "Klase",
+  "discountDetailsLabel": "Mga Detalye ng Diskwento",
+  "memberIdLabel": "ID ng Miyembro",
+  "tierStatusLabel": "Katayuan ng Tier",
+  "pointsBalanceLabel": "Balanse ng mga Puntos",
+  "secondaryPinLabel": "Pangalawang PIN",
+  "issueDateLabel": "Petsa ng Isyu",
+  "documentTitleLabel": "Pamagat ng Dokumento",
+  "nfcReaderTitle": "NFC Reader",
+  "nfcNotAvailable": "Hindi available ang NFC",
+  "nfcUnsupportedDesc": "Hindi sinusuportahan ng device na ito ang pagbabasa ng NFC card.",
+  "readyToScan": "Handa nang I-scan",
+  "holdCardNfcPrompt": "Hawakan ang iyong contactless card sa likod ng iyong telepono.",
+  "scanFailed": "Nabigo ang pag-scan",
+  "somethingWentWrong": "Nagkaproblema.",
+  "tryAgainBtn": "Subukan Muli",
+  "cardDetected": "Natukoy ang Card",
+  "unsupportedCardError": "Ang uri ng card na ito ay hindi suportado.",
+  "nfcReadFailedDesc": "Hindi mabasa ang card na ito. Subukang muli o idagdag ito nang manu-mano.",
+  "nfcReadError": "Nabigo ang pagbabasa: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "Hindi masimulan ang NFC session: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "Scan Card",
+  "noCameraError": "Walang available na camera sa device na ito",
+  "cameraStartError": "Hindi masimulan ang camera: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "Hindi mabasa ang mga detalye ng card. Subukang muli gamit ang mas mahusay na pag-iilaw.",
+  "ocrScanFailed": "Nabigo ang pag-scan: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "Kinakailangan ang pahintulot ng camera para mag-scan ng card.",
+  "openSettingsBtn": "Buksan ang Mga Setting",
+  "notDetected": "Hindi natukoy",
+  "scanAgainBtn": "I-scan muli",
+  "cardPhotosDesc": "Panatilihin ang isang larawan ng iyong card para sa mabilis na sanggunian. Nananatili ang mga larawan sa device na ito.",
+  "addPhotoPlaceholder": "Magdagdag ng {label} na larawan",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "Premium",
+  "benefitRemoveAdsTitle": "Alisin ang lahat ng ad",
+  "benefitRemoveAdsDesc": "Walang mga banner, walang mga interstitial, kailanman",
+  "benefitFasterTitle": "Mas mabilis na karanasan",
+  "benefitFasterDesc": "Mga instant na screen na walang mai-load",
+  "benefitSupportTitle": "Suportahan ang pag-unlad",
+  "benefitSupportDesc": "Tumulong na panatilihing lumago ang app",
+  "benefitBadgeTitle": "Premium badge",
+  "benefitBadgeDesc": "Isang maliit na pasasalamat sa iyong profile",
+  "premiumHeroActive": "Premium ka",
+  "premiumHeroInactive": "Maging Ad-Free",
+  "premiumHeroDescActive": "Salamat sa pagsuporta sa Card Wallet",
+  "premiumHeroDescInactive": "Alisin ang mga ad at mag-unlock ng mas malinis na karanasan",
+  "disablePremiumBtn": "Huwag paganahin ang Premium",
+  "removeAdsBtn": "Alisin ang Mga Ad",
+  "premiumOneTimeNotice": "Isang beses. Agad na nagre-restore sa device na ito.",
+  "noBiometricsConfigured": "Walang biometrics/device lock na naka-configure sa device na ito",
+  "cardTypeCredit": "Credit Card",
+  "cardTypeDebit": "Debit Card",
+  "cardTypePoint": "Point Card",
+  "cardTypeMembership": "Membership Card",
+  "cardTypeCoupon": "Kupon",
+  "cardTypeGift": "Gift Card",
+  "cardTypeEventTicket": "Ticket ng Kaganapan",
+  "cardTypeOther": "Iba pa",
+  "chooseCardType": "Pumili ng uri ng card",
+  "selectCustomColor": "Piliin ang Custom na Kulay",
+  "solidColor": "Solid",
+  "gradientColor": "Gradient",
+  "startColor": "Magsimula",
+  "endColor": "Tapusin",
+  "cardExpLabel": "EXP",
+  "homeTab": "Bahay",
+  "cardsTab": "Aking Mga Kard",
+  "profileTab": "Profile",
+  "appTitleTypewriter": "Card Wallet",
+  "seeAll": "Tingnan Lahat",
+  "backupShareText": "Card Wallet Secure Backup",
+  "backupFileNotFoundError": "Hindi nahanap ang backup na file",
+  "corruptedBackupError": "Sirang o di-wastong backup na file",
+  "invalidBackupDataError": "Ang backup na file ay hindi naglalaman ng wastong data.",
+  "unsupportedBackupVersionError": "Hindi sinusuportahang backup na bersyon: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

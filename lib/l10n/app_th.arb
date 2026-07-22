@@ -1,0 +1,342 @@
+{
+  "appTitle": "แอพกระเป๋าเงินบัตร",
+  "addCard": "เพิ่มการ์ด",
+  "hiThere": "สวัสดี ครับ 😏",
+  "settingsTitle": "การตั้งค่า",
+  "appLock": "ล็อคแอพ",
+  "appLockSubtitle": "ต้องใช้ข้อมูลไบโอเมตริกซ์เพื่อเปิดแอป",
+  "language": "ภาษา",
+  "backupRestore": "สำรองและกู้คืน",
+  "backupRestoreSubtitle": "ส่งออกและนำเข้าการ์ดของคุณภายในเครื่อง",
+  "clearAllData": "ล้างข้อมูลทั้งหมด",
+  "goodMorning": "สวัสดีตอนเช้า",
+  "goodAfternoon": "สวัสดีตอนบ่าย",
+  "goodEvening": "สวัสดีตอนเย็น",
+  "hiName": "สวัสดี {name} 😢",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "เพิ่มการ์ดใหม่",
+  "scan": "สแกน",
+  "scanDesc": "สแกนรายละเอียดบัตร\nทันที",
+  "manually": "ด้วยตนเอง",
+  "manuallyDesc": "กรอกรายละเอียดบัตร\nด้วยตนเอง",
+  "nfc": "เอ็นเอฟซี",
+  "nfcDesc": "แตะการ์ดเพื่อเพิ่ม\nโดยใช้เอ็นเอฟซี",
+  "tools": "เครื่องมือ",
+  "binChecker": "ตัวตรวจสอบถัง",
+  "binCheckerDesc": "ตรวจสอบรายละเอียดบัตรจาก BIN",
+  "cardVerify": "ตรวจสอบบัตร",
+  "cardVerifyDesc": "ตรวจสอบหมายเลขบัตร",
+  "frequentlyAdded": "เพิ่มบ่อย",
+  "cardsTitle": "การ์ด",
+  "yourCardsManage": "บัตรของคุณที่นี่เพื่อจัดการ",
+  "cardCountText": "{count, plural, =1{บันทึกการ์ดแล้ว 1 ใบ} other{บันทึกการ์ด {count} แล้ว}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{การ์ด 1 ใบ} other{การ์ด {count}}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "ทั้งหมด",
+  "noCardsYet": "ยังไม่มีบัตร",
+  "noCardsYetDesc": "ไปที่หน้าแรกหรือแตะเครื่องสแกนเพื่อเพิ่มการ์ด",
+  "noCardsCategory": "ไม่มีการ์ดในหมวดหมู่นี้",
+  "tryDifferentFilter": "ลองเลือกตัวกรองอื่น",
+  "addFirstCardStart": "เพิ่มบัตรใบแรกของคุณเพื่อเริ่มต้น",
+  "rateUs": "ให้คะแนนเรา",
+  "rateUsThanks": "ขอบคุณสำหรับการสนับสนุน!",
+  "shareApp": "แชร์แอป",
+  "shareAppSoon": "การแบ่งปันจะมาเร็ว ๆ นี้",
+  "help": "ช่วย",
+  "supportSoon": "การสนับสนุนในเร็ว ๆ นี้",
+  "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+  "privacyPolicySoon": "เปิดนโยบายความเป็นส่วนตัว",
+  "termsOfUse": "เงื่อนไขการใช้งาน",
+  "termsOfUseSoon": "เปิดเงื่อนไขการใช้งาน",
+  "clearDataTitle": "ล้างข้อมูลทั้งหมดใช่ไหม",
+  "clearDataDesc": "การดำเนินการนี้จะลบการ์ดที่บันทึกไว้ทุกใบอย่างถาวร สิ่งนี้ไม่สามารถยกเลิกได้",
+  "cancel": "ยกเลิก",
+  "clearDataConfirm": "ล้างข้อมูล",
+  "clearDataToast": "ล้างข้อมูลทั้งหมดแล้ว",
+  "splashSubtitle": "บัตรของคุณปลอดภัยและเรียบง่าย",
+  "unlockPrompt": "ปลดล็อก Card Wallet เพื่อดำเนินการต่อ",
+  "tapToUnlock": "แตะเพื่อปลดล็อค",
+  "authFailed": "การตรวจสอบสิทธิ์ล้มเหลว",
+  "binCheckerTitle": "ตัวตรวจสอบถัง",
+  "enterMin6Digits": "ป้อนอย่างน้อย 6 หลัก",
+  "binNotVerified": "ไม่สามารถยืนยัน BIN นี้ได้",
+  "lookupFailed": "การค้นหาล้มเหลว ตรวจสอบการเชื่อมต่อของคุณแล้วลองอีกครั้ง",
+  "binLookupPlaceholder": "ค้นหา BIN / IIN",
+  "enterDigitsLabel": "ป้อนตัวเลข 6-8 หลักแรก",
+  "checkButton": "ตรวจสอบ",
+  "binResultTitle": "ผลลัพธ์ถัง",
+  "cardNetwork": "เครือข่าย",
+  "cardType": "พิมพ์",
+  "cardBrandCategory": "ยี่ห้อ/หมวดหมู่",
+  "cardBank": "ธนาคาร",
+  "cardCountry": "ประเทศ",
+  "cardCountryCode": "รหัสประเทศ",
+  "cardCurrency": "สกุลเงิน",
+  "cardValid": "ถูกต้อง",
+  "yes": "ใช่",
+  "no": "เลขที่",
+  "cardValidatorTitle": "เครื่องตรวจสอบบัตร",
+  "cardValidatorPreviewName": "เครื่องตรวจสอบบัตร",
+  "enterCardNumberLabel": "กรอกหมายเลขบัตร",
+  "validCardNumber": "หมายเลขบัตรที่ถูกต้อง",
+  "invalidCardNumber": "หมายเลขบัตรไม่ถูกต้อง — ตรวจสอบตัวเลข",
+  "backupRestoreTitle": "สำรองและกู้คืน",
+  "createBackupPass": "สร้างรหัสผ่านสำรอง",
+  "backupPassWarning": "สิ่งสำคัญ: จดรหัสผ่านนี้ไว้ เราไม่สามารถกู้คืนหรือกู้คืนข้อมูลสำรองของคุณได้หากคุณลืม",
+  "enterPassLabel": "ใส่รหัสผ่าน",
+  "confirmPassLabel": "ยืนยันรหัสผ่าน",
+  "passEmptyError": "รหัสผ่านต้องไม่เว้นว่าง",
+  "passMismatchError": "รหัสผ่านไม่ตรงกัน",
+  "doneBtn": "เสร็จแล้ว",
+  "enterBackupPass": "ป้อนรหัสผ่านสำรอง",
+  "noCardsToBackup": "ไม่มีการ์ดที่จะสำรองข้อมูล",
+  "backupSuccess": "สร้างข้อมูลสำรองเรียบร้อยแล้ว!",
+  "backupFailed": "การสำรองข้อมูลล้มเหลว: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "คืนค่าข้อมูลสำรองใช่ไหม",
+  "restoreBackupWarning": "คำเตือน: การคืนค่าข้อมูลสำรองจะเขียนทับการ์ดและธุรกรรมปัจจุบันทั้งหมด สิ่งนี้ไม่สามารถยกเลิกได้",
+  "continueBtn": "ดำเนินการต่อ",
+  "restoreSuccess": "กู้คืนข้อมูลสำรองสำเร็จแล้ว!",
+  "incorrectPasswordError": "รหัสผ่านไม่ถูกต้องหรือไฟล์สำรองข้อมูลเสียหาย",
+  "restoreFailed": "การคืนค่าล้มเหลว: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "ลบข้อมูลสำรองใช่ไหม",
+  "deleteBackupConfirmText": "ลบ \"{name}\" หรือไม่ สิ่งนี้ไม่สามารถยกเลิกได้",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "ลบ",
+  "backupDeleted": "ลบข้อมูลสำรองแล้ว",
+  "failedShareBackup": "ไม่สามารถแชร์ข้อมูลสำรอง: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "ไม่สามารถเลือกไฟล์: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "การสำรองข้อมูลครั้งสุดท้าย",
+  "neverBackedUp": "ไม่เคยสำรองข้อมูล",
+  "backupType": "ประเภทการสำรองข้อมูล",
+  "localBackupDesc": "ท้องถิ่น — บันทึกอยู่ในอุปกรณ์นี้เท่านั้น",
+  "createBackupBtn": "สร้างข้อมูลสำรอง",
+  "importExternalBackupBtn": "นำเข้าข้อมูลสำรองภายนอก",
+  "savedBackupsHeader": "ข้อมูลสำรองที่บันทึกไว้",
+  "noBackupsYet": "ยังไม่มีการสำรองข้อมูล",
+  "tapCreateBackupDesc": "แตะ \"สร้างข้อมูลสำรอง\" เพื่อบันทึกการ์ดของคุณ",
+  "restoreTooltip": "คืนค่า",
+  "shareTooltip": "แบ่งปัน",
+  "cardNotFound": "ไม่พบการ์ด",
+  "editCardTitle": "แก้ไขการ์ด",
+  "addCardTitle": "เพิ่มการ์ด",
+  "cardTypeLabel": "ประเภทบัตร",
+  "cardColorLabel": "สีการ์ด",
+  "fieldRequiredError": "ต้องระบุข้อมูลในช่องนี้",
+  "bankNameLabel": "ชื่อธนาคาร",
+  "expiryLabel": "วันหมดอายุ (ดด/ปป)",
+  "cvvLabel": "ซีวีวี",
+  "cardPhotosLabel": "รูปถ่ายการ์ด",
+  "frontSideLabel": "ด้านหน้า",
+  "backSideLabel": "ด้านหลัง",
+  "notesLabel": "หมายเหตุ",
+  "saveChangesBtn": "บันทึกการเปลี่ยนแปลง",
+  "saveCardBtn": "บันทึกการ์ด",
+  "deleteCardBtn": "ลบการ์ด",
+  "takePhotoLabel": "ถ่ายรูป",
+  "chooseGalleryLabel": "เลือกจากแกลเลอรี่",
+  "deleteCardPrompt": "ลบการ์ดใช่ไหม",
+  "deleteCardWarning": "การดำเนินการนี้ไม่สามารถยกเลิกได้",
+  "cardNumberLabel": "หมายเลขบัตร",
+  "pointCardNumberLabel": "หมายเลขบัตรพอยต์",
+  "membershipIdLabel": "รหัสสมาชิก",
+  "couponCodeLabel": "รหัสคูปอง",
+  "giftCardNumberLabel": "หมายเลขบัตรของขวัญ",
+  "ticketPnrLabel": "ตั๋ว / หมายเลข PNR",
+  "numberLabel": "ตัวเลข",
+  "cardholderNameLabel": "ชื่อผู้ถือบัตร",
+  "cardNameLabel": "ชื่อการ์ด",
+  "enterValidCardNumberError": "ป้อนหมายเลขบัตรที่ถูกต้อง",
+  "cardNumberInvalidError": "หมายเลขบัตรดูเหมือนไม่ถูกต้อง",
+  "enterMin3CharsError": "ป้อนอย่างน้อย 3 ตัวอักษร",
+  "cardAlreadyExistsError": "บันทึกบัตรที่มีหมายเลขนี้แล้ว",
+  "revealCvv": "เผย CVV",
+  "cardDetailsHeader": "รายละเอียดบัตร:",
+  "typePrefix": "พิมพ์:",
+  "bankPrefix": "ธนาคาร:",
+  "cardNumberPrefix": "หมายเลขบัตร:",
+  "cardholderPrefix": "ผู้ถือบัตร:",
+  "expiryPrefix": "หมดอายุ:",
+  "notesPrefix": "หมายเหตุ:",
+  "detailsSuffix": "รายละเอียด",
+  "cardDetailsTitle": "รายละเอียดบัตร",
+  "hideBtn": "ซ่อน",
+  "revealBtn": "เปิดเผย",
+  "editBtn": "แก้ไข",
+  "cardInformationHeader": "ข้อมูลบัตร",
+  "cardholderLabel": "ผู้ถือบัตร",
+  "nameLabel": "ชื่อ",
+  "bankLabel": "ธนาคาร",
+  "pnrNumberLabel": "หมายเลข PNR",
+  "venueLabel": "สถานที่",
+  "eventDateLabel": "วันที่จัดงาน",
+  "seatLabel": "ที่นั่ง",
+  "classLabel": "ระดับ",
+  "discountDetailsLabel": "รายละเอียดส่วนลด",
+  "memberIdLabel": "รหัสสมาชิก",
+  "tierStatusLabel": "สถานะระดับ",
+  "pointsBalanceLabel": "คะแนนคงเหลือ",
+  "secondaryPinLabel": "PIN รอง",
+  "issueDateLabel": "วันที่ออก",
+  "documentTitleLabel": "ชื่อเอกสาร",
+  "nfcReaderTitle": "เครื่องอ่านเอ็นเอฟซี",
+  "nfcNotAvailable": "เอ็นเอฟซีไม่พร้อมใช้งาน",
+  "nfcUnsupportedDesc": "อุปกรณ์นี้ไม่รองรับการอ่านการ์ด NFC",
+  "readyToScan": "พร้อมสำหรับการสแกน",
+  "holdCardNfcPrompt": "ถือการ์ดแบบไร้สัมผัสไว้ที่ด้านหลังโทรศัพท์",
+  "scanFailed": "การสแกนล้มเหลว",
+  "somethingWentWrong": "มีบางอย่างผิดพลาด",
+  "tryAgainBtn": "ลองอีกครั้ง",
+  "cardDetected": "ตรวจพบการ์ดแล้ว",
+  "unsupportedCardError": "ไม่รองรับการ์ดประเภทนี้",
+  "nfcReadFailedDesc": "ไม่สามารถอ่านการ์ดใบนี้ได้ ลองอีกครั้งหรือเพิ่มด้วยตนเอง",
+  "nfcReadError": "การอ่านล้มเหลว: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "ไม่สามารถเริ่มเซสชัน NFC: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "สแกนการ์ด",
+  "noCameraError": "ไม่มีกล้องในอุปกรณ์นี้",
+  "cameraStartError": "ไม่สามารถเริ่มกล้องได้: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "ไม่สามารถอ่านรายละเอียดการ์ดได้ ลองอีกครั้งโดยให้แสงสว่างดีขึ้น",
+  "ocrScanFailed": "การสแกนล้มเหลว: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "ต้องได้รับอนุญาตจากกล้องจึงจะสแกนการ์ดได้",
+  "openSettingsBtn": "เปิดการตั้งค่า",
+  "notDetected": "ตรวจไม่พบ",
+  "scanAgainBtn": "สแกนอีกครั้ง",
+  "cardPhotosDesc": "เก็บรูปถ่ายบัตรของคุณไว้เพื่อใช้อ้างอิงอย่างรวดเร็ว รูปภาพจะยังคงอยู่ในอุปกรณ์นี้",
+  "addPhotoPlaceholder": "เพิ่มรูปภาพ {label}",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "พรีเมี่ยม",
+  "benefitRemoveAdsTitle": "ลบโฆษณาทั้งหมด",
+  "benefitRemoveAdsDesc": "ไม่มีแบนเนอร์ ไม่มีโฆษณาคั่นระหว่างหน้าเลย",
+  "benefitFasterTitle": "ประสบการณ์ที่เร็วขึ้น",
+  "benefitFasterDesc": "หน้าจอทันทีโดยไม่ต้องโหลดอะไรเลย",
+  "benefitSupportTitle": "รองรับการพัฒนา",
+  "benefitSupportDesc": "ช่วยให้แอปเติบโต",
+  "benefitBadgeTitle": "ป้ายพรีเมียม",
+  "benefitBadgeDesc": "ขอขอบคุณเล็กน้อยในโปรไฟล์ของคุณ",
+  "premiumHeroActive": "คุณเป็นพรีเมี่ยม",
+  "premiumHeroInactive": "ไปแบบไม่มีโฆษณา",
+  "premiumHeroDescActive": "ขอบคุณที่สนับสนุน Card Wallet",
+  "premiumHeroDescInactive": "ลบโฆษณาและปลดล็อคประสบการณ์ที่สะอาดยิ่งขึ้น",
+  "disablePremiumBtn": "ปิดการใช้งานพรีเมี่ยม",
+  "removeAdsBtn": "ลบโฆษณา",
+  "premiumOneTimeNotice": "ครั้งเดียว. คืนค่าทันทีบนอุปกรณ์นี้",
+  "noBiometricsConfigured": "ไม่มีการกำหนดค่าไบโอเมตริก/การล็อกอุปกรณ์บนอุปกรณ์นี้",
+  "cardTypeCredit": "บัตรเครดิต",
+  "cardTypeDebit": "บัตรเดบิต",
+  "cardTypePoint": "บัตรจุด",
+  "cardTypeMembership": "บัตรสมาชิก",
+  "cardTypeCoupon": "คูปอง",
+  "cardTypeGift": "บัตรของขวัญ",
+  "cardTypeEventTicket": "ตั๋วกิจกรรม",
+  "cardTypeOther": "อื่น",
+  "chooseCardType": "เลือกประเภทบัตร",
+  "selectCustomColor": "เลือกสีที่กำหนดเอง",
+  "solidColor": "แข็ง",
+  "gradientColor": "การไล่ระดับสี",
+  "startColor": "เริ่ม",
+  "endColor": "จบ",
+  "cardExpLabel": "ประสบการณ์",
+  "homeTab": "บ้าน",
+  "cardsTab": "การ์ดของฉัน",
+  "profileTab": "ประวัติโดยย่อ",
+  "appTitleTypewriter": "กระเป๋าใส่บัตร",
+  "seeAll": "ดูทั้งหมด",
+  "backupShareText": "การสำรองข้อมูลกระเป๋าสตางค์บัตรอย่างปลอดภัย",
+  "backupFileNotFoundError": "ไม่พบไฟล์สำรอง",
+  "corruptedBackupError": "ไฟล์สำรองข้อมูลเสียหายหรือไม่ถูกต้อง",
+  "invalidBackupDataError": "ไฟล์สำรองไม่มีข้อมูลที่ถูกต้อง",
+  "unsupportedBackupVersionError": "เวอร์ชันสำรองที่ไม่รองรับ: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

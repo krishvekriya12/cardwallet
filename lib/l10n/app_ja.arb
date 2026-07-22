@@ -1,0 +1,342 @@
+{
+  "appTitle": "カードウォレットアプリ",
+  "addCard": "カードを追加",
+  "hiThere": "こんにちは👋",
+  "settingsTitle": "設定",
+  "appLock": "アプリロック",
+  "appLockSubtitle": "アプリを開くには生体認証が必要です",
+  "language": "言語",
+  "backupRestore": "バックアップと復元",
+  "backupRestoreSubtitle": "カードをローカルにエクスポートおよびインポートする",
+  "clearAllData": "すべてのデータをクリア",
+  "goodMorning": "おはよう",
+  "goodAfternoon": "こんにちは",
+  "goodEvening": "こんばんは",
+  "hiName": "こんにちは、{name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "新しいカードを追加",
+  "scan": "スキャン",
+  "scanDesc": "カードの詳細をスキャンします\n即座に",
+  "manually": "手動で",
+  "manuallyDesc": "カード詳細を入力してください\n手動で",
+  "nfc": "NFC",
+  "nfcDesc": "追加するカードをタップします\nNFCを使用して",
+  "tools": "ツール",
+  "binChecker": "BINチェッカー",
+  "binCheckerDesc": "BINからカード詳細を確認する",
+  "cardVerify": "カード検証",
+  "cardVerifyDesc": "カード番号を検証する",
+  "frequentlyAdded": "頻繁に追加される",
+  "cardsTitle": "カード",
+  "yourCardsManage": "カードをここで管理します",
+  "cardCountText": "{count, plural, =1{カードが 1 枚保存されました} other{{count} カードが保存されました}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{カード1枚} other{{count}カード}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "全て",
+  "noCardsYet": "まだカードがありません",
+  "noCardsYetDesc": "ホームに移動するか、スキャナーをタップしてカードを追加します",
+  "noCardsCategory": "このカテゴリにはカードがありません",
+  "tryDifferentFilter": "別のフィルターを選択してみてください",
+  "addFirstCardStart": "最初のカードを追加して始めましょう",
+  "rateUs": "評価してください",
+  "rateUsThanks": "サポートありがとうございます!",
+  "shareApp": "アプリを共有する",
+  "shareAppSoon": "近日共有予定",
+  "help": "ヘルプ",
+  "supportSoon": "サポートは近日提供予定",
+  "privacyPolicy": "プライバシーポリシー",
+  "privacyPolicySoon": "プライバシーポリシーを開きます",
+  "termsOfUse": "利用規約",
+  "termsOfUseSoon": "利用規約を開きます",
+  "clearDataTitle": "すべてのデータを消去しますか?",
+  "clearDataDesc": "これにより、保存されているすべてのカードが完全に削除されます。これを元に戻すことはできません。",
+  "cancel": "キャンセル",
+  "clearDataConfirm": "データのクリア",
+  "clearDataToast": "すべてのデータがクリアされました",
+  "splashSubtitle": "あなたのカードを安全かつ簡単に",
+  "unlockPrompt": "続行するにはカードウォレットのロックを解除してください",
+  "tapToUnlock": "タップしてロックを解除する",
+  "authFailed": "認証に失敗しました",
+  "binCheckerTitle": "BINチェッカー",
+  "enterMin6Digits": "少なくとも 6 桁を入力してください",
+  "binNotVerified": "この BIN は検証できませんでした",
+  "lookupFailed": "検索に失敗しました。接続を確認して、もう一度試してください。",
+  "binLookupPlaceholder": "BIN / IIN ルックアップ",
+  "enterDigitsLabel": "最初の 6 ～ 8 桁を入力してください",
+  "checkButton": "チェック",
+  "binResultTitle": "BIN の結果",
+  "cardNetwork": "ネットワーク",
+  "cardType": "タイプ",
+  "cardBrandCategory": "ブランド/カテゴリー",
+  "cardBank": "銀行",
+  "cardCountry": "国",
+  "cardCountryCode": "国コード",
+  "cardCurrency": "通貨",
+  "cardValid": "有効",
+  "yes": "はい",
+  "no": "いいえ",
+  "cardValidatorTitle": "カードバリデーター",
+  "cardValidatorPreviewName": "カードバリデーター",
+  "enterCardNumberLabel": "カード番号を入力してください",
+  "validCardNumber": "有効なカード番号",
+  "invalidCardNumber": "無効なカード番号 - 数字を確認してください",
+  "backupRestoreTitle": "バックアップと復元",
+  "createBackupPass": "バックアップパスワードの作成",
+  "backupPassWarning": "重要: このパスワードを書き留めてください。バックアップを忘れた場合、復元したり復元したりすることはできません。",
+  "enterPassLabel": "パスワードを入力してください",
+  "confirmPassLabel": "パスワードを認証する",
+  "passEmptyError": "パスワードを空にすることはできません",
+  "passMismatchError": "パスワードが一致しません",
+  "doneBtn": "終わり",
+  "enterBackupPass": "バックアップパスワードを入力してください",
+  "noCardsToBackup": "バックアップするカードがありません",
+  "backupSuccess": "バックアップが正常に作成されました。",
+  "backupFailed": "バックアップ失敗: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "バックアップを復元しますか?",
+  "restoreBackupWarning": "警告: バックアップを復元すると、現在のカードとトランザクションがすべて上書きされます。これを元に戻すことはできません。",
+  "continueBtn": "続く",
+  "restoreSuccess": "バックアップが正常に復元されました。",
+  "incorrectPasswordError": "パスワードが間違っているか、バックアップ ファイルが破損しています。",
+  "restoreFailed": "復元に失敗しました: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "バックアップを削除しますか?",
+  "deleteBackupConfirmText": "「{name}」を削除しますか?これを元に戻すことはできません。",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "消去",
+  "backupDeleted": "バックアップが削除されました",
+  "failedShareBackup": "バックアップの共有に失敗しました: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "ファイルの選択に失敗しました: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "最後のバックアップ",
+  "neverBackedUp": "バックアップしたことがない",
+  "backupType": "バックアップの種類",
+  "localBackupDesc": "ローカル — このデバイスにのみ保存されます",
+  "createBackupBtn": "バックアップの作成",
+  "importExternalBackupBtn": "外部バックアップのインポート",
+  "savedBackupsHeader": "保存されたバックアップ",
+  "noBackupsYet": "まだバックアップがありません",
+  "tapCreateBackupDesc": "「バックアップを作成」をタップしてカードを保存します",
+  "restoreTooltip": "復元する",
+  "shareTooltip": "共有",
+  "cardNotFound": "カードが見つかりません",
+  "editCardTitle": "カードの編集",
+  "addCardTitle": "カードを追加",
+  "cardTypeLabel": "カードの種類",
+  "cardColorLabel": "カードの色",
+  "fieldRequiredError": "この項目は必須です",
+  "bankNameLabel": "銀行名",
+  "expiryLabel": "有効期限 (MM/YY)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "カードの写真",
+  "frontSideLabel": "前面",
+  "backSideLabel": "裏面",
+  "notesLabel": "注意事項",
+  "saveChangesBtn": "変更を保存",
+  "saveCardBtn": "セーブカード",
+  "deleteCardBtn": "カードの削除",
+  "takePhotoLabel": "写真を撮ってください",
+  "chooseGalleryLabel": "ギャラリーから選ぶ",
+  "deleteCardPrompt": "カードを削除しますか?",
+  "deleteCardWarning": "この操作は元に戻すことができません。",
+  "cardNumberLabel": "カード番号",
+  "pointCardNumberLabel": "ポイントカード番号",
+  "membershipIdLabel": "会員ID",
+  "couponCodeLabel": "クーポンコード",
+  "giftCardNumberLabel": "ギフトカード番号",
+  "ticketPnrLabel": "チケット/PNR番号",
+  "numberLabel": "番号",
+  "cardholderNameLabel": "クレジットカード名義人氏名",
+  "cardNameLabel": "カード名",
+  "enterValidCardNumberError": "有効なカード番号を入力してください",
+  "cardNumberInvalidError": "カード番号が無効のようです",
+  "enterMin3CharsError": "少なくとも 3 文字を入力してください",
+  "cardAlreadyExistsError": "この番号のカードはすでに保存されています",
+  "revealCvv": "CVVを明らかにする",
+  "cardDetailsHeader": "カード詳細:",
+  "typePrefix": "タイプ：",
+  "bankPrefix": "銀行：",
+  "cardNumberPrefix": "カード番号：",
+  "cardholderPrefix": "カード所有者:",
+  "expiryPrefix": "有効期限:",
+  "notesPrefix": "注:",
+  "detailsSuffix": "詳細",
+  "cardDetailsTitle": "カード詳細",
+  "hideBtn": "隠れる",
+  "revealBtn": "明らかにする",
+  "editBtn": "編集",
+  "cardInformationHeader": "カード情報",
+  "cardholderLabel": "カード所有者",
+  "nameLabel": "名前",
+  "bankLabel": "銀行",
+  "pnrNumberLabel": "PNR番号",
+  "venueLabel": "会場",
+  "eventDateLabel": "イベント日",
+  "seatLabel": "シート",
+  "classLabel": "クラス",
+  "discountDetailsLabel": "割引詳細",
+  "memberIdLabel": "会員ID",
+  "tierStatusLabel": "ティアステータス",
+  "pointsBalanceLabel": "ポイント残高",
+  "secondaryPinLabel": "二次PIN",
+  "issueDateLabel": "発行日",
+  "documentTitleLabel": "文書のタイトル",
+  "nfcReaderTitle": "NFCリーダー",
+  "nfcNotAvailable": "NFCは利用できません",
+  "nfcUnsupportedDesc": "このデバイスは NFC カードの読み取りをサポートしていません。",
+  "readyToScan": "スキャンの準備ができました",
+  "holdCardNfcPrompt": "非接触型カードを携帯電話の背面にかざします。",
+  "scanFailed": "スキャンに失敗しました",
+  "somethingWentWrong": "何か問題が発生しました。",
+  "tryAgainBtn": "もう一度やり直してください",
+  "cardDetected": "カードが検出されました",
+  "unsupportedCardError": "このカード タイプはサポートされていません。",
+  "nfcReadFailedDesc": "このカードを読み取れませんでした。もう一度試すか、手動で追加してください。",
+  "nfcReadError": "読み取りに失敗しました: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "NFC セッションを開始できませんでした: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "スキャンカード",
+  "noCameraError": "このデバイスでは利用可能なカメラがありません",
+  "cameraStartError": "カメラを開始できませんでした: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "カードの詳細を読み取れませんでした。照明を改善してもう一度試してください。",
+  "ocrScanFailed": "スキャンに失敗しました: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "カードをスキャンするにはカメラの許可が必要です。",
+  "openSettingsBtn": "設定を開く",
+  "notDetected": "検出されませんでした",
+  "scanAgainBtn": "再スキャン",
+  "cardPhotosDesc": "すぐに参照できるようにカードの写真を保管しておいてください。画像はこのデバイスに残ります。",
+  "addPhotoPlaceholder": "{label}写真を追加",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "プレミアム",
+  "benefitRemoveAdsTitle": "すべての広告を削除する",
+  "benefitRemoveAdsDesc": "バナーやインタースティシャルは一切ありません",
+  "benefitFasterTitle": "より高速なエクスペリエンス",
+  "benefitFasterDesc": "何も読み込まないインスタント画面",
+  "benefitSupportTitle": "サポート開発",
+  "benefitSupportDesc": "アプリの成長をサポートする",
+  "benefitBadgeTitle": "プレミアムバッジ",
+  "benefitBadgeDesc": "プロフィールにちょっとした感謝の気持ちを添えて",
+  "premiumHeroActive": "あなたはプレミアムです",
+  "premiumHeroInactive": "広告なしへ",
+  "premiumHeroDescActive": "カードウォレットをご利用いただきありがとうございます",
+  "premiumHeroDescInactive": "広告を削除し、よりクリーンなエクスペリエンスを実現します",
+  "disablePremiumBtn": "プレミアムを無効にする",
+  "removeAdsBtn": "広告を削除する",
+  "premiumOneTimeNotice": "一度。このデバイスでは即座に復元されます。",
+  "noBiometricsConfigured": "このデバイスには生体認証/デバイス ロックが設定されていません",
+  "cardTypeCredit": "クレジットカード",
+  "cardTypeDebit": "デビットカード",
+  "cardTypePoint": "ポイントカード",
+  "cardTypeMembership": "会員カード",
+  "cardTypeCoupon": "クーポン",
+  "cardTypeGift": "ギフトカード",
+  "cardTypeEventTicket": "イベントチケット",
+  "cardTypeOther": "他の",
+  "chooseCardType": "カードの種類を選択してください",
+  "selectCustomColor": "カスタムカラーの選択",
+  "solidColor": "固体",
+  "gradientColor": "勾配",
+  "startColor": "始める",
+  "endColor": "終わり",
+  "cardExpLabel": "経験値",
+  "homeTab": "家",
+  "cardsTab": "私のカード",
+  "profileTab": "プロフィール",
+  "appTitleTypewriter": "カードウォレット",
+  "seeAll": "すべて見る",
+  "backupShareText": "カードウォレットの安全なバックアップ",
+  "backupFileNotFoundError": "バックアップファイルが見つかりません",
+  "corruptedBackupError": "バックアップ ファイルが破損しているか無効です",
+  "invalidBackupDataError": "バックアップ ファイルに有効なデータが含まれていません。",
+  "unsupportedBackupVersionError": "サポートされていないバックアップ バージョン: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

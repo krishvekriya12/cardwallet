@@ -1,0 +1,342 @@
+{
+  "appTitle": "卡钱包应用程序",
+  "addCard": "添加卡",
+  "hiThere": "嗨，那里👋",
+  "settingsTitle": "设置",
+  "appLock": "应用锁",
+  "appLockSubtitle": "需要生物识别才能打开应用程序",
+  "language": "语言",
+  "backupRestore": "备份与恢复",
+  "backupRestoreSubtitle": "在本地导出和导入您的卡",
+  "clearAllData": "清除所有数据",
+  "goodMorning": "早上好",
+  "goodAfternoon": "下午好",
+  "goodEvening": "晚上好",
+  "hiName": "嗨，{name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "添加新卡",
+  "scan": "扫描",
+  "scanDesc": "扫描卡详细信息\n立即",
+  "manually": "手动",
+  "manuallyDesc": "输入卡详细信息\n手动",
+  "nfc": "近场通信",
+  "nfcDesc": "点击卡进行添加\n使用 NFC",
+  "tools": "工具",
+  "binChecker": "BIN检查器",
+  "binCheckerDesc": "从 BIN 检查卡详细信息",
+  "cardVerify": "卡验证",
+  "cardVerifyDesc": "验证卡号",
+  "frequentlyAdded": "经常添加",
+  "cardsTitle": "牌",
+  "yourCardsManage": "您的卡可以在这里管理",
+  "cardCountText": "{count, plural, =1{已保存 1 张卡} other{{count} 卡已保存}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{1 张卡} other{{count} 卡}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "全部",
+  "noCardsYet": "还没有卡",
+  "noCardsYetDesc": "转到主页或点击扫描仪添加卡片",
+  "noCardsCategory": "该类别没有卡片",
+  "tryDifferentFilter": "尝试选择不同的过滤器",
+  "addFirstCardStart": "添加您的第一张卡以开始使用",
+  "rateUs": "评价我们",
+  "rateUsThanks": "感谢您的支持！",
+  "shareApp": "分享应用程序",
+  "shareAppSoon": "即将分享",
+  "help": "帮助",
+  "supportSoon": "支持即将推出",
+  "privacyPolicy": "隐私政策",
+  "privacyPolicySoon": "打开隐私政策",
+  "termsOfUse": "使用条款",
+  "termsOfUseSoon": "打开使用条款",
+  "clearDataTitle": "清除所有数据？",
+  "clearDataDesc": "这将永久删除每张已保存的卡片。此操作无法撤消。",
+  "cancel": "取消",
+  "clearDataConfirm": "清除数据",
+  "clearDataToast": "所有数据已清除",
+  "splashSubtitle": "您的卡片，安全又简单",
+  "unlockPrompt": "解锁卡钱包以继续",
+  "tapToUnlock": "点击解锁",
+  "authFailed": "认证失败",
+  "binCheckerTitle": "BIN检查器",
+  "enterMin6Digits": "输入至少 6 位数字",
+  "binNotVerified": "无法验证此 BIN",
+  "lookupFailed": "查找失败。检查您的连接并重试。",
+  "binLookupPlaceholder": "BIN / IIN 查找",
+  "enterDigitsLabel": "输入前 6-8 位数字",
+  "checkButton": "查看",
+  "binResultTitle": "分档结果",
+  "cardNetwork": "网络",
+  "cardType": "类型",
+  "cardBrandCategory": "品牌/类别",
+  "cardBank": "银行",
+  "cardCountry": "国家",
+  "cardCountryCode": "国家/地区代码",
+  "cardCurrency": "货币",
+  "cardValid": "有效的",
+  "yes": "是的",
+  "no": "不",
+  "cardValidatorTitle": "卡片验证器",
+  "cardValidatorPreviewName": "卡片验证器",
+  "enterCardNumberLabel": "输入卡号",
+  "validCardNumber": "有效卡号",
+  "invalidCardNumber": "卡号无效 - 检查数字",
+  "backupRestoreTitle": "备份与恢复",
+  "createBackupPass": "创建备份密码",
+  "backupPassWarning": "重要提示：记下此密码。如果您忘记了它，我们将无法恢复它或恢复您的备份。",
+  "enterPassLabel": "输入密码",
+  "confirmPassLabel": "确认密码",
+  "passEmptyError": "密码不能为空",
+  "passMismatchError": "密码不匹配",
+  "doneBtn": "完毕",
+  "enterBackupPass": "输入备份密码",
+  "noCardsToBackup": "没有要备份的卡",
+  "backupSuccess": "备份创建成功！",
+  "backupFailed": "备份失败：{error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "恢复备份？",
+  "restoreBackupWarning": "警告：恢复备份将覆盖所有当前卡和交易。此操作无法撤消。",
+  "continueBtn": "继续",
+  "restoreSuccess": "备份恢复成功！",
+  "incorrectPasswordError": "密码不正确或备份文件损坏。",
+  "restoreFailed": "恢复失败：{error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "删除备份？",
+  "deleteBackupConfirmText": "删除“{name}”？此操作无法撤消。",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "删除",
+  "backupDeleted": "备份已删除",
+  "failedShareBackup": "无法共享备份：{error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "无法选择文件：{error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "上次备份",
+  "neverBackedUp": "从未备份过",
+  "backupType": "备份类型",
+  "localBackupDesc": "本地 — 仅保存在此设备上",
+  "createBackupBtn": "创建备份",
+  "importExternalBackupBtn": "导入外部备份",
+  "savedBackupsHeader": "已保存的备份",
+  "noBackupsYet": "还没有备份",
+  "tapCreateBackupDesc": "点击“创建备份”来保存您的卡片",
+  "restoreTooltip": "恢复",
+  "shareTooltip": "分享",
+  "cardNotFound": "未找到卡",
+  "editCardTitle": "编辑卡",
+  "addCardTitle": "添加卡",
+  "cardTypeLabel": "卡型",
+  "cardColorLabel": "卡牌颜色",
+  "fieldRequiredError": "此字段是必需的",
+  "bankNameLabel": "银行名称",
+  "expiryLabel": "到期日（月/年）",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "卡片照片",
+  "frontSideLabel": "正面",
+  "backSideLabel": "背面",
+  "notesLabel": "笔记",
+  "saveChangesBtn": "保存更改",
+  "saveCardBtn": "保存卡",
+  "deleteCardBtn": "删除卡",
+  "takePhotoLabel": "拍张照片",
+  "chooseGalleryLabel": "从画廊中选择",
+  "deleteCardPrompt": "删除卡？",
+  "deleteCardWarning": "此操作无法撤消。",
+  "cardNumberLabel": "卡号",
+  "pointCardNumberLabel": "点卡号码",
+  "membershipIdLabel": "会员ID",
+  "couponCodeLabel": "优惠券代码",
+  "giftCardNumberLabel": "礼品卡号码",
+  "ticketPnrLabel": "机票/PNR 号码",
+  "numberLabel": "数字",
+  "cardholderNameLabel": "持卡人姓名",
+  "cardNameLabel": "卡名",
+  "enterValidCardNumberError": "输入有效的卡号",
+  "cardNumberInvalidError": "卡号看起来无效",
+  "enterMin3CharsError": "输入至少3个字符",
+  "cardAlreadyExistsError": "此号码的卡已保存",
+  "revealCvv": "显示CVV",
+  "cardDetailsHeader": "卡详情：",
+  "typePrefix": "类型：",
+  "bankPrefix": "银行：",
+  "cardNumberPrefix": "卡号：",
+  "cardholderPrefix": "持卡人：",
+  "expiryPrefix": "到期日：",
+  "notesPrefix": "笔记：",
+  "detailsSuffix": "细节",
+  "cardDetailsTitle": "卡详情",
+  "hideBtn": "隐藏",
+  "revealBtn": "揭示",
+  "editBtn": "编辑",
+  "cardInformationHeader": "卡信息",
+  "cardholderLabel": "持卡人",
+  "nameLabel": "姓名",
+  "bankLabel": "银行",
+  "pnrNumberLabel": "PNR 号码",
+  "venueLabel": "场地",
+  "eventDateLabel": "活动日期",
+  "seatLabel": "座位",
+  "classLabel": "班级",
+  "discountDetailsLabel": "折扣详情",
+  "memberIdLabel": "会员编号",
+  "tierStatusLabel": "等级状态",
+  "pointsBalanceLabel": "积分余额",
+  "secondaryPinLabel": "辅助密码",
+  "issueDateLabel": "签发日期",
+  "documentTitleLabel": "文件标题",
+  "nfcReaderTitle": "NFC读写器",
+  "nfcNotAvailable": "NFC 不可用",
+  "nfcUnsupportedDesc": "该设备不支持NFC卡读取。",
+  "readyToScan": "准备扫描",
+  "holdCardNfcPrompt": "将非接触式卡放在手机背面。",
+  "scanFailed": "扫描失败",
+  "somethingWentWrong": "出了点问题。",
+  "tryAgainBtn": "再试一次",
+  "cardDetected": "检测到卡",
+  "unsupportedCardError": "不支持此卡类型。",
+  "nfcReadFailedDesc": "无法读取此卡。再试一次或手动添加。",
+  "nfcReadError": "读取失败：{error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "无法启动 NFC 会话：{error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "扫描卡",
+  "noCameraError": "该设备上没有可用的相机",
+  "cameraStartError": "无法启动相机：{error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "无法读取卡详细信息。用更好的照明再试一次。",
+  "ocrScanFailed": "扫描失败：{error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "扫描卡片需要相机许可。",
+  "openSettingsBtn": "打开设置",
+  "notDetected": "未检测到",
+  "scanAgainBtn": "再次扫描",
+  "cardPhotosDesc": "保留您的卡的照片以供快速参考。图像保留在此设备上。",
+  "addPhotoPlaceholder": "添加 {label} 照片",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "优质的",
+  "benefitRemoveAdsTitle": "删除所有广告",
+  "benefitRemoveAdsDesc": "没有横幅，没有插页式广告，永远",
+  "benefitFasterTitle": "更快的体验",
+  "benefitFasterDesc": "即时屏幕，无需加载任何内容",
+  "benefitSupportTitle": "支持发展",
+  "benefitSupportDesc": "帮助保持应用程序的增长",
+  "benefitBadgeTitle": "高级徽章",
+  "benefitBadgeDesc": "在你的个人资料上表达一点感谢",
+  "premiumHeroActive": "你是高级会员",
+  "premiumHeroInactive": "无广告",
+  "premiumHeroDescActive": "感谢您对卡钱包的支持",
+  "premiumHeroDescInactive": "删除广告并解锁更清晰的体验",
+  "disablePremiumBtn": "禁用高级版",
+  "removeAdsBtn": "删除广告",
+  "premiumOneTimeNotice": "一度。在此设备上立即恢复。",
+  "noBiometricsConfigured": "该设备上未配置生物识别/设备锁",
+  "cardTypeCredit": "信用卡",
+  "cardTypeDebit": "借记卡",
+  "cardTypePoint": "点卡",
+  "cardTypeMembership": "会员卡",
+  "cardTypeCoupon": "优惠券",
+  "cardTypeGift": "礼品卡",
+  "cardTypeEventTicket": "活动门票",
+  "cardTypeOther": "其他",
+  "chooseCardType": "选择卡类型",
+  "selectCustomColor": "选择自定义颜色",
+  "solidColor": "坚硬的",
+  "gradientColor": "坡度",
+  "startColor": "开始",
+  "endColor": "结尾",
+  "cardExpLabel": "经验值",
+  "homeTab": "家",
+  "cardsTab": "我的卡片",
+  "profileTab": "轮廓",
+  "appTitleTypewriter": "卡钱包",
+  "seeAll": "查看全部",
+  "backupShareText": "卡钱包安全备份",
+  "backupFileNotFoundError": "找不到备份文件",
+  "corruptedBackupError": "备份文件损坏或无效",
+  "invalidBackupDataError": "备份文件不包含有效数据。",
+  "unsupportedBackupVersionError": "不支持的备份版本：{version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

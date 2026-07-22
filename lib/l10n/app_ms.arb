@@ -1,0 +1,342 @@
+{
+  "appTitle": "Apl Dompet Kad",
+  "addCard": "Tambah Kad",
+  "hiThere": "Hai, ada 👋",
+  "settingsTitle": "tetapan",
+  "appLock": "Kunci Apl",
+  "appLockSubtitle": "Memerlukan biometrik untuk membuka apl",
+  "language": "Bahasa",
+  "backupRestore": "Sandaran & Pulihkan",
+  "backupRestoreSubtitle": "Eksport & import kad anda secara tempatan",
+  "clearAllData": "Kosongkan Semua Data",
+  "goodMorning": "selamat pagi",
+  "goodAfternoon": "selamat petang",
+  "goodEvening": "selamat petang",
+  "hiName": "Hai, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "Tambah Kad Baharu",
+  "scan": "Imbas",
+  "scanDesc": "Imbas butiran kad\nserta merta",
+  "manually": "Secara manual",
+  "manuallyDesc": "Masukkan butiran kad\nsecara manual",
+  "nfc": "NFC",
+  "nfcDesc": "Ketik kad untuk menambah\nmenggunakan NFC",
+  "tools": "Alatan",
+  "binChecker": "Pemeriksa BIN",
+  "binCheckerDesc": "Semak butiran kad dari BIN",
+  "cardVerify": "Pengesahan Kad",
+  "cardVerifyDesc": "Sahkan nombor kad",
+  "frequentlyAdded": "Kerap Ditambah",
+  "cardsTitle": "Kad",
+  "yourCardsManage": "Kad anda di sini untuk diurus",
+  "cardCountText": "{count, plural, =1{1 kad disimpan} other{Kad {count} disimpan}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{1 kad} other{kad {count}}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "Semua",
+  "noCardsYet": "Tiada kad lagi",
+  "noCardsYetDesc": "Pergi ke Laman Utama atau ketik pengimbas untuk menambah kad",
+  "noCardsCategory": "Tiada kad dalam kategori ini",
+  "tryDifferentFilter": "Cuba pilih penapis lain",
+  "addFirstCardStart": "Tambahkan kad pertama anda untuk bermula",
+  "rateUs": "Nilaikan Kami",
+  "rateUsThanks": "Terima kasih atas sokongan!",
+  "shareApp": "Kongsi Apl",
+  "shareAppSoon": "Perkongsian akan datang tidak lama lagi",
+  "help": "Tolong",
+  "supportSoon": "Sokongan akan datang tidak lama lagi",
+  "privacyPolicy": "Dasar Privasi",
+  "privacyPolicySoon": "Membuka dasar privasi",
+  "termsOfUse": "Syarat Penggunaan",
+  "termsOfUseSoon": "Membuka syarat penggunaan",
+  "clearDataTitle": "Kosongkan semua data?",
+  "clearDataDesc": "Ini memadamkan setiap kad yang disimpan secara kekal. Ini tidak boleh dibuat asal.",
+  "cancel": "Batal",
+  "clearDataConfirm": "Kosongkan Data",
+  "clearDataToast": "Semua data dikosongkan",
+  "splashSubtitle": "Kad anda, selamat & ringkas",
+  "unlockPrompt": "Buka kunci Dompet Kad untuk meneruskan",
+  "tapToUnlock": "Ketik untuk Buka Kunci",
+  "authFailed": "Pengesahan gagal",
+  "binCheckerTitle": "Pemeriksa BIN",
+  "enterMin6Digits": "Masukkan sekurang-kurangnya 6 digit",
+  "binNotVerified": "BIN ini tidak dapat disahkan",
+  "lookupFailed": "Carian gagal. Semak sambungan anda dan cuba lagi.",
+  "binLookupPlaceholder": "BIN / IIN LOOKUP",
+  "enterDigitsLabel": "Masukkan 6–8 digit pertama",
+  "checkButton": "Semak",
+  "binResultTitle": "Keputusan BIN",
+  "cardNetwork": "Rangkaian",
+  "cardType": "taip",
+  "cardBrandCategory": "Jenama/Kategori",
+  "cardBank": "Bank",
+  "cardCountry": "Negara",
+  "cardCountryCode": "Kod Negara",
+  "cardCurrency": "mata wang",
+  "cardValid": "sah",
+  "yes": "ya",
+  "no": "Tidak",
+  "cardValidatorTitle": "Pengesah Kad",
+  "cardValidatorPreviewName": "PENGESAH KAD",
+  "enterCardNumberLabel": "Masukkan nombor kad",
+  "validCardNumber": "Nombor kad yang sah",
+  "invalidCardNumber": "Nombor kad tidak sah — semak digit",
+  "backupRestoreTitle": "Sandaran & Pulihkan",
+  "createBackupPass": "Cipta Kata Laluan Sandaran",
+  "backupPassWarning": "PENTING: Tulis kata laluan ini. Kami tidak dapat memulihkannya atau memulihkan sandaran anda jika anda melupakannya.",
+  "enterPassLabel": "Masukkan Kata Laluan",
+  "confirmPassLabel": "Sahkan Kata Laluan",
+  "passEmptyError": "Kata laluan tidak boleh kosong",
+  "passMismatchError": "Kata laluan tidak sepadan",
+  "doneBtn": "Selesai",
+  "enterBackupPass": "Masukkan Kata Laluan Sandaran",
+  "noCardsToBackup": "Tiada kad untuk disandarkan",
+  "backupSuccess": "Sandaran berjaya dibuat!",
+  "backupFailed": "Sandaran gagal: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "Pulihkan sandaran?",
+  "restoreBackupWarning": "AMARAN: Memulihkan sandaran akan menimpa semua kad dan transaksi semasa. Ini tidak boleh dibuat asal.",
+  "continueBtn": "teruskan",
+  "restoreSuccess": "Sandaran berjaya dipulihkan!",
+  "incorrectPasswordError": "Kata laluan yang salah atau fail sandaran yang rosak.",
+  "restoreFailed": "Pemulihan gagal: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "Padamkan sandaran?",
+  "deleteBackupConfirmText": "Padamkan \"{name}\"? Ini tidak boleh dibuat asal.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "Padam",
+  "backupDeleted": "Sandaran dipadamkan",
+  "failedShareBackup": "Gagal berkongsi sandaran: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "Gagal memilih fail: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "Sandaran Terakhir",
+  "neverBackedUp": "Tidak pernah disandarkan",
+  "backupType": "Jenis Sandaran",
+  "localBackupDesc": "Setempat — disimpan pada peranti ini sahaja",
+  "createBackupBtn": "Buat Sandaran",
+  "importExternalBackupBtn": "Import Sandaran Luaran",
+  "savedBackupsHeader": "Sandaran Disimpan",
+  "noBackupsYet": "Tiada sandaran lagi",
+  "tapCreateBackupDesc": "Ketik \"Buat Sandaran\" untuk menyimpan kad anda",
+  "restoreTooltip": "Pulihkan",
+  "shareTooltip": "Kongsi",
+  "cardNotFound": "Kad tidak ditemui",
+  "editCardTitle": "Edit Kad",
+  "addCardTitle": "Tambah Kad",
+  "cardTypeLabel": "Jenis kad",
+  "cardColorLabel": "Warna kad",
+  "fieldRequiredError": "Medan ini diperlukan",
+  "bankNameLabel": "Nama Bank",
+  "expiryLabel": "Tamat tempoh (MM/YY)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "Foto Kad",
+  "frontSideLabel": "Bahagian Depan",
+  "backSideLabel": "Bahagian Belakang",
+  "notesLabel": "Nota",
+  "saveChangesBtn": "Simpan Perubahan",
+  "saveCardBtn": "Simpan Kad",
+  "deleteCardBtn": "Padamkan kad",
+  "takePhotoLabel": "Ambil gambar",
+  "chooseGalleryLabel": "Pilih daripada galeri",
+  "deleteCardPrompt": "Padamkan kad?",
+  "deleteCardWarning": "Tindakan ini tidak boleh dibuat asal.",
+  "cardNumberLabel": "Nombor Kad",
+  "pointCardNumberLabel": "Nombor Kad Mata",
+  "membershipIdLabel": "ID keahlian",
+  "couponCodeLabel": "Kod Kupon",
+  "giftCardNumberLabel": "Nombor Kad Hadiah",
+  "ticketPnrLabel": "Nombor Tiket / PNR",
+  "numberLabel": "Nombor",
+  "cardholderNameLabel": "Nama Pemegang Kad",
+  "cardNameLabel": "Nama Kad",
+  "enterValidCardNumberError": "Masukkan nombor kad yang sah",
+  "cardNumberInvalidError": "Nombor kad kelihatan tidak sah",
+  "enterMin3CharsError": "Masukkan sekurang-kurangnya 3 aksara",
+  "cardAlreadyExistsError": "Kad dengan nombor ini telah disimpan",
+  "revealCvv": "Dedahkan CVV",
+  "cardDetailsHeader": "Butiran Kad:",
+  "typePrefix": "Jenis:",
+  "bankPrefix": "Bank:",
+  "cardNumberPrefix": "Nombor Kad:",
+  "cardholderPrefix": "Pemegang kad:",
+  "expiryPrefix": "tamat tempoh:",
+  "notesPrefix": "Nota:",
+  "detailsSuffix": "Butiran",
+  "cardDetailsTitle": "Butiran Kad",
+  "hideBtn": "Sembunyi",
+  "revealBtn": "Dedahkan",
+  "editBtn": "Sunting",
+  "cardInformationHeader": "Maklumat Kad",
+  "cardholderLabel": "Pemegang kad",
+  "nameLabel": "Nama",
+  "bankLabel": "Bank",
+  "pnrNumberLabel": "Nombor PNR",
+  "venueLabel": "Tempat",
+  "eventDateLabel": "Tarikh Peristiwa",
+  "seatLabel": "tempat duduk",
+  "classLabel": "Kelas",
+  "discountDetailsLabel": "Butiran Diskaun",
+  "memberIdLabel": "ID ahli",
+  "tierStatusLabel": "Status Peringkat",
+  "pointsBalanceLabel": "Baki Mata",
+  "secondaryPinLabel": "PIN kedua",
+  "issueDateLabel": "Tarikh Keluaran",
+  "documentTitleLabel": "Tajuk Dokumen",
+  "nfcReaderTitle": "Pembaca NFC",
+  "nfcNotAvailable": "NFC tidak tersedia",
+  "nfcUnsupportedDesc": "Peranti ini tidak menyokong bacaan kad NFC.",
+  "readyToScan": "Sedia untuk Mengimbas",
+  "holdCardNfcPrompt": "Pegang kad tanpa sentuh anda di belakang telefon anda.",
+  "scanFailed": "Imbasan Gagal",
+  "somethingWentWrong": "Sesuatu telah berlaku.",
+  "tryAgainBtn": "Cuba Lagi",
+  "cardDetected": "Kad Dikesan",
+  "unsupportedCardError": "Jenis kad ini tidak disokong.",
+  "nfcReadFailedDesc": "Tidak dapat membaca kad ini. Cuba lagi atau tambah secara manual.",
+  "nfcReadError": "Bacaan gagal: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "Tidak dapat memulakan sesi NFC: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "Kad Imbasan",
+  "noCameraError": "Tiada kamera tersedia pada peranti ini",
+  "cameraStartError": "Tidak dapat memulakan kamera: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "Tidak dapat membaca butiran kad. Cuba lagi dengan pencahayaan yang lebih baik.",
+  "ocrScanFailed": "Imbasan gagal: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "Kebenaran kamera diperlukan untuk mengimbas kad.",
+  "openSettingsBtn": "Buka Tetapan",
+  "notDetected": "Tidak dikesan",
+  "scanAgainBtn": "Imbas Lagi",
+  "cardPhotosDesc": "Simpan foto kad anda untuk rujukan pantas. Imej kekal pada peranti ini.",
+  "addPhotoPlaceholder": "Tambahkan foto {label}",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "Premium",
+  "benefitRemoveAdsTitle": "Alih keluar semua iklan",
+  "benefitRemoveAdsDesc": "Tiada sepanduk, tiada interstisial, pernah",
+  "benefitFasterTitle": "Pengalaman yang lebih pantas",
+  "benefitFasterDesc": "Skrin segera tanpa apa-apa untuk dimuatkan",
+  "benefitSupportTitle": "Menyokong pembangunan",
+  "benefitSupportDesc": "Bantu apl terus berkembang",
+  "benefitBadgeTitle": "Lencana premium",
+  "benefitBadgeDesc": "Sedikit terima kasih pada profil anda",
+  "premiumHeroActive": "Anda Premium",
+  "premiumHeroInactive": "Pergi Tanpa Iklan",
+  "premiumHeroDescActive": "Terima kasih kerana menyokong Card Wallet",
+  "premiumHeroDescInactive": "Alih keluar iklan dan buka kunci pengalaman yang lebih bersih",
+  "disablePremiumBtn": "Lumpuhkan Premium",
+  "removeAdsBtn": "Alih Keluar Iklan",
+  "premiumOneTimeNotice": "Sekali. Dipulihkan serta-merta pada peranti ini.",
+  "noBiometricsConfigured": "Tiada biometrik/kunci peranti dikonfigurasikan pada peranti ini",
+  "cardTypeCredit": "Kad Kredit",
+  "cardTypeDebit": "Kad Debit",
+  "cardTypePoint": "Kad Mata",
+  "cardTypeMembership": "Kad Keahlian",
+  "cardTypeCoupon": "kupon",
+  "cardTypeGift": "Kad Hadiah",
+  "cardTypeEventTicket": "Tiket Acara",
+  "cardTypeOther": "Lain-lain",
+  "chooseCardType": "Pilih jenis kad",
+  "selectCustomColor": "Pilih Warna Tersuai",
+  "solidColor": "Padat",
+  "gradientColor": "Kecerunan",
+  "startColor": "Mulakan",
+  "endColor": "tamat",
+  "cardExpLabel": "EXP",
+  "homeTab": "Rumah",
+  "cardsTab": "Kad Saya",
+  "profileTab": "Profil",
+  "appTitleTypewriter": "Dompet Kad",
+  "seeAll": "Lihat Semua",
+  "backupShareText": "Sandaran Selamat Dompet Kad",
+  "backupFileNotFoundError": "Fail sandaran tidak ditemui",
+  "corruptedBackupError": "Fail sandaran rosak atau tidak sah",
+  "invalidBackupDataError": "Fail sandaran tidak mengandungi data yang sah.",
+  "unsupportedBackupVersionError": "Versi sandaran tidak disokong: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

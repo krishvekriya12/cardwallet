@@ -1,0 +1,342 @@
+{
+  "appTitle": "تطبيق محفظة البطاقة",
+  "addCard": "أضف بطاقة",
+  "hiThere": "مرحبًا، 👋",
+  "settingsTitle": "إعدادات",
+  "appLock": "قفل التطبيق",
+  "appLockSubtitle": "تتطلب القياسات الحيوية لفتح التطبيق",
+  "language": "لغة",
+  "backupRestore": "النسخ الاحتياطي والاستعادة",
+  "backupRestoreSubtitle": "تصدير واستيراد البطاقات الخاصة بك محليا",
+  "clearAllData": "مسح كافة البيانات",
+  "goodMorning": "صباح الخير",
+  "goodAfternoon": "مساء الخير",
+  "goodEvening": "مساء الخير",
+  "hiName": "مرحبًا، {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "إضافة بطاقة جديدة",
+  "scan": "مسح",
+  "scanDesc": "مسح تفاصيل البطاقة\nعلى الفور",
+  "manually": "يدويا",
+  "manuallyDesc": "أدخل تفاصيل البطاقة\nيدويا",
+  "nfc": "نفك",
+  "nfcDesc": "اضغط على البطاقة لإضافتها\nباستخدام NFC",
+  "tools": "أدوات",
+  "binChecker": "مدقق بن",
+  "binCheckerDesc": "التحقق من تفاصيل البطاقة من BIN",
+  "cardVerify": "التحقق من البطاقة",
+  "cardVerifyDesc": "التحقق من صحة رقم البطاقة",
+  "frequentlyAdded": "تمت إضافته بشكل متكرر",
+  "cardsTitle": "بطاقات",
+  "yourCardsManage": "البطاقات الخاصة بك هنا لإدارة",
+  "cardCountText": "{count, plural, =1{تم حفظ بطاقة واحدة} other{تم حفظ بطاقات {count}}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{1 بطاقة} other{بطاقات {count}}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "الجميع",
+  "noCardsYet": "لا توجد بطاقات حتى الآن",
+  "noCardsYetDesc": "انتقل إلى الصفحة الرئيسية أو اضغط على الماسح الضوئي لإضافة بطاقة",
+  "noCardsCategory": "لا توجد بطاقات في هذه الفئة",
+  "tryDifferentFilter": "حاول اختيار مرشح مختلف",
+  "addFirstCardStart": "أضف بطاقتك الأولى للبدء",
+  "rateUs": "قيمنا",
+  "rateUsThanks": "شكرا على الدعم!",
+  "shareApp": "مشاركة التطبيق",
+  "shareAppSoon": "المشاركة قريبا",
+  "help": "يساعد",
+  "supportSoon": "الدعم قريبا",
+  "privacyPolicy": "سياسة الخصوصية",
+  "privacyPolicySoon": "يفتح سياسة الخصوصية",
+  "termsOfUse": "شروط الاستخدام",
+  "termsOfUseSoon": "يفتح شروط الاستخدام",
+  "clearDataTitle": "هل تريد مسح جميع البيانات؟",
+  "clearDataDesc": "يؤدي هذا إلى حذف كل بطاقة محفوظة بشكل دائم. لا يمكن التراجع عن هذا.",
+  "cancel": "يلغي",
+  "clearDataConfirm": "مسح البيانات",
+  "clearDataToast": "تم مسح كافة البيانات",
+  "splashSubtitle": "بطاقاتك، آمنة وبسيطة",
+  "unlockPrompt": "افتح محفظة البطاقة للمتابعة",
+  "tapToUnlock": "انقر لفتح",
+  "authFailed": "فشلت المصادقة",
+  "binCheckerTitle": "مدقق بن",
+  "enterMin6Digits": "أدخل 6 أرقام على الأقل",
+  "binNotVerified": "لا يمكن التحقق من رقم التعريف الشخصي هذا",
+  "lookupFailed": "فشل البحث. تحقق من اتصالك وحاول مرة أخرى.",
+  "binLookupPlaceholder": "بحث بن / IIN",
+  "enterDigitsLabel": "أدخل أول 6-8 أرقام",
+  "checkButton": "يفحص",
+  "binResultTitle": "نتيجة بن",
+  "cardNetwork": "شبكة",
+  "cardType": "يكتب",
+  "cardBrandCategory": "العلامة التجارية/الفئة",
+  "cardBank": "بنك",
+  "cardCountry": "دولة",
+  "cardCountryCode": "رمز البلد",
+  "cardCurrency": "عملة",
+  "cardValid": "صالح",
+  "yes": "نعم",
+  "no": "لا",
+  "cardValidatorTitle": "مدقق البطاقة",
+  "cardValidatorPreviewName": "مدقق البطاقة",
+  "enterCardNumberLabel": "أدخل رقم البطاقة",
+  "validCardNumber": "رقم بطاقة صالح",
+  "invalidCardNumber": "رقم البطاقة غير صالح - تحقق من الأرقام",
+  "backupRestoreTitle": "النسخ الاحتياطي والاستعادة",
+  "createBackupPass": "إنشاء كلمة مرور احتياطية",
+  "backupPassWarning": "هام: اكتب كلمة المرور هذه. لا يمكننا استعادتها أو استعادة النسخة الاحتياطية إذا نسيتها.",
+  "enterPassLabel": "أدخل كلمة المرور",
+  "confirmPassLabel": "تأكيد كلمة المرور",
+  "passEmptyError": "لا يمكن أن تكون كلمة المرور فارغة",
+  "passMismatchError": "كلمات المرور غير متطابقة",
+  "doneBtn": "منتهي",
+  "enterBackupPass": "أدخل كلمة المرور الاحتياطية",
+  "noCardsToBackup": "لا توجد بطاقات للنسخ الاحتياطي",
+  "backupSuccess": "تم إنشاء النسخة الاحتياطية بنجاح!",
+  "backupFailed": "فشل النسخ الاحتياطي: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "استعادة النسخة الاحتياطية؟",
+  "restoreBackupWarning": "تحذير: ستؤدي استعادة النسخة الاحتياطية إلى استبدال كافة البطاقات والمعاملات الحالية. لا يمكن التراجع عن هذا.",
+  "continueBtn": "يكمل",
+  "restoreSuccess": "تمت استعادة النسخة الاحتياطية بنجاح!",
+  "incorrectPasswordError": "كلمة المرور غير صحيحة أو ملف النسخ الاحتياطي تالف.",
+  "restoreFailed": "فشلت الاستعادة: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "هل تريد حذف النسخة الاحتياطية؟",
+  "deleteBackupConfirmText": "هل تريد حذف \"{name}\"؟ لا يمكن التراجع عن هذا.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "يمسح",
+  "backupDeleted": "تم حذف النسخة الاحتياطية",
+  "failedShareBackup": "فشلت مشاركة النسخة الاحتياطية: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "فشل في اختيار الملف: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "النسخ الاحتياطي الأخير",
+  "neverBackedUp": "لم يتم الاحتفاظ بنسخة احتياطية أبدًا",
+  "backupType": "نوع النسخ الاحتياطي",
+  "localBackupDesc": "محلي — محفوظ على هذا الجهاز فقط",
+  "createBackupBtn": "إنشاء نسخة احتياطية",
+  "importExternalBackupBtn": "استيراد النسخ الاحتياطي الخارجي",
+  "savedBackupsHeader": "النسخ الاحتياطية المحفوظة",
+  "noBackupsYet": "لا توجد نسخ احتياطية حتى الآن",
+  "tapCreateBackupDesc": "اضغط على \"إنشاء نسخة احتياطية\" لحفظ بطاقاتك",
+  "restoreTooltip": "يعيد",
+  "shareTooltip": "يشارك",
+  "cardNotFound": "لم يتم العثور على البطاقة",
+  "editCardTitle": "تحرير البطاقة",
+  "addCardTitle": "أضف بطاقة",
+  "cardTypeLabel": "نوع البطاقة",
+  "cardColorLabel": "لون البطاقة",
+  "fieldRequiredError": "هذه الخانة مطلوبه",
+  "bankNameLabel": "اسم البنك",
+  "expiryLabel": "انتهاء الصلاحية (شهر/سنة)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "صور البطاقة",
+  "frontSideLabel": "الجانب الأمامي",
+  "backSideLabel": "الجانب الخلفي",
+  "notesLabel": "ملحوظات",
+  "saveChangesBtn": "حفظ التغييرات",
+  "saveCardBtn": "حفظ البطاقة",
+  "deleteCardBtn": "حذف البطاقة",
+  "takePhotoLabel": "التقط صورة",
+  "chooseGalleryLabel": "اختر من المعرض",
+  "deleteCardPrompt": "هل تريد حذف البطاقة؟",
+  "deleteCardWarning": "لا يمكن التراجع عن هذا الإجراء.",
+  "cardNumberLabel": "رقم البطاقة",
+  "pointCardNumberLabel": "رقم بطاقة النقطة",
+  "membershipIdLabel": "معرف العضوية",
+  "couponCodeLabel": "رمز القسيمة",
+  "giftCardNumberLabel": "رقم بطاقة الهدية",
+  "ticketPnrLabel": "رقم التذكرة / PNR",
+  "numberLabel": "رقم",
+  "cardholderNameLabel": "اسم حامل البطاقة",
+  "cardNameLabel": "اسم البطاقة",
+  "enterValidCardNumberError": "أدخل رقم بطاقة صالح",
+  "cardNumberInvalidError": "يبدو رقم البطاقة غير صالح",
+  "enterMin3CharsError": "أدخل 3 أحرف على الأقل",
+  "cardAlreadyExistsError": "تم حفظ بطاقة بهذا الرقم بالفعل",
+  "revealCvv": "كشف CVV",
+  "cardDetailsHeader": "تفاصيل البطاقة:",
+  "typePrefix": "يكتب:",
+  "bankPrefix": "بنك:",
+  "cardNumberPrefix": "رقم البطاقة:",
+  "cardholderPrefix": "حامل البطاقة:",
+  "expiryPrefix": "انتهاء الصلاحية:",
+  "notesPrefix": "ملحوظات:",
+  "detailsSuffix": "تفاصيل",
+  "cardDetailsTitle": "تفاصيل البطاقة",
+  "hideBtn": "يخفي",
+  "revealBtn": "يكشف",
+  "editBtn": "يحرر",
+  "cardInformationHeader": "معلومات البطاقة",
+  "cardholderLabel": "حامل البطاقة",
+  "nameLabel": "اسم",
+  "bankLabel": "بنك",
+  "pnrNumberLabel": "رقم سجل الركاب",
+  "venueLabel": "مكان",
+  "eventDateLabel": "تاريخ الحدث",
+  "seatLabel": "مقعد",
+  "classLabel": "فصل",
+  "discountDetailsLabel": "تفاصيل الخصم",
+  "memberIdLabel": "معرف العضو",
+  "tierStatusLabel": "حالة الطبقة",
+  "pointsBalanceLabel": "رصيد النقاط",
+  "secondaryPinLabel": "رقم التعريف الشخصي الثانوي",
+  "issueDateLabel": "تاريخ الإصدار",
+  "documentTitleLabel": "عنوان الوثيقة",
+  "nfcReaderTitle": "قارئ NFC",
+  "nfcNotAvailable": "NFC غير متوفر",
+  "nfcUnsupportedDesc": "هذا الجهاز لا يدعم قراءة بطاقة NFC.",
+  "readyToScan": "جاهز للمسح الضوئي",
+  "holdCardNfcPrompt": "ضع بطاقتك اللاتلامسية في الجزء الخلفي من هاتفك.",
+  "scanFailed": "فشل المسح",
+  "somethingWentWrong": "حدث خطأ ما.",
+  "tryAgainBtn": "حاول ثانية",
+  "cardDetected": "تم الكشف عن البطاقة",
+  "unsupportedCardError": "هذا النوع من البطاقة غير مدعوم.",
+  "nfcReadFailedDesc": "لا يمكن قراءة هذه البطاقة. حاول مرة أخرى أو أضفه يدويًا.",
+  "nfcReadError": "فشلت القراءة: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "تعذر بدء جلسة NFC: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "مسح البطاقة",
+  "noCameraError": "لا توجد كاميرا متاحة على هذا الجهاز",
+  "cameraStartError": "تعذر تشغيل الكاميرا: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "لا يمكن قراءة تفاصيل البطاقة. حاول مرة أخرى باستخدام إضاءة أفضل.",
+  "ocrScanFailed": "فشل الفحص: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "مطلوب إذن الكاميرا لمسح البطاقة.",
+  "openSettingsBtn": "افتح الإعدادات",
+  "notDetected": "لم يتم الكشف عنها",
+  "scanAgainBtn": "المسح مرة أخرى",
+  "cardPhotosDesc": "احتفظ بصورة لبطاقتك للرجوع إليها بسرعة. تبقى الصور على هذا الجهاز.",
+  "addPhotoPlaceholder": "أضف صورة {label}",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "غالي",
+  "benefitRemoveAdsTitle": "إزالة كافة الإعلانات",
+  "benefitRemoveAdsDesc": "لا لافتات ولا إعلانات بينية على الإطلاق",
+  "benefitFasterTitle": "تجربة أسرع",
+  "benefitFasterDesc": "شاشات فورية بدون أي شيء لتحميله",
+  "benefitSupportTitle": "دعم التنمية",
+  "benefitSupportDesc": "ساعد في الحفاظ على نمو التطبيق",
+  "benefitBadgeTitle": "شارة مميزة",
+  "benefitBadgeDesc": "القليل من الشكر على ملفك الشخصي",
+  "premiumHeroActive": "أنت مميز",
+  "premiumHeroInactive": "اذهب خالية من الإعلانات",
+  "premiumHeroDescActive": "شكرا لدعم محفظة البطاقة",
+  "premiumHeroDescInactive": "قم بإزالة الإعلانات واحصل على تجربة أنظف",
+  "disablePremiumBtn": "تعطيل بريميوم",
+  "removeAdsBtn": "إزالة الإعلانات",
+  "premiumOneTimeNotice": "لمرة واحدة. يستعيد على الفور على هذا الجهاز.",
+  "noBiometricsConfigured": "لم يتم تكوين قفل الجهاز/القياسات الحيوية على هذا الجهاز",
+  "cardTypeCredit": "بطاقة إئتمان",
+  "cardTypeDebit": "بطاقة الخصم",
+  "cardTypePoint": "بطاقة النقطة",
+  "cardTypeMembership": "بطاقة العضوية",
+  "cardTypeCoupon": "قسيمة",
+  "cardTypeGift": "بطاقة هدية",
+  "cardTypeEventTicket": "تذكرة الحدث",
+  "cardTypeOther": "آخر",
+  "chooseCardType": "اختر نوع البطاقة",
+  "selectCustomColor": "حدد اللون المخصص",
+  "solidColor": "صلب",
+  "gradientColor": "التدرج",
+  "startColor": "يبدأ",
+  "endColor": "نهاية",
+  "cardExpLabel": "خبرة",
+  "homeTab": "بيت",
+  "cardsTab": "بطاقاتي",
+  "profileTab": "حساب تعريفي",
+  "appTitleTypewriter": "محفظة البطاقة",
+  "seeAll": "رؤية الكل",
+  "backupShareText": "محفظة البطاقة احتياطية آمنة",
+  "backupFileNotFoundError": "لم يتم العثور على ملف النسخ الاحتياطي",
+  "corruptedBackupError": "ملف النسخ الاحتياطي تالف أو غير صالح",
+  "invalidBackupDataError": "ملف النسخ الاحتياطي لا يحتوي على بيانات صالحة.",
+  "unsupportedBackupVersionError": "نسخة احتياطية غير مدعومة: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

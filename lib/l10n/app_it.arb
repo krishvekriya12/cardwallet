@@ -1,0 +1,342 @@
+{
+  "appTitle": "Applicazione portafoglio carte",
+  "addCard": "Aggiungi carta",
+  "hiThere": "Ciao, ecco 👋",
+  "settingsTitle": "Impostazioni",
+  "appLock": "Blocco dell'app",
+  "appLockSubtitle": "Richiedi dati biometrici per aprire l'app",
+  "language": "Lingua",
+  "backupRestore": "Backup e ripristino",
+  "backupRestoreSubtitle": "Esporta e importa le tue carte localmente",
+  "clearAllData": "Cancella tutti i dati",
+  "goodMorning": "Buongiorno",
+  "goodAfternoon": "Buon pomeriggio",
+  "goodEvening": "Buonasera",
+  "hiName": "Ciao, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "Aggiungi nuova carta",
+  "scan": "Scansione",
+  "scanDesc": "Scansiona i dettagli della carta\nistantaneamente",
+  "manually": "Manualmente",
+  "manuallyDesc": "Inserisci i dettagli della carta\nmanualmente",
+  "nfc": "NFC",
+  "nfcDesc": "Tocca la carta da aggiungere\nutilizzando l'NFC",
+  "tools": "Utensili",
+  "binChecker": "Controllo BIN",
+  "binCheckerDesc": "Controlla i dettagli della carta da BIN",
+  "cardVerify": "Verifica carta",
+  "cardVerifyDesc": "Convalidare un numero di carta",
+  "frequentlyAdded": "Aggiunto frequentemente",
+  "cardsTitle": "Carte",
+  "yourCardsManage": "Le tue carte qui da gestire",
+  "cardCountText": "{count, plural, =1{1 carta salvata} other{Carte {count} salvate}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{1 carta} other{Carte {count}}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "Tutto",
+  "noCardsYet": "Nessuna carta ancora",
+  "noCardsYetDesc": "Vai su Home o tocca lo scanner per aggiungere una carta",
+  "noCardsCategory": "Nessuna carta in questa categoria",
+  "tryDifferentFilter": "Prova a selezionare un filtro diverso",
+  "addFirstCardStart": "Aggiungi la tua prima carta per iniziare",
+  "rateUs": "Valutaci",
+  "rateUsThanks": "Grazie per il supporto!",
+  "shareApp": "Condividi l'app",
+  "shareAppSoon": "Presto la condivisione",
+  "help": "Aiuto",
+  "supportSoon": "Supporto in arrivo",
+  "privacyPolicy": "politica sulla riservatezza",
+  "privacyPolicySoon": "Apre l'informativa sulla privacy",
+  "termsOfUse": "Termini di utilizzo",
+  "termsOfUseSoon": "Apre i termini di utilizzo",
+  "clearDataTitle": "Cancellare tutti i dati?",
+  "clearDataDesc": "Ciò elimina permanentemente ogni carta salvata. Questa operazione non può essere annullata.",
+  "cancel": "Cancellare",
+  "clearDataConfirm": "Cancella dati",
+  "clearDataToast": "Tutti i dati cancellati",
+  "splashSubtitle": "Le tue carte, sicure e semplici",
+  "unlockPrompt": "Sblocca il portafoglio carte per continuare",
+  "tapToUnlock": "Tocca per sbloccare",
+  "authFailed": "Autenticazione non riuscita",
+  "binCheckerTitle": "Controllo BIN",
+  "enterMin6Digits": "Inserisci almeno 6 cifre",
+  "binNotVerified": "Impossibile verificare questo BIN",
+  "lookupFailed": "Ricerca non riuscita. Controlla la connessione e riprova.",
+  "binLookupPlaceholder": "RICERCA BIN/IIN",
+  "enterDigitsLabel": "Inserisci le prime 6-8 cifre",
+  "checkButton": "Controllo",
+  "binResultTitle": "Risultato BIN",
+  "cardNetwork": "Rete",
+  "cardType": "Tipo",
+  "cardBrandCategory": "Marca/Categoria",
+  "cardBank": "Banca",
+  "cardCountry": "Paese",
+  "cardCountryCode": "Codice Paese",
+  "cardCurrency": "Valuta",
+  "cardValid": "Valido",
+  "yes": "SÌ",
+  "no": "NO",
+  "cardValidatorTitle": "Validatore di carte",
+  "cardValidatorPreviewName": "VALIDATORE DI CARTE",
+  "enterCardNumberLabel": "Inserisci il numero della carta",
+  "validCardNumber": "Numero di carta valido",
+  "invalidCardNumber": "Numero di carta non valido: controlla le cifre",
+  "backupRestoreTitle": "Backup e ripristino",
+  "createBackupPass": "Crea password di backup",
+  "backupPassWarning": "IMPORTANTE: annotare questa password. Non possiamo recuperarlo o ripristinare il backup se lo dimentichi.",
+  "enterPassLabel": "Inserisci la password",
+  "confirmPassLabel": "Conferma password",
+  "passEmptyError": "La password non può essere vuota",
+  "passMismatchError": "Le password non corrispondono",
+  "doneBtn": "Fatto",
+  "enterBackupPass": "Inserisci la password di backup",
+  "noCardsToBackup": "Nessuna carta di cui eseguire il backup",
+  "backupSuccess": "Backup creato con successo!",
+  "backupFailed": "Backup non riuscito: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "Ripristinare il backup?",
+  "restoreBackupWarning": "ATTENZIONE: il ripristino di un backup sovrascriverà tutte le carte e le transazioni correnti. Questa operazione non può essere annullata.",
+  "continueBtn": "Continuare",
+  "restoreSuccess": "Backup ripristinato con successo!",
+  "incorrectPasswordError": "Password errata o file di backup danneggiato.",
+  "restoreFailed": "Ripristino non riuscito: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "Eliminare il backup?",
+  "deleteBackupConfirmText": "Eliminare \"{name}\"? Questa operazione non può essere annullata.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "Eliminare",
+  "backupDeleted": "Backup eliminato",
+  "failedShareBackup": "Impossibile condividere il backup: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "Impossibile selezionare il file: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "Ultimo backup",
+  "neverBackedUp": "Mai eseguito il backup",
+  "backupType": "Tipo di backup",
+  "localBackupDesc": "Locale: salvato solo su questo dispositivo",
+  "createBackupBtn": "Crea backup",
+  "importExternalBackupBtn": "Importa backup esterno",
+  "savedBackupsHeader": "Backup salvati",
+  "noBackupsYet": "Nessun backup ancora",
+  "tapCreateBackupDesc": "Tocca \"Crea backup\" per salvare le tue carte",
+  "restoreTooltip": "Ripristinare",
+  "shareTooltip": "Condividere",
+  "cardNotFound": "Carta non trovata",
+  "editCardTitle": "Modifica carta",
+  "addCardTitle": "Aggiungi carta",
+  "cardTypeLabel": "Tipo di carta",
+  "cardColorLabel": "Colore della carta",
+  "fieldRequiredError": "Questo campo è obbligatorio",
+  "bankNameLabel": "Nome della banca",
+  "expiryLabel": "Scadenza (MM/AA)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "Foto di carte",
+  "frontSideLabel": "Lato anteriore",
+  "backSideLabel": "Lato posteriore",
+  "notesLabel": "Note",
+  "saveChangesBtn": "Salva modifiche",
+  "saveCardBtn": "Salva carta",
+  "deleteCardBtn": "Elimina carta",
+  "takePhotoLabel": "Scatta una foto",
+  "chooseGalleryLabel": "Scegli dalla galleria",
+  "deleteCardPrompt": "Eliminare la carta?",
+  "deleteCardWarning": "Questa azione non può essere annullata.",
+  "cardNumberLabel": "Numero della carta",
+  "pointCardNumberLabel": "Numero della carta punti",
+  "membershipIdLabel": "ID di appartenenza",
+  "couponCodeLabel": "Codice coupon",
+  "giftCardNumberLabel": "Numero della carta regalo",
+  "ticketPnrLabel": "Numero biglietto/PNR",
+  "numberLabel": "Numero",
+  "cardholderNameLabel": "Nome del titolare",
+  "cardNameLabel": "Nome della carta",
+  "enterValidCardNumberError": "Inserisci un numero di carta valido",
+  "cardNumberInvalidError": "Il numero della carta sembra non valido",
+  "enterMin3CharsError": "Inserisci almeno 3 caratteri",
+  "cardAlreadyExistsError": "Una carta con questo numero è già salvata",
+  "revealCvv": "Rivela CVV",
+  "cardDetailsHeader": "Dettagli della carta:",
+  "typePrefix": "Tipo:",
+  "bankPrefix": "Banca:",
+  "cardNumberPrefix": "Numero della carta:",
+  "cardholderPrefix": "Titolare della carta:",
+  "expiryPrefix": "Scadenza:",
+  "notesPrefix": "Note:",
+  "detailsSuffix": "Dettagli",
+  "cardDetailsTitle": "Dettagli della carta",
+  "hideBtn": "Nascondere",
+  "revealBtn": "Svelare",
+  "editBtn": "Modificare",
+  "cardInformationHeader": "Informazioni sulla carta",
+  "cardholderLabel": "Titolare della carta",
+  "nameLabel": "Nome",
+  "bankLabel": "Banca",
+  "pnrNumberLabel": "Numero PNR",
+  "venueLabel": "Luogo",
+  "eventDateLabel": "Data dell'evento",
+  "seatLabel": "Posto a sedere",
+  "classLabel": "Classe",
+  "discountDetailsLabel": "Dettagli sconto",
+  "memberIdLabel": "ID membro",
+  "tierStatusLabel": "Stato del livello",
+  "pointsBalanceLabel": "Saldo punti",
+  "secondaryPinLabel": "PIN secondario",
+  "issueDateLabel": "Data di emissione",
+  "documentTitleLabel": "Titolo del documento",
+  "nfcReaderTitle": "Lettore NFC",
+  "nfcNotAvailable": "NFC non disponibile",
+  "nfcUnsupportedDesc": "Questo dispositivo non supporta la lettura delle schede NFC.",
+  "readyToScan": "Pronto per la scansione",
+  "holdCardNfcPrompt": "Tieni la tua carta contactless sul retro del telefono.",
+  "scanFailed": "Scansione non riuscita",
+  "somethingWentWrong": "Qualcosa è andato storto.",
+  "tryAgainBtn": "Riprova",
+  "cardDetected": "Carta rilevata",
+  "unsupportedCardError": "Questo tipo di carta non è supportato.",
+  "nfcReadFailedDesc": "Impossibile leggere questa carta. Riprova o aggiungilo manualmente.",
+  "nfcReadError": "Lettura non riuscita: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "Impossibile avviare la sessione NFC: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "Scansiona la carta",
+  "noCameraError": "Nessuna fotocamera disponibile su questo dispositivo",
+  "cameraStartError": "Impossibile avviare la fotocamera: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "Impossibile leggere i dettagli della carta. Riprovare con un'illuminazione migliore.",
+  "ocrScanFailed": "Scansione non riuscita: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "Per eseguire la scansione di una carta è necessaria l'autorizzazione della fotocamera.",
+  "openSettingsBtn": "Apri Impostazioni",
+  "notDetected": "Non rilevato",
+  "scanAgainBtn": "Scansione di nuovo",
+  "cardPhotosDesc": "Conserva una foto della tua carta per una rapida consultazione. Le immagini rimangono su questo dispositivo.",
+  "addPhotoPlaceholder": "Aggiungi la foto {label}",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "Premio",
+  "benefitRemoveAdsTitle": "Rimuovi tutti gli annunci",
+  "benefitRemoveAdsDesc": "Nessun banner, nessun interstitial, mai",
+  "benefitFasterTitle": "Esperienza più veloce",
+  "benefitFasterDesc": "Schermate istantanee senza nulla da caricare",
+  "benefitSupportTitle": "Sostenere lo sviluppo",
+  "benefitSupportDesc": "Aiutaci a far crescere l'app",
+  "benefitBadgeTitle": "Distintivo premium",
+  "benefitBadgeDesc": "Un piccolo ringraziamento sul tuo profilo",
+  "premiumHeroActive": "Sei Premium",
+  "premiumHeroInactive": "Vai senza pubblicità",
+  "premiumHeroDescActive": "Grazie per il supporto di Card Wallet",
+  "premiumHeroDescInactive": "Rimuovi gli annunci e sblocca un'esperienza più pulita",
+  "disablePremiumBtn": "Disabilita Premium",
+  "removeAdsBtn": "Rimuovi annunci",
+  "premiumOneTimeNotice": "Una volta. Ripristina istantaneamente su questo dispositivo.",
+  "noBiometricsConfigured": "Nessun blocco biometrico/dispositivo configurato su questo dispositivo",
+  "cardTypeCredit": "Carta di credito",
+  "cardTypeDebit": "Carta di debito",
+  "cardTypePoint": "Carta punti",
+  "cardTypeMembership": "Tessera associativa",
+  "cardTypeCoupon": "Buono",
+  "cardTypeGift": "Carta regalo",
+  "cardTypeEventTicket": "Biglietto per eventi",
+  "cardTypeOther": "Altro",
+  "chooseCardType": "Scegli il tipo di carta",
+  "selectCustomColor": "Seleziona Colore personalizzato",
+  "solidColor": "Solido",
+  "gradientColor": "Pendenza",
+  "startColor": "Inizio",
+  "endColor": "FINE",
+  "cardExpLabel": "ESP",
+  "homeTab": "Casa",
+  "cardsTab": "Le mie carte",
+  "profileTab": "Profilo",
+  "appTitleTypewriter": "Porta carte",
+  "seeAll": "Vedi tutto",
+  "backupShareText": "Backup sicuro del portafoglio di carte",
+  "backupFileNotFoundError": "File di backup non trovato",
+  "corruptedBackupError": "File di backup danneggiato o non valido",
+  "invalidBackupDataError": "Il file di backup non contiene dati validi.",
+  "unsupportedBackupVersionError": "Versione di backup non supportata: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

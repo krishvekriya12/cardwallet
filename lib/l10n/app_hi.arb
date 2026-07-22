@@ -1,0 +1,327 @@
+{
+  "appTitle": "कार्ड वॉलेट ऐप",
+  "addCard": "कार्ड जोड़ें",
+  "hiThere": "नमस्ते! 👋",
+  "settingsTitle": "सेटिंग्स",
+  "appLock": "ऐप लॉक",
+  "appLockSubtitle": "ऐप खोलने के लिए बायोमेट्रिक्स की आवश्यकता है",
+  "language": "भाषा",
+  "backupRestore": "बैकअप और रीस्टोर",
+  "backupRestoreSubtitle": "अपने कार्ड स्थानीय रूप से एक्सपोर्ट और इम्पोर्ट करें",
+  "clearAllData": "सभी डेटा मिटाएं",
+
+  "goodMorning": "सुप्रभात",
+  "goodAfternoon": "नमस्कार",
+  "goodEvening": "शुभ संध्या",
+  "hiName": "नमस्ते, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "नया कार्ड जोड़ें",
+  "scan": "स्कैन करें",
+  "scanDesc": "कार्ड का विवरण तुरंत\nस्कैन करें",
+  "manually": "मैन्युअल रूप से",
+  "manuallyDesc": "कार्ड का विवरण मैन्युअल रूप से\nदर्ज करें",
+  "nfc": "एनएफसी",
+  "nfcDesc": "एनएफसी का उपयोग करके जोड़ने के लिए\nकार्ड टैप करें",
+  "tools": "टूल्स",
+  "binChecker": "बिन चेकर",
+  "binCheckerDesc": "बिन (BIN) से कार्ड का विवरण जांचें",
+  "cardVerify": "कार्ड सत्यापित करें",
+  "cardVerifyDesc": "कार्ड नंबर सत्यापित करें",
+  "frequentlyAdded": "अक्सर जोड़े जाने वाले",
+
+  "cardsTitle": "कार्ड्स",
+  "yourCardsManage": "प्रबंधन के लिए आपके कार्ड यहाँ हैं",
+  "cardCountText": "{count, plural, =1{1 कार्ड सहेजा गया} other{{count} कार्ड सहेजे गए}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{1 कार्ड} other{{count} कार्ड}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "सभी",
+  "noCardsYet": "अभी तक कोई कार्ड नहीं है",
+  "noCardsYetDesc": "होम पर जाएं या कार्ड जोड़ने के लिए स्कैनर पर टैप करें",
+  "noCardsCategory": "इस श्रेणी में कोई कार्ड नहीं है",
+  "tryDifferentFilter": "दूसरा फ़िल्टर चुनने का प्रयास करें",
+  "addFirstCardStart": "शुरू करने के लिए अपना पहला कार्ड जोड़ें",
+
+  "rateUs": "हमें रेट करें",
+  "rateUsThanks": "समर्थन के लिए धन्यवाद!",
+  "shareApp": "ऐप शेयर करें",
+  "shareAppSoon": "शेयरिंग जल्द ही आ रही है",
+  "help": "सहायता",
+  "supportSoon": "सहायता जल्द ही आ रही है",
+  "privacyPolicy": "गोपनीयता नीति",
+  "privacyPolicySoon": "गोपनीयता नीति खोलता है",
+  "termsOfUse": "उपयोग की शर्तें",
+  "termsOfUseSoon": "उपयोग की शर्तें खोलता है",
+  "clearDataTitle": "सभी डेटा मिटाएं?",
+  "clearDataDesc": "यह स्थायी रूप से प्रत्येक सहेजे गए कार्ड को हटा देता है। इसे वापस नहीं लाया जा सकता।",
+  "cancel": "रद्द करें",
+  "clearDataConfirm": "डेटा मिटाएं",
+  "clearDataToast": "सभी डेटा हटा दिया गया",
+
+  "splashSubtitle": "आपके कार्ड, सुरक्षित और सरल",
+  "unlockPrompt": "आगे बढ़ने के लिए कार्ड वॉलेट को अनलॉक करें",
+  "tapToUnlock": "अनलॉक करने के लिए टैप करें",
+  "authFailed": "सत्यापन विफल रहा",
+
+  "binCheckerTitle": "बिन चेकर",
+  "enterMin6Digits": "कम से कम 6 अंक दर्ज करें",
+  "binNotVerified": "यह bin (BIN) सत्यापित नहीं किया जा सका",
+  "lookupFailed": "लुकअप विफल रहा। अपना कनेक्शन जांचें और पुनः प्रयास करें।",
+  "binLookupPlaceholder": "बिन / आईआईएन लुकअप",
+  "enterDigitsLabel": "पहले 6-8 अंक दर्ज करें",
+  "checkButton": "जांचें",
+
+  "binResultTitle": "बिन परिणाम",
+  "cardNetwork": "नेटवर्क",
+  "cardType": "प्रकार",
+  "cardBrandCategory": "ब्रांड/श्रेणी",
+  "cardBank": "बैंक",
+  "cardCountry": "देश",
+  "cardCountryCode": "देश कोड",
+  "cardCurrency": "मुद्रा",
+  "cardValid": "वैध",
+  "yes": "हाँ",
+  "no": "नहीं",
+
+  "cardValidatorTitle": "कार्ड वैलिडेटर",
+  "cardValidatorPreviewName": "कार्ड वैलिडेटर",
+  "enterCardNumberLabel": "कार्ड नंबर दर्ज करें",
+  "validCardNumber": "वैध कार्ड नंबर",
+  "invalidCardNumber": "अवैध कार्ड नंबर - अंकों की जांच करें",
+
+  "backupRestoreTitle": "बैकअप और रीस्टोर",
+  "createBackupPass": "बैकअप पासवर्ड बनाएं",
+  "backupPassWarning": "महत्वपूर्ण: इस पासवर्ड को कहीं लिख लें। यदि आप इसे भूल जाते हैं तो हम इसे रिकवर नहीं कर सकते या आपके बैकअप को रीस्टोर नहीं कर सकते।",
+  "enterPassLabel": "पासवर्ड दर्ज करें",
+  "confirmPassLabel": "पासवर्ड की पुष्टि करें",
+  "passEmptyError": "पासवर्ड खाली नहीं हो सकता",
+  "passMismatchError": "पासवर्ड मेल नहीं खाते",
+  "doneBtn": "पूर्ण",
+  "enterBackupPass": "बैकअप पासवर्ड दर्ज करें",
+  "noCardsToBackup": "बैकअप लेने के लिए कोई कार्ड नहीं है",
+  "backupSuccess": "बैकअप सफलतापूर्वक बनाया गया!",
+  "backupFailed": "बैकअप विफल रहा: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "बैकअप रीस्टोर करें?",
+  "restoreBackupWarning": "चेतावनी: बैकअप रीस्टोर करने से सभी मौजूदा कार्ड और लेनदेन मिट जाएंगे। इसे वापस नहीं लाया जा सकता।",
+  "continueBtn": "जारी रखें",
+  "restoreSuccess": "बैकअप सफलतापूर्वक रीस्टोर किया गया!",
+  "incorrectPasswordError": "गलत पासवर्ड या दूषित बैकअप फ़ाइल।",
+  "restoreFailed": "रीस्टोर विफल रहा: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "बैकअप हटाएं?",
+  "deleteBackupConfirmText": "क्या आप \"{name}\" को हटाना चाहते हैं? इसे वापस नहीं लाया जा सकता।",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "हटाएं",
+  "backupDeleted": "बैकअप हटा दिया गया",
+  "failedShareBackup": "बैकअप साझा करने में विफल: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "फ़ाइल चुनने में विफल: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "आखिरी बैकअप",
+  "neverBackedUp": "कभी बैकअप नहीं लिया गया",
+  "backupType": "बैकअप का प्रकार",
+  "localBackupDesc": "स्थानीय — केवल इस डिवाइस पर सुरक्षित",
+  "createBackupBtn": "बैकअप बनाएं",
+  "importExternalBackupBtn": "बाहरी बैकअप इम्पोर्ट करें",
+  "savedBackupsHeader": "सहेजे गए बैकअप",
+  "noBackupsYet": "अभी तक कोई बैकअप नहीं है",
+  "tapCreateBackupDesc": "अपने कार्ड सुरक्षित करने के लिए \"बैकअप बनाएं\" पर टैप करें",
+  "restoreTooltip": "रीस्टोर",
+  "shareTooltip": "साझा करें",
+
+  "cardNotFound": "कार्ड नहीं मिला",
+  "editCardTitle": "कार्ड संपादित करें",
+  "addCardTitle": "कार्ड जोड़ें",
+  "cardTypeLabel": "कार्ड का प्रकार",
+  "cardColorLabel": "कार्ड का रंग",
+  "fieldRequiredError": "यह फ़ील्ड आवश्यक है",
+  "bankNameLabel": "बैंक का नाम",
+  "expiryLabel": "समाप्ति तिथि (MM/YY)",
+  "cvvLabel": "सीवीवी (CVV)",
+  "cardPhotosLabel": "कार्ड की तस्वीरें",
+  "frontSideLabel": "सामने का भाग",
+  "backSideLabel": "पीछे का भाग",
+  "notesLabel": "टिप्पणियाँ",
+  "saveChangesBtn": "बदलाव सहेजें",
+  "saveCardBtn": "कार्ड सहेजें",
+  "deleteCardBtn": "कार्ड हटाएं",
+  "takePhotoLabel": "तस्वीर लें",
+  "chooseGalleryLabel": "गैलरी से चुनें",
+  "deleteCardPrompt": "कार्ड हटाएं?",
+  "deleteCardWarning": "इस कार्रवाई को वापस नहीं लाया जा सकता।",
+
+  "cardNumberLabel": "कार्ड नंबर",
+  "pointCardNumberLabel": "प्वाइंट कार्ड नंबर",
+  "membershipIdLabel": "सदस्यता आईडी",
+  "couponCodeLabel": "कूपन कोड",
+  "giftCardNumberLabel": "गिफ्ट कार्ड नंबर",
+  "ticketPnrLabel": "टिकट / पीएनआर नंबर",
+  "numberLabel": "नंबर",
+  "cardholderNameLabel": "कार्डधारक का नाम",
+  "cardNameLabel": "कार्ड का नाम",
+  "enterValidCardNumberError": "एक वैध कार्ड नंबर दर्ज करें",
+  "cardNumberInvalidError": "कार्ड नंबर अमान्य लग रहा है",
+  "enterMin3CharsError": "कम से कम 3 वर्ण दर्ज करें",
+  "cardAlreadyExistsError": "इस नंबर वाला कार्ड पहले से सहेजा गया है",
+
+  "revealCvv": "सीवीवी (CVV) दिखाएं",
+  "cardDetailsHeader": "कार्ड का विवरण:",
+  "typePrefix": "प्रकार: ",
+  "bankPrefix": "बैंक: ",
+  "cardNumberPrefix": "कार्ड नंबर: ",
+  "cardholderPrefix": "कार्डधारक: ",
+  "expiryPrefix": "समाप्ति: ",
+  "notesPrefix": "टिप्पणी: ",
+  "detailsSuffix": " विवरण",
+  "cardDetailsTitle": "कार्ड विवरण",
+  "hideBtn": "छिपाएं",
+  "revealBtn": "दिखाएं",
+  "editBtn": "संपादित करें",
+  "cardInformationHeader": "कार्ड की जानकारी",
+  "cardholderLabel": "कार्डधारक",
+  "nameLabel": "नाम",
+  "bankLabel": "बैंक",
+
+  "pnrNumberLabel": "पीएनआर नंबर",
+  "venueLabel": "स्थान",
+  "eventDateLabel": "घटना की तिथि",
+  "seatLabel": "सीट",
+  "classLabel": "श्रेणी",
+  "discountDetailsLabel": "छूट का विवरण",
+  "memberIdLabel": "सदस्यता आईडी",
+  "tierStatusLabel": "टियर स्थिति",
+  "pointsBalanceLabel": "अंक शेष",
+  "secondaryPinLabel": "द्वितीयक पिन",
+  "issueDateLabel": "जारी करने की तिथि",
+  "documentTitleLabel": "दस्तावेज़ का शीर्षक",
+
+  "nfcReaderTitle": "एनएफसी रीडर",
+  "nfcNotAvailable": "एनएफसी उपलब्ध नहीं है",
+  "nfcUnsupportedDesc": "यह डिवाइस एनएफसी कार्ड पढ़ने का समर्थन नहीं करता है।",
+  "readyToScan": "स्कैन करने के लिए तैयार",
+  "holdCardNfcPrompt": "अपने कॉन्टैक्टलेस कार्ड को अपने फोन के पीछे रखें।",
+  "scanFailed": "स्कैन विफल रहा",
+  "somethingWentWrong": "कुछ गलत हो गया।",
+  "tryAgainBtn": "पुनः प्रयास करें",
+  "cardDetected": "कार्ड का पता चला",
+  "unsupportedCardError": "यह कार्ड प्रकार समर्थित नहीं है।",
+  "nfcReadFailedDesc": "यह कार्ड नहीं पढ़ा जा सका। पुन: प्रयास करें या इसे मैन्युअल रूप से जोड़ें।",
+  "nfcReadError": "पढ़ना विफल रहा: {error}",
+  "nfcStartSessionError": "एनएफसी सत्र शुरू नहीं किया जा सका: {error}",
+
+  "scanCardTitle": "कार्ड स्कैन करें",
+  "noCameraError": "इस डिवाइस पर कोई कैमरा उपलब्ध नहीं है",
+  "cameraStartError": "कैमरा शुरू नहीं किया जा सका: {error}",
+  "ocrReadError": "कार्ड का विवरण नहीं पढ़ा जा सका। बेहतर रोशनी के साथ पुन: प्रयास करें।",
+  "ocrScanFailed": "स्कैन विफल रहा: {error}",
+  "cameraPermissionDesc": "कार्ड स्कैन करने के लिए कैमरे की अनुमति आवश्यक है।",
+  "openSettingsBtn": "सेटिंग्स खोलें",
+  "notDetected": "पता नहीं चला",
+  "scanAgainBtn": "फिर से स्कैन करें",
+
+  "cardPhotosDesc": "त्वरित संदर्भ के लिए अपने कार्ड का फोटो रखें। छवियां इसी डिवाइस पर रहेंगी।",
+  "addPhotoPlaceholder": "{label} फोटो जोड़ें",
+
+  "premiumTitle": "प्रीमियम",
+  "benefitRemoveAdsTitle": "सभी विज्ञापन हटाएं",
+  "benefitRemoveAdsDesc": "कभी कोई बैनर या विज्ञापन नहीं",
+  "benefitFasterTitle": "तेज़ अनुभव",
+  "benefitFasterDesc": "बिना लोड हुए तुरंत खुलने वाली स्क्रीन",
+  "benefitSupportTitle": "विकास का समर्थन करें",
+  "benefitSupportDesc": "ऐप को लगातार बेहतर बनाने में मदद करें",
+  "benefitBadgeTitle": "प्रीमियम बैज",
+  "benefitBadgeDesc": "आपके प्रोफ़ाइल पर एक छोटा सा धन्यवाद बैज",
+  "premiumHeroActive": "आप प्रीमियम हैं",
+  "premiumHeroInactive": "विज्ञापन-मुक्त अनुभव पाएं",
+  "premiumHeroDescActive": "कार्ड वॉलेट का समर्थन करने के लिए धन्यवाद",
+  "premiumHeroDescInactive": "विज्ञापन हटाएं और एक बेहतर अनुभव पाएं",
+  "disablePremiumBtn": "प्रीमियम निष्क्रिय करें",
+  "removeAdsBtn": "विज्ञापन हटाएं",
+  "premiumOneTimeNotice": "एक बार भुगतान। इस डिवाइस पर तुरंत लागू होगा।",
+
+  "noBiometricsConfigured": "इस डिवाइस पर कोई बायोमेट्रिक्स/डिवाइस लॉक कॉन्फ़िगर नहीं किया गया है",
+
+  "cardTypeCredit": "क्रेडिट कार्ड",
+  "cardTypeDebit": "डेबिट कार्ड",
+  "cardTypePoint": "पॉइंट कार्ड",
+  "cardTypeMembership": "सदस्यता कार्ड",
+  "cardTypeCoupon": "कूपन",
+  "cardTypeGift": "गिफ्ट कार्ड",
+  "cardTypeEventTicket": "इवेंट टिकट",
+  "cardTypeOther": "अन्य",
+  "chooseCardType": "कार्ड का प्रकार चुनें",
+  "selectCustomColor": "कस्टम रंग चुनें",
+  "solidColor": "ठोस",
+  "gradientColor": "ग्रेडिएंट",
+  "startColor": "प्रारंभ",
+  "endColor": "अंत",
+  "cardExpLabel": "EXP",
+  "homeTab": "होम",
+  "cardsTab": "मेरे कार्ड",
+  "profileTab": "प्रोफ़ाइल",
+
+  "appTitleTypewriter": "कार्ड वॉलेट",
+  "seeAll": "सभी देखें",
+  "backupShareText": "कार्ड वॉलेट सुरक्षित बैकअप",
+
+  "backupFileNotFoundError": "बैकअप फ़ाइल नहीं मिली",
+  "corruptedBackupError": "दूषित या अमान्य बैकअप फ़ाइल",
+  "invalidBackupDataError": "बैकअप फ़ाइल में वैध डेटा नहीं है",
+  "unsupportedBackupVersionError": "असमर्थित बैकअप संस्करण: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

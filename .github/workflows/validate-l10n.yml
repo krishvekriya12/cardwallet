@@ -1,0 +1,137 @@
+name: Validate Localizations
+
+on:
+  push:
+    paths:
+      - 'lib/l10n/**.arb'   # Only runs when ARB files change
+      - 'l10n.yaml'
+  pull_request:
+    paths:
+      - 'lib/l10n/**.arb'
+      - 'l10n.yaml'
+
+jobs:
+  # ──────────────────────────────────────────────
+  # Job 1: Check all ARB files for missing keys
+  # ──────────────────────────────────────────────
+  check-arb-completeness:
+    name: Check Translation Completeness
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check for missing translation keys
+        run: |
+          python - <<'EOF'
+          import json
+          import sys
+          from pathlib import Path
+
+          ARB_DIR  = Path("lib/l10n")
+          TEMPLATE = ARB_DIR / "app_en.arb"
+
+          en_data = json.loads(TEMPLATE.read_text(encoding="utf-8"))
+          en_keys = [k for k in en_data if not k.startswith("@")]
+
+          print(f"English template: {len(en_keys)} keys")
+          all_ok = True
+
+          for arb_file in sorted(ARB_DIR.glob("app_*.arb")):
+              if arb_file.name == "app_en.arb":
+                  continue
+
+              lang_code = arb_file.stem.replace("app_", "")
+              lang_data = json.loads(arb_file.read_text(encoding="utf-8"))
+              lang_keys = [k for k in lang_data if not k.startswith("@")]
+
+              missing = [k for k in en_keys if k not in lang_keys]
+              extra   = [k for k in lang_keys if k not in en_keys]
+
+              if missing or extra:
+                  all_ok = False
+                  print(f"\n❌ [{lang_code}] Issues found:")
+                  for k in missing:
+                      print(f"   MISSING: {k}")
+                  for k in extra:
+                      print(f"   EXTRA:   {k}")
+              else:
+                  print(f"✅ [{lang_code}] Complete ({len(lang_keys)} keys)")
+
+          if not all_ok:
+              print("\n❌ Translation check FAILED. Fix missing keys before merging.")
+              sys.exit(1)
+          else:
+              print("\n✅ All translations are complete!")
+          EOF
+
+  # ──────────────────────────────────────────────
+  # Job 2: Validate ARB JSON syntax is valid
+  # ──────────────────────────────────────────────
+  validate-arb-json:
+    name: Validate ARB JSON Syntax
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate all ARB files are valid JSON
+        run: |
+          python - <<'EOF'
+          import json
+          import sys
+          from pathlib import Path
+
+          all_ok = True
+          for arb_file in sorted(Path("lib/l10n").glob("app_*.arb")):
+              try:
+                  data = json.loads(arb_file.read_text(encoding="utf-8"))
+                  print(f"✅ {arb_file.name} — valid JSON ({len(data)} entries)")
+              except json.JSONDecodeError as e:
+                  print(f"❌ {arb_file.name} — INVALID JSON: {e}")
+                  all_ok = False
+
+          if not all_ok:
+              sys.exit(1)
+          EOF
+
+  # ──────────────────────────────────────────────
+  # Job 3: Run flutter gen-l10n and check for errors
+  # ──────────────────────────────────────────────
+  gen-l10n:
+    name: Run flutter gen-l10n
+    runs-on: ubuntu-latest
+    needs: [check-arb-completeness, validate-arb-json]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Run gen-l10n
+        run: flutter gen-l10n
+
+      - name: Check generated files are not outdated
+        run: |
+          # If generated files changed vs what's in repo, fail
+          if ! git diff --exit-code lib/l10n/app_localizations*.dart; then
+            echo ""
+            echo "❌ Generated Dart files are out of date!"
+            echo "   Run 'flutter gen-l10n' locally and commit the updated files."
+            exit 1
+          fi
+          echo "✅ Generated Dart files are up to date."

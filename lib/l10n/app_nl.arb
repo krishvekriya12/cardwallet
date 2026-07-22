@@ -1,0 +1,342 @@
+{
+  "appTitle": "Card Wallet-app",
+  "addCard": "Kaart toevoegen",
+  "hiThere": "Hallo daar 👋",
+  "settingsTitle": "Instellingen",
+  "appLock": "App-vergrendeling",
+  "appLockSubtitle": "Biometrie vereist om de app te openen",
+  "language": "Taal",
+  "backupRestore": "Back-up en herstel",
+  "backupRestoreSubtitle": "Exporteer en importeer uw kaarten lokaal",
+  "clearAllData": "Wis alle gegevens",
+  "goodMorning": "Goedemorgen",
+  "goodAfternoon": "Goedemiddag",
+  "goodEvening": "Goedeavond",
+  "hiName": "Hallo, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "Nieuwe kaart toevoegen",
+  "scan": "Scannen",
+  "scanDesc": "Kaartgegevens scannen\nonmiddellijk",
+  "manually": "Handmatig",
+  "manuallyDesc": "Voer kaartgegevens in\nhandmatig",
+  "nfc": "NFC",
+  "nfcDesc": "Tik op de kaart om toe te voegen\nmet behulp van NFC",
+  "tools": "Hulpmiddelen",
+  "binChecker": "BIN-controle",
+  "binCheckerDesc": "Controleer kaartgegevens van BIN",
+  "cardVerify": "Kaart verifiëren",
+  "cardVerifyDesc": "Valideer een kaartnummer",
+  "frequentlyAdded": "Vaak toegevoegd",
+  "cardsTitle": "Kaarten",
+  "yourCardsManage": "Uw kaarten hier om te beheren",
+  "cardCountText": "{count, plural, =1{1 kaart opgeslagen} other{{count}-kaarten opgeslagen}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{1 kaart} other{{count}-kaarten}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "Alle",
+  "noCardsYet": "Nog geen kaarten",
+  "noCardsYetDesc": "Ga naar Home of tik op scanner om een ​​kaart toe te voegen",
+  "noCardsCategory": "Geen kaarten in deze categorie",
+  "tryDifferentFilter": "Probeer een ander filter te selecteren",
+  "addFirstCardStart": "Voeg uw eerste kaart toe om aan de slag te gaan",
+  "rateUs": "Beoordeel ons",
+  "rateUsThanks": "Bedankt voor de steun!",
+  "shareApp": "Deel app",
+  "shareAppSoon": "Binnenkort delen",
+  "help": "Hulp",
+  "supportSoon": "Ondersteuning binnenkort beschikbaar",
+  "privacyPolicy": "Privacybeleid",
+  "privacyPolicySoon": "Opent het privacybeleid",
+  "termsOfUse": "Gebruiksvoorwaarden",
+  "termsOfUseSoon": "Opent de gebruiksvoorwaarden",
+  "clearDataTitle": "Alle gegevens wissen?",
+  "clearDataDesc": "Hierdoor wordt elke opgeslagen kaart permanent verwijderd. Dit kan niet ongedaan worden gemaakt.",
+  "cancel": "Annuleren",
+  "clearDataConfirm": "Gegevens wissen",
+  "clearDataToast": "Alle gegevens gewist",
+  "splashSubtitle": "Uw kaarten, veilig en eenvoudig",
+  "unlockPrompt": "Ontgrendel Card Wallet om door te gaan",
+  "tapToUnlock": "Tik om te ontgrendelen",
+  "authFailed": "Authenticatie mislukt",
+  "binCheckerTitle": "BIN-controle",
+  "enterMin6Digits": "Voer minimaal 6 cijfers in",
+  "binNotVerified": "Dit BIN kon niet worden geverifieerd",
+  "lookupFailed": "Opzoeken mislukt. Controleer uw verbinding en probeer het opnieuw.",
+  "binLookupPlaceholder": "BIN / IIN ZOEKEN",
+  "enterDigitsLabel": "Voer de eerste 6–8 cijfers in",
+  "checkButton": "Rekening",
+  "binResultTitle": "BIN-resultaat",
+  "cardNetwork": "Netwerk",
+  "cardType": "Type",
+  "cardBrandCategory": "Merk/categorie",
+  "cardBank": "Bank",
+  "cardCountry": "Land",
+  "cardCountryCode": "Landcode",
+  "cardCurrency": "Munteenheid",
+  "cardValid": "Geldig",
+  "yes": "Ja",
+  "no": "Nee",
+  "cardValidatorTitle": "Kaartvalidator",
+  "cardValidatorPreviewName": "KAARTVALIDATOR",
+  "enterCardNumberLabel": "Voer kaartnummer in",
+  "validCardNumber": "Geldig kaartnummer",
+  "invalidCardNumber": "Ongeldig kaartnummer — controleer de cijfers",
+  "backupRestoreTitle": "Back-up en herstel",
+  "createBackupPass": "Maak een back-upwachtwoord",
+  "backupPassWarning": "BELANGRIJK: Schrijf dit wachtwoord op. We kunnen het niet herstellen of uw back-up herstellen als u deze vergeet.",
+  "enterPassLabel": "Voer wachtwoord in",
+  "confirmPassLabel": "Bevestig wachtwoord",
+  "passEmptyError": "Wachtwoord mag niet leeg zijn",
+  "passMismatchError": "Wachtwoorden komen niet overeen",
+  "doneBtn": "Klaar",
+  "enterBackupPass": "Voer het back-upwachtwoord in",
+  "noCardsToBackup": "Geen kaarten om een ​​back-up van te maken",
+  "backupSuccess": "Back-up is succesvol gemaakt!",
+  "backupFailed": "Back-up mislukt: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "Back-up herstellen?",
+  "restoreBackupWarning": "WAARSCHUWING: Als u een back-up herstelt, worden alle huidige kaarten en transacties overschreven. Dit kan niet ongedaan worden gemaakt.",
+  "continueBtn": "Doorgaan",
+  "restoreSuccess": "Back-up succesvol hersteld!",
+  "incorrectPasswordError": "Onjuist wachtwoord of beschadigd back-upbestand.",
+  "restoreFailed": "Herstellen mislukt: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "Back-up verwijderen?",
+  "deleteBackupConfirmText": "'{name}' verwijderen? Dit kan niet ongedaan worden gemaakt.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "Verwijderen",
+  "backupDeleted": "Back-up verwijderd",
+  "failedShareBackup": "Kan back-up niet delen: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "Kan bestand niet kiezen: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "Laatste back-up",
+  "neverBackedUp": "Nooit een back-up gemaakt",
+  "backupType": "Back-uptype",
+  "localBackupDesc": "Lokaal: alleen op dit apparaat opgeslagen",
+  "createBackupBtn": "Maak een back-up",
+  "importExternalBackupBtn": "Externe back-up importeren",
+  "savedBackupsHeader": "Opgeslagen back-ups",
+  "noBackupsYet": "Nog geen back-ups",
+  "tapCreateBackupDesc": "Tik op 'Back-up maken' om uw kaarten op te slaan",
+  "restoreTooltip": "Herstellen",
+  "shareTooltip": "Deel",
+  "cardNotFound": "Kaart niet gevonden",
+  "editCardTitle": "Kaart bewerken",
+  "addCardTitle": "Kaart toevoegen",
+  "cardTypeLabel": "Kaarttype",
+  "cardColorLabel": "Kaartkleur",
+  "fieldRequiredError": "Dit veld is verplicht",
+  "bankNameLabel": "Banknaam",
+  "expiryLabel": "Vervaldatum (MM/JJ)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "Kaartfoto's",
+  "frontSideLabel": "Voorzijde",
+  "backSideLabel": "Achterkant",
+  "notesLabel": "Opmerkingen",
+  "saveChangesBtn": "Wijzigingen opslaan",
+  "saveCardBtn": "Kaart opslaan",
+  "deleteCardBtn": "Kaart verwijderen",
+  "takePhotoLabel": "Maak een foto",
+  "chooseGalleryLabel": "Kies uit galerij",
+  "deleteCardPrompt": "Kaart verwijderen?",
+  "deleteCardWarning": "Deze actie kan niet ongedaan worden gemaakt.",
+  "cardNumberLabel": "Kaartnummer",
+  "pointCardNumberLabel": "Puntkaartnummer",
+  "membershipIdLabel": "Lidmaatschaps-ID",
+  "couponCodeLabel": "Couponcode",
+  "giftCardNumberLabel": "Cadeaukaartnummer",
+  "ticketPnrLabel": "Ticket-/PNR-nummer",
+  "numberLabel": "Nummer",
+  "cardholderNameLabel": "Naam kaarthouder",
+  "cardNameLabel": "Kaartnaam",
+  "enterValidCardNumberError": "Voer een geldig kaartnummer in",
+  "cardNumberInvalidError": "Kaartnummer lijkt ongeldig",
+  "enterMin3CharsError": "Voer minimaal 3 tekens in",
+  "cardAlreadyExistsError": "Er is al een kaart met dit nummer opgeslagen",
+  "revealCvv": "CVV onthullen",
+  "cardDetailsHeader": "Kaartgegevens:",
+  "typePrefix": "Type:",
+  "bankPrefix": "Bank:",
+  "cardNumberPrefix": "Kaartnummer:",
+  "cardholderPrefix": "Kaarthouder:",
+  "expiryPrefix": "Vervaldatum:",
+  "notesPrefix": "Opmerkingen:",
+  "detailsSuffix": "Details",
+  "cardDetailsTitle": "Kaartgegevens",
+  "hideBtn": "Verbergen",
+  "revealBtn": "Onthullen",
+  "editBtn": "Bewerking",
+  "cardInformationHeader": "Kaartinformatie",
+  "cardholderLabel": "Kaarthouder",
+  "nameLabel": "Naam",
+  "bankLabel": "Bank",
+  "pnrNumberLabel": "PNR-nummer",
+  "venueLabel": "Locatie",
+  "eventDateLabel": "Datum evenement",
+  "seatLabel": "Zitplaats",
+  "classLabel": "Klas",
+  "discountDetailsLabel": "Kortingsdetails",
+  "memberIdLabel": "Lid-ID",
+  "tierStatusLabel": "Niveaustatus",
+  "pointsBalanceLabel": "Puntensaldo",
+  "secondaryPinLabel": "Secundaire pincode",
+  "issueDateLabel": "Uitgiftedatum",
+  "documentTitleLabel": "Documenttitel",
+  "nfcReaderTitle": "NFC-lezer",
+  "nfcNotAvailable": "NFC niet beschikbaar",
+  "nfcUnsupportedDesc": "Dit apparaat ondersteunt het lezen van NFC-kaarten niet.",
+  "readyToScan": "Klaar om te scannen",
+  "holdCardNfcPrompt": "Houd uw contactloze kaart tegen de achterkant van uw telefoon.",
+  "scanFailed": "Scannen mislukt",
+  "somethingWentWrong": "Er is iets misgegaan.",
+  "tryAgainBtn": "Probeer het opnieuw",
+  "cardDetected": "Kaart gedetecteerd",
+  "unsupportedCardError": "Dit kaarttype wordt niet ondersteund.",
+  "nfcReadFailedDesc": "Kan deze kaart niet lezen. Probeer het opnieuw of voeg het handmatig toe.",
+  "nfcReadError": "Lezen mislukt: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "Kan NFC-sessie niet starten: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "Scankaart",
+  "noCameraError": "Er is geen camera beschikbaar op dit apparaat",
+  "cameraStartError": "Kan camera niet starten: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "Kan kaartgegevens niet lezen. Probeer het opnieuw met betere verlichting.",
+  "ocrScanFailed": "Scan mislukt: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "Voor het scannen van een kaart is cameratoestemming vereist.",
+  "openSettingsBtn": "Instellingen openen",
+  "notDetected": "Niet gedetecteerd",
+  "scanAgainBtn": "Opnieuw scannen",
+  "cardPhotosDesc": "Bewaar een foto van uw kaart, zodat u deze snel kunt raadplegen. Afbeeldingen blijven op dit apparaat staan.",
+  "addPhotoPlaceholder": "{label}-foto toevoegen",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "Premie",
+  "benefitRemoveAdsTitle": "Verwijder alle advertenties",
+  "benefitRemoveAdsDesc": "Geen banners, geen interstitials, nooit",
+  "benefitFasterTitle": "Snellere ervaring",
+  "benefitFasterDesc": "Directe schermen zonder dat er iets hoeft te worden geladen",
+  "benefitSupportTitle": "Ondersteuning van ontwikkeling",
+  "benefitSupportDesc": "Help de app groeien",
+  "benefitBadgeTitle": "Premium-badge",
+  "benefitBadgeDesc": "Een klein bedankje op je profiel",
+  "premiumHeroActive": "Jij bent Premium",
+  "premiumHeroInactive": "Ga advertentievrij",
+  "premiumHeroDescActive": "Bedankt voor het ondersteunen van Card Wallet",
+  "premiumHeroDescInactive": "Verwijder advertenties en ontgrendel een schonere ervaring",
+  "disablePremiumBtn": "Schakel Premium uit",
+  "removeAdsBtn": "Verwijder advertenties",
+  "premiumOneTimeNotice": "Eenmalig. Herstelt onmiddellijk op dit apparaat.",
+  "noBiometricsConfigured": "Er zijn geen biometrische gegevens/apparaatvergrendeling geconfigureerd op dit apparaat",
+  "cardTypeCredit": "Creditcard",
+  "cardTypeDebit": "Debetkaart",
+  "cardTypePoint": "Puntenkaart",
+  "cardTypeMembership": "Lidmaatschapskaart",
+  "cardTypeCoupon": "Coupon",
+  "cardTypeGift": "Cadeaukaart",
+  "cardTypeEventTicket": "Evenement kaartje",
+  "cardTypeOther": "Ander",
+  "chooseCardType": "Kies kaarttype",
+  "selectCustomColor": "Selecteer Aangepaste kleur",
+  "solidColor": "Stevig",
+  "gradientColor": "Verloop",
+  "startColor": "Begin",
+  "endColor": "Einde",
+  "cardExpLabel": "EXP",
+  "homeTab": "Thuis",
+  "cardsTab": "Mijn kaarten",
+  "profileTab": "Profiel",
+  "appTitleTypewriter": "Kaart portemonnee",
+  "seeAll": "Bekijk alles",
+  "backupShareText": "Kaartportemonnee Veilige back-up",
+  "backupFileNotFoundError": "Back-upbestand niet gevonden",
+  "corruptedBackupError": "Beschadigd of ongeldig back-upbestand",
+  "invalidBackupDataError": "Het back-upbestand bevat geen geldige gegevens.",
+  "unsupportedBackupVersionError": "Niet-ondersteunde back-upversie: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

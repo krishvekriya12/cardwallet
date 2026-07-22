@@ -1,0 +1,34 @@
+﻿name: Build iOS Simulator App
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - run: flutter pub get
+      - name: Disable Swift Package Manager
+        run: flutter config --no-enable-swift-package-manager
+      - name: Generate iOS project files
+        run: flutter build ios --simulator --config-only
+      - name: Patch Podfile
+        run: |
+          cd ios
+          ruby -e "content = File.read('Podfile'); content = content.sub(/target 'Runner' do/, \"target 'Runner' do\n  pod 'webview_flutter_wkwebview', :path => '.symlinks/plugins/webview_flutter_wkwebview/darwin'\"); File.write('Podfile', content)"
+          cat Podfile
+      - name: Build for iOS Simulator
+        run: flutter build ios --simulator
+      - name: Zip the app
+        run: |
+          cd build/ios/iphonesimulator
+          zip -r Runner.zip Runner.app
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-simulator-build
+          path: build/ios/iphonesimulator/Runner.zip

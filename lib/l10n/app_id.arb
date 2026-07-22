@@ -1,0 +1,342 @@
+{
+  "appTitle": "Aplikasi Dompet Kartu",
+  "addCard": "Tambahkan Kartu",
+  "hiThere": "Hai, itu 👋",
+  "settingsTitle": "Pengaturan",
+  "appLock": "Kunci Aplikasi",
+  "appLockSubtitle": "Memerlukan biometrik untuk membuka aplikasi",
+  "language": "Bahasa",
+  "backupRestore": "Cadangkan & Pulihkan",
+  "backupRestoreSubtitle": "Ekspor & impor kartu Anda secara lokal",
+  "clearAllData": "Hapus Semua Data",
+  "goodMorning": "Selamat pagi",
+  "goodAfternoon": "Selamat siang",
+  "goodEvening": "Selamat malam",
+  "hiName": "Hai, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "Tambahkan Kartu Baru",
+  "scan": "Pindai",
+  "scanDesc": "Pindai detail kartu\nsecara instan",
+  "manually": "Secara manual",
+  "manuallyDesc": "Masukkan detail kartu\nsecara manual",
+  "nfc": "NFC",
+  "nfcDesc": "Ketuk kartu untuk menambahkan\nmenggunakan NFC",
+  "tools": "Peralatan",
+  "binChecker": "Pemeriksa BIN",
+  "binCheckerDesc": "Periksa detail kartu dari BIN",
+  "cardVerify": "Verifikasi Kartu",
+  "cardVerifyDesc": "Validasi nomor kartu",
+  "frequentlyAdded": "Sering Ditambahkan",
+  "cardsTitle": "Kartu-kartu",
+  "yourCardsManage": "Kartu Anda ada di sini untuk dikelola",
+  "cardCountText": "{count, plural, =1{1 kartu disimpan} other{Kartu {count} disimpan}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{1 kartu} other{kartu {count}}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "Semua",
+  "noCardsYet": "Belum ada kartu",
+  "noCardsYetDesc": "Buka Beranda atau ketuk pemindai untuk menambahkan kartu",
+  "noCardsCategory": "Tidak ada kartu dalam kategori ini",
+  "tryDifferentFilter": "Coba pilih filter lain",
+  "addFirstCardStart": "Tambahkan kartu pertama Anda untuk memulai",
+  "rateUs": "Nilai Kami",
+  "rateUsThanks": "Terima kasih atas dukungannya!",
+  "shareApp": "Bagikan Aplikasi",
+  "shareAppSoon": "Berbagi segera hadir",
+  "help": "Membantu",
+  "supportSoon": "Dukungan segera hadir",
+  "privacyPolicy": "Kebijakan Privasi",
+  "privacyPolicySoon": "Membuka kebijakan privasi",
+  "termsOfUse": "Ketentuan Penggunaan",
+  "termsOfUseSoon": "Membuka ketentuan penggunaan",
+  "clearDataTitle": "Hapus semua data?",
+  "clearDataDesc": "Tindakan ini akan menghapus secara permanen setiap kartu yang disimpan. Hal ini tidak dapat dibatalkan.",
+  "cancel": "Membatalkan",
+  "clearDataConfirm": "Hapus Data",
+  "clearDataToast": "Semua data dihapus",
+  "splashSubtitle": "Kartu Anda, aman & sederhana",
+  "unlockPrompt": "Buka kunci Dompet Kartu untuk melanjutkan",
+  "tapToUnlock": "Ketuk untuk Membuka Kunci",
+  "authFailed": "Otentikasi gagal",
+  "binCheckerTitle": "Pemeriksa BIN",
+  "enterMin6Digits": "Masukkan minimal 6 digit",
+  "binNotVerified": "BIN ini tidak dapat diverifikasi",
+  "lookupFailed": "Pencarian gagal. Periksa koneksi Anda dan coba lagi.",
+  "binLookupPlaceholder": "PENCARIAN BIN / IIN",
+  "enterDigitsLabel": "Masukkan 6–8 digit pertama",
+  "checkButton": "Memeriksa",
+  "binResultTitle": "Hasil BIN",
+  "cardNetwork": "Jaringan",
+  "cardType": "Jenis",
+  "cardBrandCategory": "Merek/Kategori",
+  "cardBank": "Bank",
+  "cardCountry": "Negara",
+  "cardCountryCode": "Kode negara",
+  "cardCurrency": "Mata uang",
+  "cardValid": "Sah",
+  "yes": "Ya",
+  "no": "TIDAK",
+  "cardValidatorTitle": "Validator Kartu",
+  "cardValidatorPreviewName": "VALIDATOR KARTU",
+  "enterCardNumberLabel": "Masukkan nomor kartu",
+  "validCardNumber": "Nomor kartu yang valid",
+  "invalidCardNumber": "Nomor kartu tidak valid — periksa digitnya",
+  "backupRestoreTitle": "Cadangkan & Pulihkan",
+  "createBackupPass": "Buat Kata Sandi Cadangan",
+  "backupPassWarning": "PENTING: Catat kata sandi ini. Kami tidak dapat memulihkannya atau memulihkan cadangan Anda jika Anda lupa.",
+  "enterPassLabel": "Masukkan Kata Sandi",
+  "confirmPassLabel": "Konfirmasi Kata Sandi",
+  "passEmptyError": "Kata sandi tidak boleh kosong",
+  "passMismatchError": "Kata sandi tidak cocok",
+  "doneBtn": "Selesai",
+  "enterBackupPass": "Masukkan Kata Sandi Cadangan",
+  "noCardsToBackup": "Tidak ada kartu untuk dicadangkan",
+  "backupSuccess": "Cadangan berhasil dibuat!",
+  "backupFailed": "Pencadangan gagal: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "Pulihkan cadangan?",
+  "restoreBackupWarning": "PERINGATAN: Memulihkan cadangan akan menimpa semua kartu dan transaksi saat ini. Hal ini tidak dapat dibatalkan.",
+  "continueBtn": "Melanjutkan",
+  "restoreSuccess": "Cadangan berhasil dipulihkan!",
+  "incorrectPasswordError": "Kata sandi salah atau file cadangan rusak.",
+  "restoreFailed": "Pemulihan gagal: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "Hapus cadangan?",
+  "deleteBackupConfirmText": "Hapus \"{name}\"? Hal ini tidak dapat dibatalkan.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "Menghapus",
+  "backupDeleted": "Cadangan dihapus",
+  "failedShareBackup": "Gagal membagikan cadangan: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "Gagal memilih file: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "Cadangan Terakhir",
+  "neverBackedUp": "Tidak pernah membuat cadangan",
+  "backupType": "Jenis Cadangan",
+  "localBackupDesc": "Lokal — hanya disimpan di perangkat ini",
+  "createBackupBtn": "Buat Cadangan",
+  "importExternalBackupBtn": "Impor Cadangan Eksternal",
+  "savedBackupsHeader": "Cadangan Tersimpan",
+  "noBackupsYet": "Belum ada cadangan",
+  "tapCreateBackupDesc": "Ketuk \"Buat Cadangan\" untuk menyimpan kartu Anda",
+  "restoreTooltip": "Memulihkan",
+  "shareTooltip": "Membagikan",
+  "cardNotFound": "Kartu tidak ditemukan",
+  "editCardTitle": "Sunting Kartu",
+  "addCardTitle": "Tambahkan Kartu",
+  "cardTypeLabel": "Jenis kartu",
+  "cardColorLabel": "Warna kartu",
+  "fieldRequiredError": "Bidang ini wajib diisi",
+  "bankNameLabel": "Nama Bank",
+  "expiryLabel": "Kedaluwarsa (MM/YY)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "Foto Kartu",
+  "frontSideLabel": "Sisi Depan",
+  "backSideLabel": "Sisi Belakang",
+  "notesLabel": "Catatan",
+  "saveChangesBtn": "Simpan Perubahan",
+  "saveCardBtn": "Simpan Kartu",
+  "deleteCardBtn": "Hapus kartu",
+  "takePhotoLabel": "Ambil foto",
+  "chooseGalleryLabel": "Pilih dari galeri",
+  "deleteCardPrompt": "Hapus kartu?",
+  "deleteCardWarning": "Tindakan ini tidak dapat dibatalkan.",
+  "cardNumberLabel": "Nomor Kartu",
+  "pointCardNumberLabel": "Nomor Kartu Poin",
+  "membershipIdLabel": "ID keanggotaan",
+  "couponCodeLabel": "Kode Kupon",
+  "giftCardNumberLabel": "Nomor Kartu Hadiah",
+  "ticketPnrLabel": "Nomor Tiket/PNR",
+  "numberLabel": "Nomor",
+  "cardholderNameLabel": "Nama Pemegang Kartu",
+  "cardNameLabel": "Nama Kartu",
+  "enterValidCardNumberError": "Masukkan nomor kartu yang valid",
+  "cardNumberInvalidError": "Nomor kartu sepertinya tidak valid",
+  "enterMin3CharsError": "Masukkan minimal 3 karakter",
+  "cardAlreadyExistsError": "Kartu dengan nomor ini sudah disimpan",
+  "revealCvv": "Mengungkapkan CVV",
+  "cardDetailsHeader": "Detail Kartu:",
+  "typePrefix": "Jenis:",
+  "bankPrefix": "Bank:",
+  "cardNumberPrefix": "Nomor Kartu:",
+  "cardholderPrefix": "Pemegang kartu:",
+  "expiryPrefix": "Kedaluwarsa:",
+  "notesPrefix": "Catatan:",
+  "detailsSuffix": "Detail",
+  "cardDetailsTitle": "Detail Kartu",
+  "hideBtn": "Bersembunyi",
+  "revealBtn": "Mengungkap",
+  "editBtn": "Sunting",
+  "cardInformationHeader": "Informasi Kartu",
+  "cardholderLabel": "Pemegang kartu",
+  "nameLabel": "Nama",
+  "bankLabel": "Bank",
+  "pnrNumberLabel": "Nomor PNR",
+  "venueLabel": "Lokasi",
+  "eventDateLabel": "Tanggal Acara",
+  "seatLabel": "Kursi",
+  "classLabel": "Kelas",
+  "discountDetailsLabel": "Detail Diskon",
+  "memberIdLabel": "ID anggota",
+  "tierStatusLabel": "Status Tingkat",
+  "pointsBalanceLabel": "Saldo Poin",
+  "secondaryPinLabel": "PIN sekunder",
+  "issueDateLabel": "Tanggal Penerbitan",
+  "documentTitleLabel": "Judul Dokumen",
+  "nfcReaderTitle": "Pembaca NFC",
+  "nfcNotAvailable": "NFC tidak tersedia",
+  "nfcUnsupportedDesc": "Perangkat ini tidak mendukung pembacaan kartu NFC.",
+  "readyToScan": "Siap Memindai",
+  "holdCardNfcPrompt": "Pegang kartu nirsentuh Anda di bagian belakang ponsel Anda.",
+  "scanFailed": "Pemindaian Gagal",
+  "somethingWentWrong": "Ada yang tidak beres.",
+  "tryAgainBtn": "Coba Lagi",
+  "cardDetected": "Kartu Terdeteksi",
+  "unsupportedCardError": "Jenis kartu ini tidak didukung.",
+  "nfcReadFailedDesc": "Tidak dapat membaca kartu ini. Coba lagi atau tambahkan secara manual.",
+  "nfcReadError": "Gagal membaca: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "Tidak dapat memulai sesi NFC: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "Pindai Kartu",
+  "noCameraError": "Tidak ada kamera yang tersedia di perangkat ini",
+  "cameraStartError": "Tidak dapat memulai kamera: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "Tidak dapat membaca detail kartu. Coba lagi dengan pencahayaan yang lebih baik.",
+  "ocrScanFailed": "Pemindaian gagal: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "Izin kamera diperlukan untuk memindai kartu.",
+  "openSettingsBtn": "Buka Pengaturan",
+  "notDetected": "Tidak terdeteksi",
+  "scanAgainBtn": "Pindai Lagi",
+  "cardPhotosDesc": "Simpan foto kartu Anda untuk referensi cepat. Gambar tetap ada di perangkat ini.",
+  "addPhotoPlaceholder": "Tambahkan foto {label}",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "Premi",
+  "benefitRemoveAdsTitle": "Hapus semua iklan",
+  "benefitRemoveAdsDesc": "Tidak ada spanduk, tidak ada interstisial",
+  "benefitFasterTitle": "Pengalaman lebih cepat",
+  "benefitFasterDesc": "Layar instan tanpa memuat apa pun",
+  "benefitSupportTitle": "Mendukung pengembangan",
+  "benefitSupportDesc": "Membantu menjaga aplikasi terus berkembang",
+  "benefitBadgeTitle": "Lencana premium",
+  "benefitBadgeDesc": "Sedikit terima kasih di profil Anda",
+  "premiumHeroActive": "Anda Premium",
+  "premiumHeroInactive": "Bebas Iklan",
+  "premiumHeroDescActive": "Terima kasih telah mendukung Dompet Kartu",
+  "premiumHeroDescInactive": "Hapus iklan dan dapatkan pengalaman yang lebih bersih",
+  "disablePremiumBtn": "Nonaktifkan Premium",
+  "removeAdsBtn": "Hapus Iklan",
+  "premiumOneTimeNotice": "Satu kali. Memulihkan secara instan di perangkat ini.",
+  "noBiometricsConfigured": "Tidak ada biometrik/kunci perangkat yang dikonfigurasi pada perangkat ini",
+  "cardTypeCredit": "Kartu kredit",
+  "cardTypeDebit": "Kartu Debit",
+  "cardTypePoint": "Kartu Poin",
+  "cardTypeMembership": "Kartu Keanggotaan",
+  "cardTypeCoupon": "Kupon",
+  "cardTypeGift": "Kartu Hadiah",
+  "cardTypeEventTicket": "Tiket Acara",
+  "cardTypeOther": "Lainnya",
+  "chooseCardType": "Pilih jenis kartu",
+  "selectCustomColor": "Pilih Warna Kustom",
+  "solidColor": "Padat",
+  "gradientColor": "Gradien",
+  "startColor": "Awal",
+  "endColor": "Akhir",
+  "cardExpLabel": "pengalaman",
+  "homeTab": "Rumah",
+  "cardsTab": "Kartu saya",
+  "profileTab": "Profil",
+  "appTitleTypewriter": "Dompet Kartu",
+  "seeAll": "Lihat Semua",
+  "backupShareText": "Cadangan Aman Dompet Kartu",
+  "backupFileNotFoundError": "File cadangan tidak ditemukan",
+  "corruptedBackupError": "File cadangan rusak atau tidak valid",
+  "invalidBackupDataError": "File cadangan tidak berisi data yang valid.",
+  "unsupportedBackupVersionError": "Versi cadangan tidak didukung: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

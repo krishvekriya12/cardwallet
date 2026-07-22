@@ -1,0 +1,342 @@
+{
+  "appTitle": "카드 지갑 앱",
+  "addCard": "카드 추가",
+  "hiThere": "안녕하세요 👋",
+  "settingsTitle": "설정",
+  "appLock": "앱 잠금",
+  "appLockSubtitle": "앱을 열려면 생체 인식이 필요합니다.",
+  "language": "언어",
+  "backupRestore": "백업 및 복원",
+  "backupRestoreSubtitle": "로컬로 카드 내보내기 및 가져오기",
+  "clearAllData": "모든 데이터 지우기",
+  "goodMorning": "좋은 아침이에요",
+  "goodAfternoon": "좋은 오후에요",
+  "goodEvening": "좋은 저녁이에요",
+  "hiName": "안녕하세요, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "새 카드 추가",
+  "scan": "주사",
+  "scanDesc": "카드 세부정보 스캔\n즉시",
+  "manually": "수동으로",
+  "manuallyDesc": "카드 세부정보 입력\n수동으로",
+  "nfc": "NFC",
+  "nfcDesc": "추가하려면 카드를 탭하세요.\nNFC를 사용하여",
+  "tools": "도구",
+  "binChecker": "빈 검사기",
+  "binCheckerDesc": "BIN에서 카드 세부정보 확인",
+  "cardVerify": "카드 확인",
+  "cardVerifyDesc": "카드번호 확인",
+  "frequentlyAdded": "자주 추가됨",
+  "cardsTitle": "카드",
+  "yourCardsManage": "여기에서 관리할 카드",
+  "cardCountText": "{count, plural, =1{카드 1개 저장됨} other{{count} 카드가 저장되었습니다.}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{카드 1장} other{{count} 카드}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "모두",
+  "noCardsYet": "아직 카드가 없습니다.",
+  "noCardsYetDesc": "카드를 추가하려면 홈으로 이동하거나 스캐너를 탭하세요.",
+  "noCardsCategory": "이 카테고리에는 카드가 없습니다.",
+  "tryDifferentFilter": "다른 필터를 선택해 보세요.",
+  "addFirstCardStart": "시작하려면 첫 번째 카드를 추가하세요.",
+  "rateUs": "우리를 평가해 주세요",
+  "rateUsThanks": "지원해 주셔서 감사합니다!",
+  "shareApp": "앱 공유",
+  "shareAppSoon": "곧 공유 예정",
+  "help": "돕다",
+  "supportSoon": "곧 지원 예정",
+  "privacyPolicy": "개인 정보 보호 정책",
+  "privacyPolicySoon": "개인 정보 보호 정책을 엽니다",
+  "termsOfUse": "이용약관",
+  "termsOfUseSoon": "이용약관을 엽니다",
+  "clearDataTitle": "모든 데이터를 삭제하시겠습니까?",
+  "clearDataDesc": "이렇게 하면 저장된 모든 카드가 영구적으로 삭제됩니다. 이 작업은 취소할 수 없습니다.",
+  "cancel": "취소",
+  "clearDataConfirm": "데이터 지우기",
+  "clearDataToast": "모든 데이터가 삭제되었습니다.",
+  "splashSubtitle": "안전하고 간편한 카드",
+  "unlockPrompt": "계속하려면 카드 지갑을 잠금 해제하세요.",
+  "tapToUnlock": "탭하여 잠금 해제",
+  "authFailed": "인증 실패",
+  "binCheckerTitle": "빈 검사기",
+  "enterMin6Digits": "6자리 이상 입력하세요.",
+  "binNotVerified": "이 BIN을 확인할 수 없습니다.",
+  "lookupFailed": "조회에 실패했습니다. 연결을 확인하고 다시 시도하세요.",
+  "binLookupPlaceholder": "BIN / IIN 조회",
+  "enterDigitsLabel": "처음 6~8자리를 입력하세요.",
+  "checkButton": "확인하다",
+  "binResultTitle": "BIN 결과",
+  "cardNetwork": "회로망",
+  "cardType": "유형",
+  "cardBrandCategory": "브랜드/카테고리",
+  "cardBank": "은행",
+  "cardCountry": "국가",
+  "cardCountryCode": "국가 코드",
+  "cardCurrency": "통화",
+  "cardValid": "유효한",
+  "yes": "예",
+  "no": "아니요",
+  "cardValidatorTitle": "카드 유효성 검사기",
+  "cardValidatorPreviewName": "카드 검증기",
+  "enterCardNumberLabel": "카드번호 입력",
+  "validCardNumber": "유효한 카드번호",
+  "invalidCardNumber": "잘못된 카드번호 — 숫자를 확인하세요",
+  "backupRestoreTitle": "백업 및 복원",
+  "createBackupPass": "백업 비밀번호 생성",
+  "backupPassWarning": "중요: 이 비밀번호를 적어 두십시오. 잊어버린 경우 복구하거나 백업을 복원할 수 없습니다.",
+  "enterPassLabel": "비밀번호 입력",
+  "confirmPassLabel": "비밀번호 확인",
+  "passEmptyError": "비밀번호는 비워둘 수 없습니다.",
+  "passMismatchError": "비밀번호가 일치하지 않습니다.",
+  "doneBtn": "완료",
+  "enterBackupPass": "백업 비밀번호를 입력하세요",
+  "noCardsToBackup": "백업할 카드가 없습니다.",
+  "backupSuccess": "백업이 성공적으로 생성되었습니다!",
+  "backupFailed": "백업 실패: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "백업을 복원하시겠습니까?",
+  "restoreBackupWarning": "경고: 백업을 복원하면 현재의 모든 카드와 거래를 덮어쓰게 됩니다. 이 작업은 취소할 수 없습니다.",
+  "continueBtn": "계속하다",
+  "restoreSuccess": "백업이 성공적으로 복원되었습니다!",
+  "incorrectPasswordError": "비밀번호가 잘못되었거나 백업 파일이 손상되었습니다.",
+  "restoreFailed": "복원 실패: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "백업을 삭제하시겠습니까?",
+  "deleteBackupConfirmText": "'{name}'을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "삭제",
+  "backupDeleted": "백업이 삭제되었습니다.",
+  "failedShareBackup": "백업 공유 실패: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "파일을 선택하지 못했습니다: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "마지막 백업",
+  "neverBackedUp": "백업되지 않음",
+  "backupType": "백업 유형",
+  "localBackupDesc": "로컬 — 이 장치에만 저장됩니다.",
+  "createBackupBtn": "백업 생성",
+  "importExternalBackupBtn": "외부 백업 가져오기",
+  "savedBackupsHeader": "저장된 백업",
+  "noBackupsYet": "아직 백업이 없습니다.",
+  "tapCreateBackupDesc": "카드를 저장하려면 \"백업 만들기\"를 탭하세요.",
+  "restoreTooltip": "복원하다",
+  "shareTooltip": "공유하다",
+  "cardNotFound": "카드를 찾을 수 없습니다",
+  "editCardTitle": "카드 편집",
+  "addCardTitle": "카드 추가",
+  "cardTypeLabel": "카드 종류",
+  "cardColorLabel": "카드 색상",
+  "fieldRequiredError": "이 필드는 필수입니다",
+  "bankNameLabel": "은행명",
+  "expiryLabel": "만료(MM/YY)",
+  "cvvLabel": "이력서",
+  "cardPhotosLabel": "카드 사진",
+  "frontSideLabel": "정면",
+  "backSideLabel": "후면",
+  "notesLabel": "메모",
+  "saveChangesBtn": "변경 사항 저장",
+  "saveCardBtn": "카드 저장",
+  "deleteCardBtn": "카드 삭제",
+  "takePhotoLabel": "사진을 찍으세요",
+  "chooseGalleryLabel": "갤러리에서 선택",
+  "deleteCardPrompt": "카드를 삭제하시겠습니까?",
+  "deleteCardWarning": "이 작업은 취소할 수 없습니다.",
+  "cardNumberLabel": "카드번호",
+  "pointCardNumberLabel": "포인트 카드 번호",
+  "membershipIdLabel": "회원 아이디",
+  "couponCodeLabel": "쿠폰 코드",
+  "giftCardNumberLabel": "기프트 카드 번호",
+  "ticketPnrLabel": "항공권/PNR 번호",
+  "numberLabel": "숫자",
+  "cardholderNameLabel": "카드 소지자 이름",
+  "cardNameLabel": "카드 이름",
+  "enterValidCardNumberError": "유효한 카드번호를 입력하세요.",
+  "cardNumberInvalidError": "카드번호가 잘못된 것 같습니다",
+  "enterMin3CharsError": "3자 이상 입력하세요.",
+  "cardAlreadyExistsError": "이 번호의 카드가 이미 저장되어 있습니다.",
+  "revealCvv": "이력서 공개",
+  "cardDetailsHeader": "카드 세부정보:",
+  "typePrefix": "유형:",
+  "bankPrefix": "은행:",
+  "cardNumberPrefix": "카드 번호:",
+  "cardholderPrefix": "카드 소지자:",
+  "expiryPrefix": "만료:",
+  "notesPrefix": "참고:",
+  "detailsSuffix": "세부",
+  "cardDetailsTitle": "카드 세부정보",
+  "hideBtn": "숨다",
+  "revealBtn": "드러내다",
+  "editBtn": "편집하다",
+  "cardInformationHeader": "카드정보",
+  "cardholderLabel": "카드홀더",
+  "nameLabel": "이름",
+  "bankLabel": "은행",
+  "pnrNumberLabel": "PNR 번호",
+  "venueLabel": "장소",
+  "eventDateLabel": "이벤트 날짜",
+  "seatLabel": "좌석",
+  "classLabel": "수업",
+  "discountDetailsLabel": "할인내역",
+  "memberIdLabel": "회원아이디",
+  "tierStatusLabel": "등급 상태",
+  "pointsBalanceLabel": "포인트 잔액",
+  "secondaryPinLabel": "보조 PIN",
+  "issueDateLabel": "발행일",
+  "documentTitleLabel": "문서 제목",
+  "nfcReaderTitle": "NFC 리더",
+  "nfcNotAvailable": "NFC를 사용할 수 없음",
+  "nfcUnsupportedDesc": "이 장치는 NFC 카드 읽기를 지원하지 않습니다.",
+  "readyToScan": "스캔 준비 완료",
+  "holdCardNfcPrompt": "비접촉식 카드를 휴대전화 뒷면에 대세요.",
+  "scanFailed": "스캔 실패",
+  "somethingWentWrong": "문제가 발생했습니다.",
+  "tryAgainBtn": "다시 시도",
+  "cardDetected": "카드 감지됨",
+  "unsupportedCardError": "이 카드 유형은 지원되지 않습니다.",
+  "nfcReadFailedDesc": "이 카드를 읽을 수 없습니다. 다시 시도하거나 수동으로 추가하세요.",
+  "nfcReadError": "읽기 실패: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "NFC 세션을 시작할 수 없습니다: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "카드 스캔",
+  "noCameraError": "이 기기에서는 사용할 수 있는 카메라가 없습니다.",
+  "cameraStartError": "카메라를 시작할 수 없습니다: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "카드 세부정보를 읽을 수 없습니다. 더 나은 조명으로 다시 시도해 보세요.",
+  "ocrScanFailed": "스캔 실패: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "카드를 스캔하려면 카메라 권한이 필요합니다.",
+  "openSettingsBtn": "설정 열기",
+  "notDetected": "감지되지 않음",
+  "scanAgainBtn": "다시 스캔",
+  "cardPhotosDesc": "빠른 참조를 위해 카드 사진을 보관하세요. 이미지는 이 기기에 유지됩니다.",
+  "addPhotoPlaceholder": "{label} 사진 추가",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "프리미엄",
+  "benefitRemoveAdsTitle": "모든 광고 제거",
+  "benefitRemoveAdsDesc": "배너, 전면 광고 없음",
+  "benefitFasterTitle": "더 빠른 경험",
+  "benefitFasterDesc": "로드할 것이 없는 인스턴트 화면",
+  "benefitSupportTitle": "개발 지원",
+  "benefitSupportDesc": "앱이 계속 성장하도록 도와주세요",
+  "benefitBadgeTitle": "프리미엄 배지",
+  "benefitBadgeDesc": "프로필에 작은 감사 인사를 전하세요",
+  "premiumHeroActive": "당신은 프리미엄입니다",
+  "premiumHeroInactive": "광고 없이 이동",
+  "premiumHeroDescActive": "카드월렛을 지원해 주셔서 감사합니다",
+  "premiumHeroDescInactive": "광고를 제거하고 더욱 깨끗한 환경을 경험하세요",
+  "disablePremiumBtn": "프리미엄 비활성화",
+  "removeAdsBtn": "광고 제거",
+  "premiumOneTimeNotice": "일회성. 이 장치에서 즉시 복원됩니다.",
+  "noBiometricsConfigured": "이 장치에는 생체 인식/장치 잠금이 구성되어 있지 않습니다.",
+  "cardTypeCredit": "신용카드",
+  "cardTypeDebit": "직불카드",
+  "cardTypePoint": "포인트 카드",
+  "cardTypeMembership": "회원카드",
+  "cardTypeCoupon": "쿠폰",
+  "cardTypeGift": "기프트 카드",
+  "cardTypeEventTicket": "이벤트 티켓",
+  "cardTypeOther": "다른",
+  "chooseCardType": "카드 종류 선택",
+  "selectCustomColor": "사용자 정의 색상 선택",
+  "solidColor": "단단한",
+  "gradientColor": "구배",
+  "startColor": "시작",
+  "endColor": "끝",
+  "cardExpLabel": "경험치",
+  "homeTab": "집",
+  "cardsTab": "내 카드",
+  "profileTab": "윤곽",
+  "appTitleTypewriter": "카드지갑",
+  "seeAll": "모두 보기",
+  "backupShareText": "카드지갑 보안 백업",
+  "backupFileNotFoundError": "백업 파일을 찾을 수 없습니다",
+  "corruptedBackupError": "손상되었거나 잘못된 백업 파일",
+  "invalidBackupDataError": "백업 파일에 유효한 데이터가 포함되어 있지 않습니다.",
+  "unsupportedBackupVersionError": "지원되지 않는 백업 버전: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

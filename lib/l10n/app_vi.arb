@@ -1,0 +1,342 @@
+{
+  "appTitle": "Ví Thẻ",
+  "addCard": "Thêm Thẻ",
+  "hiThere": "Xin chào 👋",
+  "settingsTitle": "Cài đặt",
+  "appLock": "Khóa Ứng dụng",
+  "appLockSubtitle": "Yêu cầu sinh trắc học để mở ứng dụng",
+  "language": "Ngôn ngữ",
+  "backupRestore": "Sao lưu & Khôi phục",
+  "backupRestoreSubtitle": "Xuất & nhập thẻ của bạn cục bộ",
+  "clearAllData": "Xóa Tất cả Dữ liệu",
+  "goodMorning": "Chào buổi sáng",
+  "goodAfternoon": "Chào buổi chiều",
+  "goodEvening": "Chào buổi tối",
+  "hiName": "Xin chào, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "Thêm Thẻ Mới",
+  "scan": "Quét",
+  "scanDesc": "Quét thông tin thẻ\nngay lập tức",
+  "manually": "Thủ công",
+  "manuallyDesc": "Nhập thông tin thẻ\nthủ công",
+  "nfc": "NFC",
+  "nfcDesc": "Chạm thẻ để thêm\nbằng NFC",
+  "tools": "Công cụ",
+  "binChecker": "Tra cứu BIN",
+  "binCheckerDesc": "Kiểm tra thông tin thẻ từ mã BIN",
+  "cardVerify": "Xác minh Thẻ",
+  "cardVerifyDesc": "Xác thực số thẻ",
+  "frequentlyAdded": "Thẻ Thường Dùng",
+  "cardsTitle": "Danh sách Thẻ",
+  "yourCardsManage": "Quản lý các thẻ của bạn tại đây",
+  "cardCountText": "{count, plural, =1{Đã lưu 1 thẻ} other{Đã lưu {count} thẻ}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{1 thẻ} other{{count} thẻ}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "Tất cả",
+  "noCardsYet": "Chưa có thẻ nào",
+  "noCardsYetDesc": "Vào Trang chủ hoặc dùng trình quét để thêm thẻ",
+  "noCardsCategory": "Không có thẻ nào trong mục này",
+  "tryDifferentFilter": "Hãy thử chọn bộ lọc khác",
+  "addFirstCardStart": "Thêm thẻ đầu tiên của bạn để bắt đầu",
+  "rateUs": "Đánh giá Ứng dụng",
+  "rateUsThanks": "Cảm ơn bạn đã ủng hộ!",
+  "shareApp": "Chia sẻ Ứng dụng",
+  "shareAppSoon": "Tính năng chia sẻ sắp ra mắt",
+  "help": "Trợ giúp",
+  "supportSoon": "Hỗ trợ sắp ra mắt",
+  "privacyPolicy": "Chính sách Bảo mật",
+  "privacyPolicySoon": "Mở chính sách bảo mật",
+  "termsOfUse": "Điều khoản Sử dụng",
+  "termsOfUseSoon": "Mở điều khoản sử dụng",
+  "clearDataTitle": "Xóa tất cả dữ liệu?",
+  "clearDataDesc": "Hành động này sẽ xóa vĩnh viễn mọi thẻ đã lưu. Không thể hoàn tác.",
+  "cancel": "Hủy",
+  "clearDataConfirm": "Xóa Dữ liệu",
+  "clearDataToast": "Đã xóa toàn bộ dữ liệu",
+  "splashSubtitle": "Thẻ của bạn, an toàn & đơn giản",
+  "unlockPrompt": "Mở khóa Ví Thẻ để tiếp tục",
+  "tapToUnlock": "Nhấn để Mở khóa",
+  "authFailed": "Xác thực thất bại",
+  "binCheckerTitle": "Tra cứu BIN",
+  "enterMin6Digits": "Nhập ít nhất 6 chữ số",
+  "binNotVerified": "Không thể xác minh mã BIN này",
+  "lookupFailed": "Tra cứu thất bại. Kiểm tra kết nối và thử lại.",
+  "binLookupPlaceholder": "TRA CỨU BIN / IIN",
+  "enterDigitsLabel": "Nhập 6–8 chữ số đầu tiên",
+  "checkButton": "Kiểm tra",
+  "binResultTitle": "Kết quả BIN",
+  "cardNetwork": "Mạng lưới",
+  "cardType": "Loại thẻ",
+  "cardBrandCategory": "Thương hiệu/Phân loại",
+  "cardBank": "Ngân hàng",
+  "cardCountry": "Quốc gia",
+  "cardCountryCode": "Mã Quốc gia",
+  "cardCurrency": "Tiền tệ",
+  "cardValid": "Hợp lệ",
+  "yes": "Có",
+  "no": "Không",
+  "cardValidatorTitle": "Xác minh Thẻ",
+  "cardValidatorPreviewName": "XÁC MINH THẺ",
+  "enterCardNumberLabel": "Nhập số thẻ",
+  "validCardNumber": "Số thẻ hợp lệ",
+  "invalidCardNumber": "Số thẻ không hợp lệ — vui lòng kiểm tra lại",
+  "backupRestoreTitle": "Sao lưu & Khôi phục",
+  "createBackupPass": "Tạo Mật khẩu Sao lưu",
+  "backupPassWarning": "QUAN TRỌNG: Hãy ghi nhớ mật khẩu này. Chúng tôi không thể khôi phục mật khẩu hoặc dữ liệu của bạn nếu bị quên.",
+  "enterPassLabel": "Nhập Mật khẩu",
+  "confirmPassLabel": "Xác nhận Mật khẩu",
+  "passEmptyError": "Mật khẩu không được để trống",
+  "passMismatchError": "Mật khẩu không khớp",
+  "doneBtn": "Hoàn thành",
+  "enterBackupPass": "Nhập Mật khẩu Sao lưu",
+  "noCardsToBackup": "Không có thẻ để sao lưu",
+  "backupSuccess": "Tạo bản sao lưu thành công!",
+  "backupFailed": "Sao lưu thất bại: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "Khôi phục bản sao lưu?",
+  "restoreBackupWarning": "CẢNH BÁO: Khôi phục sao lưu sẽ ghi đè lên toàn bộ thẻ hiện tại. Không thể hoàn tác.",
+  "continueBtn": "Tiếp tục",
+  "restoreSuccess": "Khôi phục bản sao lưu thành công!",
+  "incorrectPasswordError": "Sai mật khẩu hoặc tệp sao lưu bị hỏng.",
+  "restoreFailed": "Khôi phục thất bại: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "Xóa bản sao lưu?",
+  "deleteBackupConfirmText": "Xóa \"{name}\"? Hành động này không thể hoàn tác.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "Xóa",
+  "backupDeleted": "Đã xóa bản sao lưu",
+  "failedShareBackup": "Không thể chia sẻ bản sao lưu: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "Không thể chọn tệp: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "Sao lưu Gần nhất",
+  "neverBackedUp": "Chưa từng sao lưu",
+  "backupType": "Loại Sao lưu",
+  "localBackupDesc": "Cục bộ — chỉ lưu trên thiết bị này",
+  "createBackupBtn": "Tạo Bản Sao lưu",
+  "importExternalBackupBtn": "Nhập Bản Sao lưu Ngoại",
+  "savedBackupsHeader": "Bản Sao lưu Đã lưu",
+  "noBackupsYet": "Chưa có bản sao lưu nào",
+  "tapCreateBackupDesc": "Nhấn \"Tạo Bản Sao lưu\" để lưu các thẻ của bạn",
+  "restoreTooltip": "Khôi phục",
+  "shareTooltip": "Chia sẻ",
+  "cardNotFound": "Không tìm thấy thẻ",
+  "editCardTitle": "Chỉnh sửa Thẻ",
+  "addCardTitle": "Thêm Thẻ",
+  "cardTypeLabel": "Loại thẻ",
+  "cardColorLabel": "Màu thẻ",
+  "fieldRequiredError": "Trường này là bắt buộc",
+  "bankNameLabel": "Tên Ngân hàng",
+  "expiryLabel": "Hạn dùng (MM/YY)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "Ảnh chụp Thẻ",
+  "frontSideLabel": "Mặt trước",
+  "backSideLabel": "Mặt sau",
+  "notesLabel": "Ghi chú",
+  "saveChangesBtn": "Lưu Thay đổi",
+  "saveCardBtn": "Lưu Thẻ",
+  "deleteCardBtn": "Xóa thẻ",
+  "takePhotoLabel": "Chụp ảnh",
+  "chooseGalleryLabel": "Chọn từ thư viện",
+  "deleteCardPrompt": "Xóa thẻ này?",
+  "deleteCardWarning": "Hành động này không thể hoàn tác.",
+  "cardNumberLabel": "Số thẻ",
+  "pointCardNumberLabel": "Số thẻ tích điểm",
+  "membershipIdLabel": "Mã thành viên",
+  "couponCodeLabel": "Mã giảm giá",
+  "giftCardNumberLabel": "Số thẻ quà tặng",
+  "ticketPnrLabel": "Mã Vé / PNR",
+  "numberLabel": "Số",
+  "cardholderNameLabel": "Tên chủ thẻ",
+  "cardNameLabel": "Tên thẻ",
+  "enterValidCardNumberError": "Nhập số thẻ hợp lệ",
+  "cardNumberInvalidError": "Số thẻ có vẻ không đúng",
+  "enterMin3CharsError": "Nhập ít nhất 3 ký tự",
+  "cardAlreadyExistsError": "Thẻ với số này đã được lưu trước đó",
+  "revealCvv": "Hiện CVV",
+  "cardDetailsHeader": "Chi tiết Thẻ:",
+  "typePrefix": "Loại: ",
+  "bankPrefix": "Ngân hàng: ",
+  "cardNumberPrefix": "Số thẻ: ",
+  "cardholderPrefix": "Chủ thẻ: ",
+  "expiryPrefix": "Hạn dùng: ",
+  "notesPrefix": "Ghi chú: ",
+  "detailsSuffix": " Chi tiết",
+  "cardDetailsTitle": "Chi tiết Thẻ",
+  "hideBtn": "Ẩn",
+  "revealBtn": "Hiện",
+  "editBtn": "Sửa",
+  "cardInformationHeader": "Thông tin Thẻ",
+  "cardholderLabel": "Chủ thẻ",
+  "nameLabel": "Tên",
+  "bankLabel": "Ngân hàng",
+  "pnrNumberLabel": "Số PNR",
+  "venueLabel": "Địa điểm",
+  "eventDateLabel": "Ngày sự kiện",
+  "seatLabel": "Ghế",
+  "classLabel": "Hạng",
+  "discountDetailsLabel": "Chi tiết Giảm giá",
+  "memberIdLabel": "ID Thành viên",
+  "tierStatusLabel": "Hạng thành viên",
+  "pointsBalanceLabel": "Điểm tích lũy",
+  "secondaryPinLabel": "Mã PIN phụ",
+  "issueDateLabel": "Ngày cấp",
+  "documentTitleLabel": "Tên tài liệu",
+  "nfcReaderTitle": "Đọc thẻ NFC",
+  "nfcNotAvailable": "NFC không khả dụng",
+  "nfcUnsupportedDesc": "Thiết bị này không hỗ trợ đọc thẻ qua NFC.",
+  "readyToScan": "Sẵn sàng Quét",
+  "holdCardNfcPrompt": "Chạm thẻ không tiếp xúc vào mặt sau điện thoại.",
+  "scanFailed": "Quét Thất bại",
+  "somethingWentWrong": "Đã xảy ra lỗi.",
+  "tryAgainBtn": "Thử lại",
+  "cardDetected": "Đã phát hiện thẻ",
+  "unsupportedCardError": "Loại thẻ này không được hỗ trợ.",
+  "nfcReadFailedDesc": "Không thể đọc thẻ này. Thử lại hoặc thêm thủ công.",
+  "nfcReadError": "Đọc thất bại: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "Không thể bắt đầu phiên NFC: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "Quét Thẻ",
+  "noCameraError": "Không có camera trên thiết bị này",
+  "cameraStartError": "Không thể mở camera: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "Không thể đọc thông tin thẻ. Hãy thử nơi có ánh sáng tốt hơn.",
+  "ocrScanFailed": "Quét thất bại: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "Cần có quyền truy cập camera để quét thẻ.",
+  "openSettingsBtn": "Mở Cài đặt",
+  "notDetected": "Chưa nhận diện",
+  "scanAgainBtn": "Quét lại",
+  "cardPhotosDesc": "Lưu ảnh chụp thẻ để tham khảo nhanh. Hình ảnh chỉ lưu trên thiết bị này.",
+  "addPhotoPlaceholder": "Thêm ảnh {label}",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "Gói Premium",
+  "benefitRemoveAdsTitle": "Xóa toàn bộ quảng cáo",
+  "benefitRemoveAdsDesc": "Không có quảng cáo biểu ngữ hay xen kẽ",
+  "benefitFasterTitle": "Trải nghiệm nhanh hơn",
+  "benefitFasterDesc": "Màn hình tức thì không phải chờ tải",
+  "benefitSupportTitle": "Ủng hộ phát triển",
+  "benefitSupportDesc": "Giúp ứng dụng phát triển hoàn thiện hơn",
+  "benefitBadgeTitle": "Huy hiệu Premium",
+  "benefitBadgeDesc": "Huy hiệu cảm ơn trên hồ sơ của bạn",
+  "premiumHeroActive": "Bạn đang dùng Premium",
+  "premiumHeroInactive": "Trải nghiệm Không Quảng cáo",
+  "premiumHeroDescActive": "Cảm ơn bạn đã ủng hộ Ví Thẻ",
+  "premiumHeroDescInactive": "Xóa quảng cáo và tận hưởng trải nghiệm mượt mà",
+  "disablePremiumBtn": "Tắt Gói Premium",
+  "removeAdsBtn": "Xóa Quảng cáo",
+  "premiumOneTimeNotice": "Mua một lần. Khôi phục tức thì trên thiết bị này.",
+  "noBiometricsConfigured": "Chưa thiết lập sinh trắc học hoặc khóa màn hình trên thiết bị",
+  "cardTypeCredit": "Thẻ Tín dụng",
+  "cardTypeDebit": "Thẻ Ghi nợ",
+  "cardTypePoint": "Thẻ Tích điểm",
+  "cardTypeMembership": "Thẻ Thành viên",
+  "cardTypeCoupon": "Thẻ Giảm giá",
+  "cardTypeGift": "Thẻ Quà tặng",
+  "cardTypeEventTicket": "Vé Sự kiện",
+  "cardTypeOther": "Thẻ Khác",
+  "chooseCardType": "Chọn loại thẻ",
+  "selectCustomColor": "Chọn Màu Tùy chỉnh",
+  "solidColor": "Màu đơn",
+  "gradientColor": "Màu chuyển",
+  "startColor": "Bắt đầu",
+  "endColor": "Kết thúc",
+  "cardExpLabel": "HẠN DÙNG",
+  "homeTab": "Trang chủ",
+  "cardsTab": "Thẻ của tôi",
+  "profileTab": "Hồ sơ",
+  "appTitleTypewriter": "Ví Thẻ",
+  "seeAll": "Xem Tất cả",
+  "backupShareText": "Bản Sao lưu An toàn Ví Thẻ",
+  "backupFileNotFoundError": "Không tìm thấy tệp sao lưu",
+  "corruptedBackupError": "Tệp sao lưu bị hỏng hoặc không hợp lệ",
+  "invalidBackupDataError": "Tệp sao lưu không chứa dữ liệu hợp lệ.",
+  "unsupportedBackupVersionError": "Phiên bản sao lưu không được hỗ trợ: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

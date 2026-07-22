@@ -1,0 +1,342 @@
+{
+  "appTitle": "Kart Cüzdanı",
+  "addCard": "Kart Ekle",
+  "hiThere": "Merhaba 👋",
+  "settingsTitle": "Ayarlar",
+  "appLock": "Uygulama Kilidi",
+  "appLockSubtitle": "Uygulamayı açmak için biyometrik kimlik gerektir",
+  "language": "Dil",
+  "backupRestore": "Yedekle ve Geri Yükle",
+  "backupRestoreSubtitle": "Kartlarınızı yerel olarak dışa/içe aktarın",
+  "clearAllData": "Tüm Verileri Temizle",
+  "goodMorning": "Günaydın",
+  "goodAfternoon": "Tünaydın",
+  "goodEvening": "İyi akşamlar",
+  "hiName": "Merhaba, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "Yeni Kart Ekle",
+  "scan": "Tara",
+  "scanDesc": "Kart detaylarını anında\ntarayın",
+  "manually": "Manuel",
+  "manuallyDesc": "Kart bilgilerini elle\ngirin",
+  "nfc": "NFC",
+  "nfcDesc": "NFC ile eklemek için\nkartı dokundurun",
+  "tools": "Araçlar",
+  "binChecker": "BIN Sorgulama",
+  "binCheckerDesc": "BIN numarasından kart detaylarını kontrol edin",
+  "cardVerify": "Kart Doğrulama",
+  "cardVerifyDesc": "Kart numarasını doğrulayın",
+  "frequentlyAdded": "Sık Eklenenler",
+  "cardsTitle": "Kartlar",
+  "yourCardsManage": "Yöneteceğiniz kartlarınız burada",
+  "cardCountText": "{count, plural, =1{1 kart kayıtlı} other{{count} kart kayıtlı}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{1 kart} other{{count} kart}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "Tümü",
+  "noCardsYet": "Henüz kart yok",
+  "noCardsYetDesc": "Kart eklemek için Ana Sayfaya gidin veya tarayıcıyı kullanın",
+  "noCardsCategory": "Bu kategoride kart bulunamadı",
+  "tryDifferentFilter": "Farklı bir filtre seçmeyi deneyin",
+  "addFirstCardStart": "Başlamak için ilk kartınızı ekleyin",
+  "rateUs": "Bizi Değerlendirin",
+  "rateUsThanks": "Desteğiniz için teşekkürler!",
+  "shareApp": "Uygulamayı Paylaş",
+  "shareAppSoon": "Paylaşım özelliği çok yakında",
+  "help": "Yardım",
+  "supportSoon": "Destek çok yakında",
+  "privacyPolicy": "Gizlilik Politikası",
+  "privacyPolicySoon": "Gizlilik politikasını açar",
+  "termsOfUse": "Kullanım Koşulları",
+  "termsOfUseSoon": "Kullanım koşullarını açar",
+  "clearDataTitle": "Tüm veriler silinsin mi?",
+  "clearDataDesc": "Bu işlem kaydedilen tüm kartları kalıcı olarak siler. Geri alınamaz.",
+  "cancel": "İptal",
+  "clearDataConfirm": "Verileri Temizle",
+  "clearDataToast": "Tüm veriler temizlendi",
+  "splashSubtitle": "Kartlarınız, güvenli ve basit",
+  "unlockPrompt": "Devam etmek için Kart Cüzdanı'nın kilidini açın",
+  "tapToUnlock": "Kilidi Açmak İçin Dokunun",
+  "authFailed": "Kimlik doğrulama başarısız",
+  "binCheckerTitle": "BIN Sorgulama",
+  "enterMin6Digits": "En az 6 hane girin",
+  "binNotVerified": "Bu BIN doğrulanamadı",
+  "lookupFailed": "Sorgulama başarısız. Bağlantınızı kontrol edip tekrar deneyin.",
+  "binLookupPlaceholder": "BIN / IIN SORGULAMA",
+  "enterDigitsLabel": "İlk 6–8 haneyi girin",
+  "checkButton": "Kontrol Et",
+  "binResultTitle": "BIN Sonucu",
+  "cardNetwork": "Ağ",
+  "cardType": "Tür",
+  "cardBrandCategory": "Marka/Kategori",
+  "cardBank": "Banka",
+  "cardCountry": "Ülke",
+  "cardCountryCode": "Ülke Kodu",
+  "cardCurrency": "Para Birimi",
+  "cardValid": "Geçerli",
+  "yes": "Evet",
+  "no": "Hayır",
+  "cardValidatorTitle": "Kart Doğrulayıcı",
+  "cardValidatorPreviewName": "KART DOĞRULAYICI",
+  "enterCardNumberLabel": "Kart numarasını girin",
+  "validCardNumber": "Geçerli kart numarası",
+  "invalidCardNumber": "Geçersiz kart numarası — haneleri kontrol edin",
+  "backupRestoreTitle": "Yedekle ve Geri Yükle",
+  "createBackupPass": "Yedekleme Şifresi Oluştur",
+  "backupPassWarning": "ÖNEMLİ: Bu şifreyi bir yere not edin. Şifreyi unutursanız verilerinizi geri yükleyemeyiz.",
+  "enterPassLabel": "Şifreyi Girin",
+  "confirmPassLabel": "Şifreyi Onaylayın",
+  "passEmptyError": "Şifre boş olamaz",
+  "passMismatchError": "Şifreler eşleşmiyor",
+  "doneBtn": "Tamam",
+  "enterBackupPass": "Yedek Şifresini Girin",
+  "noCardsToBackup": "Yedeklenecek kart yok",
+  "backupSuccess": "Yedekleme başarıyla oluşturuldu!",
+  "backupFailed": "Yedekleme başarısız: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "Yedek geri yüklensin mi?",
+  "restoreBackupWarning": "UYARI: Yedeği geri yüklemek mevcut tüm kartların üzerine yazar. Geri alınamaz.",
+  "continueBtn": "Devam Et",
+  "restoreSuccess": "Yedek başarıyla geri yüklendi!",
+  "incorrectPasswordError": "Yanlış şifre veya bozuk yedek dosyası.",
+  "restoreFailed": "Geri yükleme başarısız: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "Yedek silinsin mi?",
+  "deleteBackupConfirmText": "\"{name}\" silinsin mi? Bu işlem geri alınamaz.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "Sil",
+  "backupDeleted": "Yedek silindi",
+  "failedShareBackup": "Yedek paylaşılamadı: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "Dosya seçilemedi: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "Son Yedekleme",
+  "neverBackedUp": "Hiç yedeklenmedi",
+  "backupType": "Yedekleme Türü",
+  "localBackupDesc": "Yerel — yalnızca bu cihazda saklanır",
+  "createBackupBtn": "Yedek Oluştur",
+  "importExternalBackupBtn": "Harici Yedek İçe Aktar",
+  "savedBackupsHeader": "Kaydedilen Yedekler",
+  "noBackupsYet": "Henüz yedek yok",
+  "tapCreateBackupDesc": "Kartlarınızı kaydetmek için \"Yedek Oluştur\"a dokunun",
+  "restoreTooltip": "Geri Yükle",
+  "shareTooltip": "Paylaş",
+  "cardNotFound": "Kart bulunamadı",
+  "editCardTitle": "Kartı Düzenle",
+  "addCardTitle": "Kart Ekle",
+  "cardTypeLabel": "Kart türü",
+  "cardColorLabel": "Kart rengi",
+  "fieldRequiredError": "Bu alan zorunludur",
+  "bankNameLabel": "Banka Adı",
+  "expiryLabel": "Son Kullanma (AA/YY)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "Kart Fotoğrafları",
+  "frontSideLabel": "Ön Yüz",
+  "backSideLabel": "Arka Yüz",
+  "notesLabel": "Notlar",
+  "saveChangesBtn": "Değişiklikleri Kaydet",
+  "saveCardBtn": "Kartı Kaydet",
+  "deleteCardBtn": "Kartı Sil",
+  "takePhotoLabel": "Fotoğraf Çek",
+  "chooseGalleryLabel": "Galeriden Seç",
+  "deleteCardPrompt": "Kart silinsin mi?",
+  "deleteCardWarning": "Bu işlem geri alınamaz.",
+  "cardNumberLabel": "Kart Numarası",
+  "pointCardNumberLabel": "Puan Kartı Numarası",
+  "membershipIdLabel": "Üyelik Kimliği",
+  "couponCodeLabel": "Kupon Kodu",
+  "giftCardNumberLabel": "Hediye Kartı Numarası",
+  "ticketPnrLabel": "Bilet / PNR Numarası",
+  "numberLabel": "Numara",
+  "cardholderNameLabel": "Kart Sahibinin Adı",
+  "cardNameLabel": "Kart Adı",
+  "enterValidCardNumberError": "Geçerli bir kart numarası girin",
+  "cardNumberInvalidError": "Kart numarası geçersiz görünüyor",
+  "enterMin3CharsError": "En az 3 karakter girin",
+  "cardAlreadyExistsError": "Bu numaraya sahip bir kart zaten kayıtlı",
+  "revealCvv": "CVV Göster",
+  "cardDetailsHeader": "Kart Detayları:",
+  "typePrefix": "Tür: ",
+  "bankPrefix": "Banka: ",
+  "cardNumberPrefix": "Kart No: ",
+  "cardholderPrefix": "Kart Sahibi: ",
+  "expiryPrefix": "SKT: ",
+  "notesPrefix": "Notlar: ",
+  "detailsSuffix": " Detayları",
+  "cardDetailsTitle": "Kart Detayları",
+  "hideBtn": "Gizle",
+  "revealBtn": "Göster",
+  "editBtn": "Düzenle",
+  "cardInformationHeader": "Kart Bilgileri",
+  "cardholderLabel": "Kart Sahibi",
+  "nameLabel": "Ad",
+  "bankLabel": "Banka",
+  "pnrNumberLabel": "PNR Numarası",
+  "venueLabel": "Mekan",
+  "eventDateLabel": "Etkinlik Tarihi",
+  "seatLabel": "Koltuk",
+  "classLabel": "Sınıf",
+  "discountDetailsLabel": "İndirim Detayları",
+  "memberIdLabel": "Üye Kimliği",
+  "tierStatusLabel": "Seviye Durumu",
+  "pointsBalanceLabel": "Puan Bakiyesi",
+  "secondaryPinLabel": "İkincil PIN",
+  "issueDateLabel": "Düzenleme Tarihi",
+  "documentTitleLabel": "Belge Başlığı",
+  "nfcReaderTitle": "NFC Okuyucu",
+  "nfcNotAvailable": "NFC mevcut değil",
+  "nfcUnsupportedDesc": "Bu cihaz NFC kart okumayı desteklemiyor.",
+  "readyToScan": "Taramaya Hazır",
+  "holdCardNfcPrompt": "Temassız kartınızı telefonunuzun arkasına yaklaştırın.",
+  "scanFailed": "Tarama Başarısız",
+  "somethingWentWrong": "Bir şeyler yanlış gitti.",
+  "tryAgainBtn": "Tekrar Dene",
+  "cardDetected": "Kart Algılandı",
+  "unsupportedCardError": "Bu kart türü desteklenmiyor.",
+  "nfcReadFailedDesc": "Bu kart okunamadı. Tekrar deneyin veya manuel ekleyin.",
+  "nfcReadError": "Okuma başarısız: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "NFC oturumu başlatılamadı: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "Kartı Tara",
+  "noCameraError": "Bu cihazda kamera bulunmuyor",
+  "cameraStartError": "Kamera başlatılamadı: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "Kart detayları okunamadı. Daha iyi ışıkta tekrar deneyin.",
+  "ocrScanFailed": "Tarama başarısız: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "Kart taramak için kamera izni gereklidir.",
+  "openSettingsBtn": "Ayarları Aç",
+  "notDetected": "Algılanmadı",
+  "scanAgainBtn": "Tekrar Tara",
+  "cardPhotosDesc": "Hızlı başvuru için kartınızın fotoğrafını saklayın. Görseller bu cihazda kalır.",
+  "addPhotoPlaceholder": "{label} fotoğrafı ekle",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "Premium",
+  "benefitRemoveAdsTitle": "Tüm reklamları kaldır",
+  "benefitRemoveAdsDesc": "Araya giren reklamlar yok",
+  "benefitFasterTitle": "Daha hızlı deneyim",
+  "benefitFasterDesc": "Yükleme beklemeden anında ekranlar",
+  "benefitSupportTitle": "Geliştirmeyi destekleyin",
+  "benefitSupportDesc": "Uygulamanın büyümesine yardımcı olun",
+  "benefitBadgeTitle": "Premium rozeti",
+  "benefitBadgeDesc": "Profilinizde özel teşekkür rozeti",
+  "premiumHeroActive": "Premium Üyesiniz",
+  "premiumHeroInactive": "Reklamsız Kullanın",
+  "premiumHeroDescActive": "Kart Cüzdanı'nı desteklediğiniz için teşekkürler",
+  "premiumHeroDescInactive": "Reklamları kaldırın ve daha temiz bir deneyim yaşayın",
+  "disablePremiumBtn": "Premium'u Devre Dışı Bırak",
+  "removeAdsBtn": "Reklamları Kaldır",
+  "premiumOneTimeNotice": "Tek seferlik. Bu cihazda anında geri yüklenir.",
+  "noBiometricsConfigured": "Bu cihazda biyometrik/ekran kilidi ayarlanmamış",
+  "cardTypeCredit": "Kredi Kartı",
+  "cardTypeDebit": "Banka Kartı",
+  "cardTypePoint": "Puan Kartı",
+  "cardTypeMembership": "Üyelik Kartı",
+  "cardTypeCoupon": "Kupon",
+  "cardTypeGift": "Hediye Kartı",
+  "cardTypeEventTicket": "Etkinlik Biletı",
+  "cardTypeOther": "Diğer",
+  "chooseCardType": "Kart türünü seçin",
+  "selectCustomColor": "Özel Renk Seçin",
+  "solidColor": "Düz",
+  "gradientColor": "Degrade",
+  "startColor": "Başlangıç",
+  "endColor": "Bitiş",
+  "cardExpLabel": "SKT",
+  "homeTab": "Ana Sayfa",
+  "cardsTab": "Kartlarım",
+  "profileTab": "Profil",
+  "appTitleTypewriter": "Kart Cüzdanı",
+  "seeAll": "Tümünü Gör",
+  "backupShareText": "Kart Cüzdanı Güvenli Yedek",
+  "backupFileNotFoundError": "Yedek dosyası bulunamadı",
+  "corruptedBackupError": "Bozuk veya geçersiz yedek dosyası",
+  "invalidBackupDataError": "Yedek dosyası geçerli veri içermiyor.",
+  "unsupportedBackupVersionError": "Desteklenmeyen yedek sürümü: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

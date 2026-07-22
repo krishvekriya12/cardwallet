@@ -1,0 +1,342 @@
+{
+  "appTitle": "Кошелек карт",
+  "addCard": "Добавить карту",
+  "hiThere": "Привет 👋",
+  "settingsTitle": "Настройки",
+  "appLock": "Блокировка приложения",
+  "appLockSubtitle": "Требовать биометрию для входа",
+  "language": "Язык",
+  "backupRestore": "Резервное копирование",
+  "backupRestoreSubtitle": "Экспорт и импорт карт локально",
+  "clearAllData": "Очистить все данные",
+  "goodMorning": "Доброе утро",
+  "goodAfternoon": "Добрый день",
+  "goodEvening": "Добрый вечер",
+  "hiName": "Привет, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "Добавить новую карту",
+  "scan": "Сканировать",
+  "scanDesc": "Мгновенное сканирование\nдеталей карты",
+  "manually": "Вручную",
+  "manuallyDesc": "Ввести данные карты\nвручную",
+  "nfc": "NFC",
+  "nfcDesc": "Приложите карту для\nдобавления через NFC",
+  "tools": "Инструменты",
+  "binChecker": "Проверка BIN",
+  "binCheckerDesc": "Проверить данные карты по BIN",
+  "cardVerify": "Проверка карты",
+  "cardVerifyDesc": "Проверить номер карты",
+  "frequentlyAdded": "Часто добавляемые",
+  "cardsTitle": "Карты",
+  "yourCardsManage": "Управление вашими картами",
+  "cardCountText": "{count, plural, =1{Сохранена 1 карта} few{Сохранено {count} карты} other{Сохранено {count} карт}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{1 карта} few{{count} карты} other{{count} карт}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "Все",
+  "noCardsYet": "Пока нет карт",
+  "noCardsYetDesc": "Перейдите на Главную или сканируйте карту",
+  "noCardsCategory": "Нет карт в этой категории",
+  "tryDifferentFilter": "Попробуйте выбрать другой фильтр",
+  "addFirstCardStart": "Добавьте свою первую карту, чтобы начать",
+  "rateUs": "Оценить нас",
+  "rateUsThanks": "Спасибо за поддержку!",
+  "shareApp": "Поделиться",
+  "shareAppSoon": "Скоро появится возможность поделиться",
+  "help": "Помощь",
+  "supportSoon": "Поддержка скоро появится",
+  "privacyPolicy": "Политика конфиденциальности",
+  "privacyPolicySoon": "Открывает политику конфиденциальности",
+  "termsOfUse": "Условия использования",
+  "termsOfUseSoon": "Открывает условия использования",
+  "clearDataTitle": "Очистить все данные?",
+  "clearDataDesc": "Это навсегда удалит все сохраненные карты. Отменить это нельзя.",
+  "cancel": "Отмена",
+  "clearDataConfirm": "Очистить данные",
+  "clearDataToast": "Все данные очищены",
+  "splashSubtitle": "Ваши карты, надежно и просто",
+  "unlockPrompt": "Разблокируйте Кошелек карт для продолжения",
+  "tapToUnlock": "Нажмите для разблокировки",
+  "authFailed": "Ошибка аутентификации",
+  "binCheckerTitle": "Проверка BIN",
+  "enterMin6Digits": "Введите минимум 6 цифр",
+  "binNotVerified": "Этот BIN не удалось проверить",
+  "lookupFailed": "Ошибка проверки. Проверьте подключение и повторите попытку.",
+  "binLookupPlaceholder": "ПОИСК BIN / IIN",
+  "enterDigitsLabel": "Введите первые 6–8 цифр",
+  "checkButton": "Проверить",
+  "binResultTitle": "Результат BIN",
+  "cardNetwork": "Платежная система",
+  "cardType": "Тип",
+  "cardBrandCategory": "Бренд/Категория",
+  "cardBank": "Банк",
+  "cardCountry": "Страна",
+  "cardCountryCode": "Код страны",
+  "cardCurrency": "Валюта",
+  "cardValid": "Действительна",
+  "yes": "Да",
+  "no": "Нет",
+  "cardValidatorTitle": "Проверка карты",
+  "cardValidatorPreviewName": "ПРОВЕРКА КАРТЫ",
+  "enterCardNumberLabel": "Введите номер карты",
+  "validCardNumber": "Действительный номер карты",
+  "invalidCardNumber": "Недействительный номер карты — проверьте цифры",
+  "backupRestoreTitle": "Резервное копирование",
+  "createBackupPass": "Создать пароль резервной копии",
+  "backupPassWarning": "ВАЖНО: Запишите этот пароль. Мы не сможем восстановить его или ваши данные, если вы его забудете.",
+  "enterPassLabel": "Введите пароль",
+  "confirmPassLabel": "Подтвердите пароль",
+  "passEmptyError": "Пароль не может быть пустым",
+  "passMismatchError": "Пароли не совпадают",
+  "doneBtn": "Готово",
+  "enterBackupPass": "Введите пароль копии",
+  "noCardsToBackup": "Нет карт для копирования",
+  "backupSuccess": "Копия успешно создана!",
+  "backupFailed": "Ошибка копирования: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "Восстановить копию?",
+  "restoreBackupWarning": "ПРЕДУПРЕЖДЕНИЕ: Восстановление перезапишет все текущие карты и транзакции. Это нельзя отменить.",
+  "continueBtn": "Продолжить",
+  "restoreSuccess": "Данные успешно восстановлены!",
+  "incorrectPasswordError": "Неверный пароль или поврежденный файл копии.",
+  "restoreFailed": "Ошибка восстановления: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "Удалить резервную копию?",
+  "deleteBackupConfirmText": "Удалить \"{name}\"? Это нельзя отменить.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "Удалить",
+  "backupDeleted": "Резервная копия удалена",
+  "failedShareBackup": "Не удалось поделиться копией: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "Не удалось выбрать файл: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "Последнее копирование",
+  "neverBackedUp": "Копия не создавалась",
+  "backupType": "Тип копирования",
+  "localBackupDesc": "Локально — сохранено только на этом устройстве",
+  "createBackupBtn": "Создать копию",
+  "importExternalBackupBtn": "Импортировать копию",
+  "savedBackupsHeader": "Сохраненные копии",
+  "noBackupsYet": "Пока нет резервных копий",
+  "tapCreateBackupDesc": "Нажмите \"Создать копию\", чтобы сохранить карты",
+  "restoreTooltip": "Восстановить",
+  "shareTooltip": "Поделиться",
+  "cardNotFound": "Карта не найдена",
+  "editCardTitle": "Редактировать карту",
+  "addCardTitle": "Добавить карту",
+  "cardTypeLabel": "Тип карты",
+  "cardColorLabel": "Цвет карты",
+  "fieldRequiredError": "Это поле обязательно",
+  "bankNameLabel": "Название банка",
+  "expiryLabel": "Срок действия (ММ/ГГ)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "Фотографии карты",
+  "frontSideLabel": "Лицевая сторона",
+  "backSideLabel": "Оборотная сторона",
+  "notesLabel": "Заметки",
+  "saveChangesBtn": "Сохранить изменения",
+  "saveCardBtn": "Сохранить карту",
+  "deleteCardBtn": "Удалить карту",
+  "takePhotoLabel": "Сделать фото",
+  "chooseGalleryLabel": "Выбрать из галереи",
+  "deleteCardPrompt": "Удалить карту?",
+  "deleteCardWarning": "Это действие нельзя отменить.",
+  "cardNumberLabel": "Номер карты",
+  "pointCardNumberLabel": "Номер бонусной карты",
+  "membershipIdLabel": "ID участника",
+  "couponCodeLabel": "Код купона",
+  "giftCardNumberLabel": "Номер подарочной карты",
+  "ticketPnrLabel": "Номер билета / PNR",
+  "numberLabel": "Номер",
+  "cardholderNameLabel": "Имя владельца карты",
+  "cardNameLabel": "Название карты",
+  "enterValidCardNumberError": "Введите действительный номер карты",
+  "cardNumberInvalidError": "Номер карты выглядит недействительным",
+  "enterMin3CharsError": "Введите минимум 3 символа",
+  "cardAlreadyExistsError": "Карта с таким номером уже сохранена",
+  "revealCvv": "Показать CVV",
+  "cardDetailsHeader": "Детали карты:",
+  "typePrefix": "Тип: ",
+  "bankPrefix": "Банк: ",
+  "cardNumberPrefix": "Номер карты: ",
+  "cardholderPrefix": "Владелец: ",
+  "expiryPrefix": "Срок: ",
+  "notesPrefix": "Заметки: ",
+  "detailsSuffix": " Детали",
+  "cardDetailsTitle": "Детали карты",
+  "hideBtn": "Скрыть",
+  "revealBtn": "Показать",
+  "editBtn": "Изменить",
+  "cardInformationHeader": "Информация о карте",
+  "cardholderLabel": "Владелец карты",
+  "nameLabel": "Имя",
+  "bankLabel": "Банк",
+  "pnrNumberLabel": "Номер PNR",
+  "venueLabel": "Место",
+  "eventDateLabel": "Дата мероприятия",
+  "seatLabel": "Место",
+  "classLabel": "Класс",
+  "discountDetailsLabel": "Детали скидки",
+  "memberIdLabel": "ID участника",
+  "tierStatusLabel": "Уровень статуса",
+  "pointsBalanceLabel": "Баланс баллов",
+  "secondaryPinLabel": "Дополнительный PIN",
+  "issueDateLabel": "Дата выдачи",
+  "documentTitleLabel": "Название документа",
+  "nfcReaderTitle": "NFC Считыватель",
+  "nfcNotAvailable": "NFC недоступен",
+  "nfcUnsupportedDesc": "Это устройство не поддерживает чтение карт NFC.",
+  "readyToScan": "Готов к сканированию",
+  "holdCardNfcPrompt": "Приложите бесконтактную карту к задней панели телефона.",
+  "scanFailed": "Ошибка сканирования",
+  "somethingWentWrong": "Что-то пошло не так.",
+  "tryAgainBtn": "Попробовать снова",
+  "cardDetected": "Карта обнаружена",
+  "unsupportedCardError": "Этот тип карты не поддерживается.",
+  "nfcReadFailedDesc": "Не удалось прочитать карту. Попробуйте снова или добавьте вручную.",
+  "nfcReadError": "Ошибка чтения: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "Не удалось начать сеанс NFC: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "Сканировать карту",
+  "noCameraError": "Камера недоступна на этом устройстве",
+  "cameraStartError": "Не удалось запустить камеру: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "Не удалось прочитать данные карты. Попробуйте при лучшем освещении.",
+  "ocrScanFailed": "Ошибка сканирования: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "Для сканирования карты требуется разрешение на доступ к камере.",
+  "openSettingsBtn": "Открыть настройки",
+  "notDetected": "Не обнаружено",
+  "scanAgainBtn": "Сканировать снова",
+  "cardPhotosDesc": "Сохраняйте фото карты для быстрого доступа. Изображения хранятся на устройстве.",
+  "addPhotoPlaceholder": "Добавить фото {label}",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "Премиум",
+  "benefitRemoveAdsTitle": "Без рекламы",
+  "benefitRemoveAdsDesc": "Никаких баннеров и межстраничной рекламы",
+  "benefitFasterTitle": "Высокая скорость",
+  "benefitFasterDesc": "Мгновенная загрузка экранов",
+  "benefitSupportTitle": "Поддержка разработки",
+  "benefitSupportDesc": "Помогите приложению развиваться дальше",
+  "benefitBadgeTitle": "Значок Премиум",
+  "benefitBadgeDesc": "Особый значок в вашем профиле",
+  "premiumHeroActive": "У вас Премиум",
+  "premiumHeroInactive": "Отключить рекламу",
+  "premiumHeroDescActive": "Спасибо за поддержку Кошелька карт",
+  "premiumHeroDescInactive": "Уберите рекламу и наслаждайтесь удобством",
+  "disablePremiumBtn": "Отключить Премиум",
+  "removeAdsBtn": "Убрать рекламу",
+  "premiumOneTimeNotice": "Разовая покупка. Мгновенно восстанавливается на этом устройстве.",
+  "noBiometricsConfigured": "На этом устройстве не настроена биометрия или блокировка экрана",
+  "cardTypeCredit": "Кредитная карта",
+  "cardTypeDebit": "Дебетовая карта",
+  "cardTypePoint": "Бонусная карта",
+  "cardTypeMembership": "Клубная карта",
+  "cardTypeCoupon": "Купон",
+  "cardTypeGift": "Подарочная карта",
+  "cardTypeEventTicket": "Билет на мероприятие",
+  "cardTypeOther": "Другое",
+  "chooseCardType": "Выберите тип карты",
+  "selectCustomColor": "Выбрать свой цвет",
+  "solidColor": "Сплошной",
+  "gradientColor": "Градиент",
+  "startColor": "Начальный",
+  "endColor": "Конечный",
+  "cardExpLabel": "СРОК",
+  "homeTab": "Главная",
+  "cardsTab": "Мои карты",
+  "profileTab": "Профиль",
+  "appTitleTypewriter": "Кошелек карт",
+  "seeAll": "Смотреть все",
+  "backupShareText": "Защищенная копирования Кошелька карт",
+  "backupFileNotFoundError": "Файл резервной копии не найден",
+  "corruptedBackupError": "Поврежденный или недействительный файл копии",
+  "invalidBackupDataError": "Файл резервной копии не содержит верных данных.",
+  "unsupportedBackupVersionError": "Неподдерживаемая версия копии: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

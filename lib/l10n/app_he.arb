@@ -1,0 +1,342 @@
+{
+  "appTitle": "אפליקציית ארנק כרטיסים",
+  "addCard": "הוסף כרטיס",
+  "hiThere": "היי, שם 👋",
+  "settingsTitle": "הגדרות",
+  "appLock": "נעילת אפליקציה",
+  "appLockSubtitle": "דרוש ביומטריה כדי לפתוח את האפליקציה",
+  "language": "שָׂפָה",
+  "backupRestore": "גיבוי ושחזור",
+  "backupRestoreSubtitle": "ייצא וייבא את הכרטיסים שלך באופן מקומי",
+  "clearAllData": "נקה את כל הנתונים",
+  "goodMorning": "בוקר טוב",
+  "goodAfternoon": "צהריים טובים",
+  "goodEvening": "ערב טוב",
+  "hiName": "היי, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "הוסף כרטיס חדש",
+  "scan": "לִסְרוֹק",
+  "scanDesc": "סרוק את פרטי הכרטיס\nבאופן מיידי",
+  "manually": "באופן ידני",
+  "manuallyDesc": "הזן פרטי כרטיס\nבאופן ידני",
+  "nfc": "NFC",
+  "nfcDesc": "הקש על כרטיס כדי להוסיף\nבאמצעות NFC",
+  "tools": "כְּלֵי עֲבוֹדָה",
+  "binChecker": "בודק BIN",
+  "binCheckerDesc": "בדוק את פרטי הכרטיס מ-BIN",
+  "cardVerify": "אימות כרטיס",
+  "cardVerifyDesc": "אימות מספר כרטיס",
+  "frequentlyAdded": "נוסף לעתים קרובות",
+  "cardsTitle": "קלפים",
+  "yourCardsManage": "הקלפים שלך כאן כדי לנהל",
+  "cardCountText": "{count, plural, =1{כרטיס אחד נשמר} other{כרטיסי {count} נשמרו}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{כרטיס אחד} other{כרטיסי {count}}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "כֹּל",
+  "noCardsYet": "עדיין אין כרטיסים",
+  "noCardsYetDesc": "עבור אל בית או הקש על סורק כדי להוסיף כרטיס",
+  "noCardsCategory": "אין כרטיסים בקטגוריה זו",
+  "tryDifferentFilter": "נסה לבחור מסנן אחר",
+  "addFirstCardStart": "הוסף את הכרטיס הראשון שלך כדי להתחיל",
+  "rateUs": "דרג אותנו",
+  "rateUsThanks": "תודה על התמיכה!",
+  "shareApp": "שתף אפליקציה",
+  "shareAppSoon": "שיתוף בקרוב",
+  "help": "עֶזרָה",
+  "supportSoon": "תמיכה בקרוב",
+  "privacyPolicy": "מדיניות פרטיות",
+  "privacyPolicySoon": "פותח את מדיניות הפרטיות",
+  "termsOfUse": "תנאי שימוש",
+  "termsOfUseSoon": "פותח את תנאי השימוש",
+  "clearDataTitle": "לנקות את כל הנתונים?",
+  "clearDataDesc": "פעולה זו מוחקת לצמיתות כל כרטיס שמור. לא ניתן לבטל זאת.",
+  "cancel": "לְבַטֵל",
+  "clearDataConfirm": "נקה נתונים",
+  "clearDataToast": "כל הנתונים נוקו",
+  "splashSubtitle": "הכרטיסים שלך, בטוחים ופשוטים",
+  "unlockPrompt": "בטל את נעילת ארנק הכרטיס כדי להמשיך",
+  "tapToUnlock": "הקש כדי לבטל את הנעילה",
+  "authFailed": "האימות נכשל",
+  "binCheckerTitle": "בודק BIN",
+  "enterMin6Digits": "הזן לפחות 6 ספרות",
+  "binNotVerified": "לא ניתן היה לאמת את ה-BIN הזה",
+  "lookupFailed": "חיפוש נכשל. בדוק את החיבור שלך ונסה שוב.",
+  "binLookupPlaceholder": "BIN / IIN חיפוש",
+  "enterDigitsLabel": "הזן את 6-8 הספרות הראשונות",
+  "checkButton": "לִבדוֹק",
+  "binResultTitle": "תוצאת BIN",
+  "cardNetwork": "רֶשֶׁת",
+  "cardType": "סוּג",
+  "cardBrandCategory": "מותג/קטגוריה",
+  "cardBank": "בַּנק",
+  "cardCountry": "מְדִינָה",
+  "cardCountryCode": "קוד מדינה",
+  "cardCurrency": "מַטְבֵּעַ",
+  "cardValid": "תָקֵף",
+  "yes": "כֵּן",
+  "no": "לֹא",
+  "cardValidatorTitle": "מאמת כרטיסים",
+  "cardValidatorPreviewName": "תוקף כרטיס",
+  "enterCardNumberLabel": "הזן מספר כרטיס",
+  "validCardNumber": "מספר כרטיס תקף",
+  "invalidCardNumber": "מספר כרטיס לא חוקי - בדוק את הספרות",
+  "backupRestoreTitle": "גיבוי ושחזור",
+  "createBackupPass": "צור סיסמת גיבוי",
+  "backupPassWarning": "חשוב: רשום את הסיסמה הזו. לא נוכל לשחזר אותו או לשחזר את הגיבוי שלך אם תשכח אותו.",
+  "enterPassLabel": "הזן סיסמה",
+  "confirmPassLabel": "אשר את הסיסמה",
+  "passEmptyError": "הסיסמה לא יכולה להיות ריקה",
+  "passMismatchError": "הסיסמאות אינן תואמות",
+  "doneBtn": "נַעֲשָׂה",
+  "enterBackupPass": "הזן סיסמת גיבוי",
+  "noCardsToBackup": "אין כרטיסים לגיבוי",
+  "backupSuccess": "הגיבוי נוצר בהצלחה!",
+  "backupFailed": "הגיבוי נכשל: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "לשחזר גיבוי?",
+  "restoreBackupWarning": "אזהרה: שחזור גיבוי יחליף את כל הכרטיסים והעסקאות הנוכחיות. לא ניתן לבטל זאת.",
+  "continueBtn": "לְהַמשִׁיך",
+  "restoreSuccess": "הגיבוי שוחזר בהצלחה!",
+  "incorrectPasswordError": "סיסמה שגויה או קובץ גיבוי פגום.",
+  "restoreFailed": "השחזור נכשל: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "למחוק גיבוי?",
+  "deleteBackupConfirmText": "למחוק את \"{name}\"? לא ניתן לבטל זאת.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "לִמְחוֹק",
+  "backupDeleted": "הגיבוי נמחק",
+  "failedShareBackup": "שיתוף הגיבוי נכשל: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "בחירת הקובץ נכשלה: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "גיבוי אחרון",
+  "neverBackedUp": "מעולם לא גיבוי",
+  "backupType": "סוג גיבוי",
+  "localBackupDesc": "מקומי - נשמר במכשיר זה בלבד",
+  "createBackupBtn": "צור גיבוי",
+  "importExternalBackupBtn": "ייבוא ​​גיבוי חיצוני",
+  "savedBackupsHeader": "גיבויים שמורים",
+  "noBackupsYet": "עדיין אין גיבויים",
+  "tapCreateBackupDesc": "הקש על \"צור גיבוי\" כדי לשמור את הכרטיסים שלך",
+  "restoreTooltip": "לְשַׁחְזֵר",
+  "shareTooltip": "לַחֲלוֹק",
+  "cardNotFound": "הכרטיס לא נמצא",
+  "editCardTitle": "ערוך כרטיס",
+  "addCardTitle": "הוסף כרטיס",
+  "cardTypeLabel": "סוג כרטיס",
+  "cardColorLabel": "צבע כרטיס",
+  "fieldRequiredError": "שדה זה חובה",
+  "bankNameLabel": "שם הבנק",
+  "expiryLabel": "תפוגה (MM/YY)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "תמונות כרטיסים",
+  "frontSideLabel": "צד קדמי",
+  "backSideLabel": "צד אחורי",
+  "notesLabel": "הערות",
+  "saveChangesBtn": "שמור שינויים",
+  "saveCardBtn": "שמור כרטיס",
+  "deleteCardBtn": "מחק כרטיס",
+  "takePhotoLabel": "צלם תמונה",
+  "chooseGalleryLabel": "בחר מתוך הגלריה",
+  "deleteCardPrompt": "למחוק כרטיס?",
+  "deleteCardWarning": "לא ניתן לבטל פעולה זו.",
+  "cardNumberLabel": "מספר כרטיס",
+  "pointCardNumberLabel": "מספר כרטיס נקודה",
+  "membershipIdLabel": "מזהה חברות",
+  "couponCodeLabel": "קוד קופון",
+  "giftCardNumberLabel": "מספר כרטיס מתנה",
+  "ticketPnrLabel": "מספר כרטיס / PNR",
+  "numberLabel": "מִספָּר",
+  "cardholderNameLabel": "שם בעל הכרטיס",
+  "cardNameLabel": "שם הכרטיס",
+  "enterValidCardNumberError": "הזן מספר כרטיס תקף",
+  "cardNumberInvalidError": "מספר הכרטיס נראה לא חוקי",
+  "enterMin3CharsError": "הזן לפחות 3 תווים",
+  "cardAlreadyExistsError": "כרטיס עם מספר זה כבר שמור",
+  "revealCvv": "חשוף CVV",
+  "cardDetailsHeader": "פרטי כרטיס:",
+  "typePrefix": "סוּג:",
+  "bankPrefix": "בַּנק:",
+  "cardNumberPrefix": "מספר כרטיס:",
+  "cardholderPrefix": "בעל כרטיס:",
+  "expiryPrefix": "תְפוּגָה:",
+  "notesPrefix": "הערות:",
+  "detailsSuffix": "פרטים",
+  "cardDetailsTitle": "פרטי כרטיס",
+  "hideBtn": "לְהַסתִיר",
+  "revealBtn": "לְגַלוֹת",
+  "editBtn": "לַעֲרוֹך",
+  "cardInformationHeader": "מידע על כרטיס",
+  "cardholderLabel": "בעל כרטיס",
+  "nameLabel": "שֵׁם",
+  "bankLabel": "בַּנק",
+  "pnrNumberLabel": "מספר PNR",
+  "venueLabel": "מָקוֹם מִפגָשׁ",
+  "eventDateLabel": "Event Date",
+  "seatLabel": "מוֹשָׁב",
+  "classLabel": "מַחלָקָה",
+  "discountDetailsLabel": "פרטי הנחה",
+  "memberIdLabel": "מזהה חבר",
+  "tierStatusLabel": "סטטוס שכבה",
+  "pointsBalanceLabel": "מאזן נקודות",
+  "secondaryPinLabel": "PIN משני",
+  "issueDateLabel": "תאריך הנפקה",
+  "documentTitleLabel": "כותרת המסמך",
+  "nfcReaderTitle": "קורא NFC",
+  "nfcNotAvailable": "NFC לא זמין",
+  "nfcUnsupportedDesc": "מכשיר זה אינו תומך בקריאת כרטיסי NFC.",
+  "readyToScan": "מוכן לסריקה",
+  "holdCardNfcPrompt": "החזק את הכרטיס ללא מגע לגב הטלפון.",
+  "scanFailed": "הסריקה נכשלה",
+  "somethingWentWrong": "משהו השתבש.",
+  "tryAgainBtn": "נסה שוב",
+  "cardDetected": "כרטיס זוהה",
+  "unsupportedCardError": "סוג כרטיס זה אינו נתמך.",
+  "nfcReadFailedDesc": "לא ניתן היה לקרוא את הכרטיס הזה. נסה שוב או הוסף אותו באופן ידני.",
+  "nfcReadError": "הקריאה נכשלה: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "לא ניתן היה להתחיל הפעלת NFC: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "scanCardTitle": "סרוק כרטיס",
+  "noCameraError": "אין מצלמה זמינה במכשיר זה",
+  "cameraStartError": "לא ניתן להפעיל את המצלמה: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "לא ניתן היה לקרוא את פרטי הכרטיס. נסה שוב עם תאורה טובה יותר.",
+  "ocrScanFailed": "הסריקה נכשלה: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "נדרשת הרשאת מצלמה כדי לסרוק כרטיס.",
+  "openSettingsBtn": "פתח את ההגדרות",
+  "notDetected": "לא זוהה",
+  "scanAgainBtn": "סרוק שוב",
+  "cardPhotosDesc": "שמור תמונה של הכרטיס שלך לעיון מהיר. התמונות נשארות במכשיר הזה.",
+  "addPhotoPlaceholder": "הוסף תמונה של {label}",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "premiumTitle": "פּרֶמיָה",
+  "benefitRemoveAdsTitle": "הסר את כל המודעות",
+  "benefitRemoveAdsDesc": "בלי באנרים, בלי מודעות ביניים, אף פעם",
+  "benefitFasterTitle": "חוויה מהירה יותר",
+  "benefitFasterDesc": "מסכים מיידיים ללא מה לטעון",
+  "benefitSupportTitle": "תמיכה בפיתוח",
+  "benefitSupportDesc": "עזור לשמור על צמיחה של האפליקציה",
+  "benefitBadgeTitle": "תג פרימיום",
+  "benefitBadgeDesc": "תודה קטנה בפרופיל שלך",
+  "premiumHeroActive": "אתה פרימיום",
+  "premiumHeroInactive": "עבור ללא פרסומות",
+  "premiumHeroDescActive": "תודה על התמיכה בארנק כרטיסים",
+  "premiumHeroDescInactive": "הסר מודעות ופתח חוויה נקייה יותר",
+  "disablePremiumBtn": "השבת את פרימיום",
+  "removeAdsBtn": "הסר מודעות",
+  "premiumOneTimeNotice": "חד פעמי. משחזר באופן מיידי במכשיר זה.",
+  "noBiometricsConfigured": "לא הוגדרה ביומטריה/נעילת מכשיר במכשיר זה",
+  "cardTypeCredit": "כרטיס אשראי",
+  "cardTypeDebit": "כרטיס חיוב",
+  "cardTypePoint": "כרטיס נקודה",
+  "cardTypeMembership": "כרטיס חבר",
+  "cardTypeCoupon": "קוּפּוֹן",
+  "cardTypeGift": "כרטיס מתנה",
+  "cardTypeEventTicket": "כרטיס לאירוע",
+  "cardTypeOther": "אַחֵר",
+  "chooseCardType": "בחר סוג כרטיס",
+  "selectCustomColor": "בחר צבע מותאם אישית",
+  "solidColor": "מוּצָק",
+  "gradientColor": "מִדרוֹן",
+  "startColor": "הַתחָלָה",
+  "endColor": "סוֹף",
+  "cardExpLabel": "EXP",
+  "homeTab": "בַּיִת",
+  "cardsTab": "הקלפים שלי",
+  "profileTab": "פּרוֹפִיל",
+  "appTitleTypewriter": "ארנק כרטיסים",
+  "seeAll": "ראה הכל",
+  "backupShareText": "גיבוי מאובטח של ארנק כרטיס",
+  "backupFileNotFoundError": "קובץ הגיבוי לא נמצא",
+  "corruptedBackupError": "קובץ גיבוי פגום או לא חוקי",
+  "invalidBackupDataError": "קובץ הגיבוי אינו מכיל נתונים חוקיים.",
+  "unsupportedBackupVersionError": "גרסת גיבוי לא נתמכת: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

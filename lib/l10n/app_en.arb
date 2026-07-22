@@ -1,0 +1,362 @@
+{
+  "appTitle": "Card Wallet App",
+  "addCard": "Add Card",
+  "hiThere": "Hi, there 👋",
+  "settingsTitle": "Settings",
+  "appLock": "App Lock",
+  "appLockSubtitle": "Require biometrics to open the app",
+  "language": "Language",
+  "backupRestore": "Backup & Restore",
+  "backupRestoreSubtitle": "Export & import your cards locally",
+  "clearAllData": "Clear All Data",
+
+  "goodMorning": "Good morning",
+  "goodAfternoon": "Good afternoon",
+  "goodEvening": "Good evening",
+  "hiName": "Hi, {name} 👋",
+  "@hiName": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "addNewCard": "Add New Card",
+  "scan": "Scan",
+  "scanDesc": "Scan card details\ninstantly",
+  "manually": "Manually",
+  "manuallyDesc": "Enter card details\nmanually",
+  "nfc": "NFC",
+  "nfcDesc": "Tap card to add\nusing NFC",
+  "tools": "Tools",
+  "binChecker": "BIN Checker",
+  "binCheckerDesc": "Check card details from BIN",
+  "cardVerify": "Card Verify",
+  "cardVerifyDesc": "Validate a card number",
+  "frequentlyAdded": "Frequently Added",
+
+  "cardsTitle": "Cards",
+  "yourCardsManage": "Your cards here to manage",
+  "cardCountText": "{count, plural, =1{1 card saved} other{{count} cards saved}}",
+  "@cardCountText": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "cardCountBadge": "{count, plural, =1{1 card} other{{count} cards}}",
+  "@cardCountBadge": {
+    "placeholders": {
+      "count": {
+        "type": "num"
+      }
+    }
+  },
+  "allFilter": "All",
+  "noCardsYet": "No cards yet",
+  "noCardsYetDesc": "Go to Home or tap scanner to add a card",
+  "noCardsCategory": "No cards in this category",
+  "tryDifferentFilter": "Try selecting a different filter",
+  "addFirstCardStart": "Add your first card to get started",
+
+  "rateUs": "Rate Us",
+  "rateUsThanks": "Thanks for the support!",
+  "shareApp": "Share App",
+  "shareAppSoon": "Sharing coming soon",
+  "help": "Help",
+  "supportSoon": "Support coming soon",
+  "privacyPolicy": "Privacy Policy",
+  "privacyPolicySoon": "Opens the privacy policy",
+  "termsOfUse": "Terms of Use",
+  "termsOfUseSoon": "Opens the terms of use",
+  "clearDataTitle": "Clear all data?",
+  "clearDataDesc": "This permanently deletes every saved card. This cannot be undone.",
+  "cancel": "Cancel",
+  "clearDataConfirm": "Clear Data",
+  "clearDataToast": "All data cleared",
+
+  "splashSubtitle": "Your cards, safe & simple",
+  "unlockPrompt": "Unlock Card Wallet to continue",
+  "tapToUnlock": "Tap to Unlock",
+  "authFailed": "Authentication failed",
+
+  "binCheckerTitle": "BIN Checker",
+  "enterMin6Digits": "Enter at least 6 digits",
+  "binNotVerified": "This BIN could not be verified",
+  "lookupFailed": "Lookup failed. Check your connection and try again.",
+  "binLookupPlaceholder": "BIN / IIN LOOKUP",
+  "enterDigitsLabel": "Enter first 6–8 digits",
+  "checkButton": "Check",
+
+  "binResultTitle": "BIN Result",
+  "cardNetwork": "Network",
+  "cardType": "Type",
+  "cardBrandCategory": "Brand/Category",
+  "cardBank": "Bank",
+  "cardCountry": "Country",
+  "cardCountryCode": "Country Code",
+  "cardCurrency": "Currency",
+  "cardValid": "Valid",
+  "yes": "Yes",
+  "no": "No",
+
+  "cardValidatorTitle": "Card Validator",
+  "cardValidatorPreviewName": "CARD VALIDATOR",
+  "enterCardNumberLabel": "Enter card number",
+  "validCardNumber": "Valid card number",
+  "invalidCardNumber": "Invalid card number — check the digits",
+
+  "backupRestoreTitle": "Backup & Restore",
+  "createBackupPass": "Create Backup Password",
+  "backupPassWarning": "IMPORTANT: Write down this password. We cannot recover it or restore your backup if you forget it.",
+  "enterPassLabel": "Enter Password",
+  "confirmPassLabel": "Confirm Password",
+  "passEmptyError": "Password cannot be empty",
+  "passMismatchError": "Passwords do not match",
+  "doneBtn": "Done",
+  "enterBackupPass": "Enter Backup Password",
+  "noCardsToBackup": "No cards to backup",
+  "backupSuccess": "Backup created successfully!",
+  "backupFailed": "Backup failed: {error}",
+  "@backupFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "restoreBackupTitle": "Restore backup?",
+  "restoreBackupWarning": "WARNING: Restoring a backup will overwrite all current cards and transactions. This cannot be undone.",
+  "continueBtn": "Continue",
+  "restoreSuccess": "Backup restored successfully!",
+  "incorrectPasswordError": "Incorrect password or corrupted backup file.",
+  "restoreFailed": "Restore failed: {error}",
+  "@restoreFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBackupTitle": "Delete backup?",
+  "deleteBackupConfirmText": "Delete \"{name}\"? This cannot be undone.",
+  "@deleteBackupConfirmText": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteBtn": "Delete",
+  "backupDeleted": "Backup deleted",
+  "failedShareBackup": "Failed to share backup: {error}",
+  "@failedShareBackup": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "failedPickFile": "Failed to pick file: {error}",
+  "@failedPickFile": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "lastBackup": "Last Backup",
+  "neverBackedUp": "Never backed up",
+  "backupType": "Backup Type",
+  "localBackupDesc": "Local — saved on this device only",
+  "createBackupBtn": "Create Backup",
+  "importExternalBackupBtn": "Import External Backup",
+  "savedBackupsHeader": "Saved Backups",
+  "noBackupsYet": "No backups yet",
+  "tapCreateBackupDesc": "Tap \"Create Backup\" to save your cards",
+  "restoreTooltip": "Restore",
+  "shareTooltip": "Share",
+
+  "cardNotFound": "Card not found",
+  "editCardTitle": "Edit Card",
+  "addCardTitle": "Add Card",
+  "cardTypeLabel": "Card type",
+  "cardColorLabel": "Card color",
+  "fieldRequiredError": "This field is required",
+  "bankNameLabel": "Bank Name",
+  "expiryLabel": "Expiry (MM/YY)",
+  "cvvLabel": "CVV",
+  "cardPhotosLabel": "Card Photos",
+  "frontSideLabel": "Front Side",
+  "backSideLabel": "Back Side",
+  "notesLabel": "Notes",
+  "saveChangesBtn": "Save Changes",
+  "saveCardBtn": "Save Card",
+  "deleteCardBtn": "Delete card",
+  "takePhotoLabel": "Take a photo",
+  "chooseGalleryLabel": "Choose from gallery",
+  "deleteCardPrompt": "Delete card?",
+  "deleteCardWarning": "This action cannot be undone.",
+
+  "cardNumberLabel": "Card Number",
+  "pointCardNumberLabel": "Point Card Number",
+  "membershipIdLabel": "Membership ID",
+  "couponCodeLabel": "Coupon Code",
+  "giftCardNumberLabel": "Gift Card Number",
+  "ticketPnrLabel": "Ticket / PNR Number",
+  "numberLabel": "Number",
+  "cardholderNameLabel": "Cardholder Name",
+  "cardNameLabel": "Card Name",
+  "enterValidCardNumberError": "Enter a valid card number",
+  "cardNumberInvalidError": "Card number looks invalid",
+  "enterMin3CharsError": "Enter at least 3 characters",
+  "cardAlreadyExistsError": "A card with this number is already saved",
+
+  "revealCvv": "Reveal CVV",
+  "cardDetailsHeader": "Card Details:",
+  "typePrefix": "Type: ",
+  "bankPrefix": "Bank: ",
+  "cardNumberPrefix": "Card Number: ",
+  "cardholderPrefix": "Cardholder: ",
+  "expiryPrefix": "Expiry: ",
+  "notesPrefix": "Notes: ",
+  "detailsSuffix": " Details",
+  "cardDetailsTitle": "Card Details",
+  "hideBtn": "Hide",
+  "revealBtn": "Reveal",
+  "editBtn": "Edit",
+  "cardInformationHeader": "Card Information",
+  "cardholderLabel": "Cardholder",
+  "nameLabel": "Name",
+  "bankLabel": "Bank",
+
+  "pnrNumberLabel": "PNR Number",
+  "venueLabel": "Venue",
+  "eventDateLabel": "Event Date",
+  "seatLabel": "Seat",
+  "classLabel": "Class",
+  "discountDetailsLabel": "Discount Details",
+  "memberIdLabel": "Member ID",
+  "tierStatusLabel": "Tier Status",
+  "pointsBalanceLabel": "Points Balance",
+  "secondaryPinLabel": "Secondary PIN",
+  "issueDateLabel": "Issue Date",
+  "documentTitleLabel": "Document Title",
+
+  "nfcReaderTitle": "NFC Reader",
+  "nfcNotAvailable": "NFC not available",
+  "nfcUnsupportedDesc": "This device does not support NFC card reading.",
+  "readyToScan": "Ready to Scan",
+  "holdCardNfcPrompt": "Hold your contactless card to the back of your phone.",
+  "scanFailed": "Scan Failed",
+  "somethingWentWrong": "Something went wrong.",
+  "tryAgainBtn": "Try Again",
+  "cardDetected": "Card Detected",
+  "unsupportedCardError": "This card type is not supported.",
+  "nfcReadFailedDesc": "Could not read this card. Try again or add it manually.",
+  "nfcReadError": "Read failed: {error}",
+  "@nfcReadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "nfcStartSessionError": "Could not start NFC session: {error}",
+  "@nfcStartSessionError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+
+  "scanCardTitle": "Scan Card",
+  "noCameraError": "No camera available on this device",
+  "cameraStartError": "Could not start camera: {error}",
+  "@cameraStartError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "ocrReadError": "Could not read card details. Try again with better lighting.",
+  "ocrScanFailed": "Scan failed: {error}",
+  "@ocrScanFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "cameraPermissionDesc": "Camera permission is required to scan a card.",
+  "openSettingsBtn": "Open Settings",
+  "notDetected": "Not detected",
+  "scanAgainBtn": "Scan Again",
+
+  "cardPhotosDesc": "Keep a photo of your card for quick reference. Images stay on this device.",
+  "addPhotoPlaceholder": "Add {label} photo",
+  "@addPhotoPlaceholder": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+
+  "premiumTitle": "Premium",
+  "benefitRemoveAdsTitle": "Remove all ads",
+  "benefitRemoveAdsDesc": "No banners, no interstitials, ever",
+  "benefitFasterTitle": "Faster experience",
+  "benefitFasterDesc": "Instant screens with nothing to load",
+  "benefitSupportTitle": "Support development",
+  "benefitSupportDesc": "Help keep the app growing",
+  "benefitBadgeTitle": "Premium badge",
+  "benefitBadgeDesc": "A little thank-you on your profile",
+  "premiumHeroActive": "You're Premium",
+  "premiumHeroInactive": "Go Ad-Free",
+  "premiumHeroDescActive": "Thanks for supporting Card Wallet",
+  "premiumHeroDescInactive": "Remove ads and unlock a cleaner experience",
+  "disablePremiumBtn": "Disable Premium",
+  "removeAdsBtn": "Remove Ads",
+  "premiumOneTimeNotice": "One-time. Restores instantly on this device.",
+
+  "noBiometricsConfigured": "No biometrics/device lock configured on this device",
+
+  "cardTypeCredit": "Credit Card",
+  "cardTypeDebit": "Debit Card",
+  "cardTypePoint": "Point Card",
+  "cardTypeMembership": "Membership Card",
+  "cardTypeCoupon": "Coupon",
+  "cardTypeGift": "Gift Card",
+  "cardTypeEventTicket": "Event Ticket",
+  "cardTypeOther": "Other",
+  "chooseCardType": "Choose card type",
+  "selectCustomColor": "Select Custom Color",
+  "solidColor": "Solid",
+  "gradientColor": "Gradient",
+  "startColor": "Start",
+  "endColor": "End",
+  "cardExpLabel": "EXP",
+  "homeTab": "Home",
+  "cardsTab": "My Cards",
+  "profileTab": "Profile",
+
+  "appTitleTypewriter": "Card Wallet",
+  "seeAll": "See All",
+  "backupShareText": "Card Wallet Secure Backup",
+
+  "backupFileNotFoundError": "Backup file not found",
+  "corruptedBackupError": "Corrupted or invalid backup file",
+  "invalidBackupDataError": "Backup file does not contain valid data.",
+  "unsupportedBackupVersionError": "Unsupported backup version: {version}",
+  "@unsupportedBackupVersionError": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}
