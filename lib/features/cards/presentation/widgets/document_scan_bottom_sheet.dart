@@ -89,6 +89,7 @@ class _DocumentScanBottomSheetState extends State<DocumentScanBottomSheet> {
   @override
   Widget build(BuildContext context) {
     final c = context.colors;
+    final isDark = c.isDark;
     final res = _currentResult;
     final hasFields = res.hasAnything;
 
@@ -158,7 +159,7 @@ class _DocumentScanBottomSheetState extends State<DocumentScanBottomSheet> {
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        '${res.detectedFieldCount} Fields Detected by AI Scanner',
+                        '${res.detectedFieldCount} Fields Auto-Detected',
                         style: TextStyle(
                           color: c.textSecondary,
                           fontSize: 13,
@@ -179,43 +180,72 @@ class _DocumentScanBottomSheetState extends State<DocumentScanBottomSheet> {
             ),
             const SizedBox(height: 16),
 
-            // AI Category & Confidence Banner
+            // Card Type & Category Banner
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               decoration: BoxDecoration(
-                color: c.primary.withValues(alpha: 0.08),
-                borderRadius: BorderRadius.circular(14),
-                border: Border.all(color: c.primary.withValues(alpha: 0.2)),
+                color: isDark
+                    ? Colors.white.withValues(alpha: 0.05)
+                    : Colors.black.withValues(alpha: 0.04),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(
+                  color: isDark
+                      ? Colors.white.withValues(alpha: 0.08)
+                      : Colors.black.withValues(alpha: 0.06),
+                ),
               ),
               child: Row(
                 children: [
-                  Icon(res.detectedType.icon, color: c.primary, size: 20),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Text(
-                      'AI Detected: ${res.detectedType.getLocalizedLabel(context)}',
-                      style: TextStyle(
-                        color: c.primary,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    width: 36,
+                    height: 36,
                     decoration: BoxDecoration(
-                      color: c.primary.withValues(alpha: 0.15),
-                      borderRadius: BorderRadius.circular(8),
+                      color: c.primary.withValues(alpha: isDark ? 0.20 : 0.12),
+                      borderRadius: BorderRadius.circular(10),
                     ),
-                    child: Text(
-                      '${res.confidence.toInt()}% AI Confidence',
-                      style: TextStyle(
-                        color: c.primary,
-                        fontSize: 11,
-                        fontWeight: FontWeight.w800,
-                      ),
+                    child: Icon(res.detectedType.icon, color: c.primary, size: 19),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Detected Card Type',
+                          style: TextStyle(
+                            color: c.textSecondary,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        const SizedBox(height: 1),
+                        Text(
+                          res.detectedType.getLocalizedLabel(context),
+                          style: TextStyle(
+                            color: c.textPrimary,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
+                  if (res.cardBrand != null && res.cardBrand!.isNotEmpty)
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                      decoration: BoxDecoration(
+                        color: c.primary.withValues(alpha: isDark ? 0.18 : 0.10),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Text(
+                        res.cardBrand!,
+                        style: TextStyle(
+                          color: c.primary,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),

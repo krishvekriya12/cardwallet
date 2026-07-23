@@ -210,7 +210,8 @@ class _HomeCardCarouselState extends State<HomeCardCarousel>
 
     final cardWidth = width - 40; // horizontal padding: 20 * 2
     final cardHeight = cardWidth / 1.586;
-    final carouselHeight = cardHeight + 40.0; // peak offset of the back-most card is 40.0
+    final double peakOffset = visible.length <= 1 ? 0.0 : (visible.length == 2 ? 22.0 : 40.0);
+    final carouselHeight = cardHeight + peakOffset;
 
     return SizedBox(
       height: carouselHeight,

@@ -51,10 +51,14 @@ class _CardScanScreenState extends State<CardScanScreen> {
       final cameraStatus = await Permission.camera.request();
       if (!cameraStatus.isGranted) {
         if (!mounted) return;
-        setState(() {
-          _processing = false;
-          _statusText = 'Camera permission required';
-        });
+        if (context.canPop()) {
+          context.pop();
+        } else {
+          setState(() {
+            _processing = false;
+            _statusText = 'Camera permission required';
+          });
+        }
         return;
       }
 
@@ -66,16 +70,24 @@ class _CardScanScreenState extends State<CardScanScreen> {
         return;
       }
 
-      setState(() {
-        _processing = false;
-        _statusText = 'Scan cancelled or no photo captured';
-      });
-    } catch (e) {
-      if (mounted) {
+      if (context.canPop()) {
+        context.pop();
+      } else {
         setState(() {
           _processing = false;
-          _statusText = 'Scanner error: $e';
+          _statusText = 'Scan cancelled or no photo captured';
         });
+      }
+    } catch (e) {
+      if (mounted) {
+        if (context.canPop()) {
+          context.pop();
+        } else {
+          setState(() {
+            _processing = false;
+            _statusText = 'Scanner error: $e';
+          });
+        }
       }
     }
   }
@@ -94,16 +106,24 @@ class _CardScanScreenState extends State<CardScanScreen> {
         await _processPaths([file.path]);
         return;
       }
-      setState(() {
-        _processing = false;
-        _statusText = null;
-      });
-    } catch (e) {
-      if (mounted) {
+      if (context.canPop()) {
+        context.pop();
+      } else {
         setState(() {
           _processing = false;
-          _statusText = 'Gallery error: $e';
+          _statusText = null;
         });
+      }
+    } catch (e) {
+      if (mounted) {
+        if (context.canPop()) {
+          context.pop();
+        } else {
+          setState(() {
+            _processing = false;
+            _statusText = 'Gallery error: $e';
+          });
+        }
       }
     }
   }
@@ -173,10 +193,14 @@ class _CardScanScreenState extends State<CardScanScreen> {
           ),
         );
       } else if (mounted) {
-        setState(() {
-          _processing = false;
-          _statusText = 'Scan review cancelled';
-        });
+        if (context.canPop()) {
+          context.pop();
+        } else {
+          setState(() {
+            _processing = false;
+            _statusText = 'Scan review cancelled';
+          });
+        }
       }
     } catch (e) {
       if (mounted) {

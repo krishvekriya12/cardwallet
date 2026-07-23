@@ -7,6 +7,7 @@ class QuickActionCard extends StatelessWidget {
   final IconData icon;
   final String title;
   final String description;
+  final String tag;
   final VoidCallback onTap;
   final Color accentColor;
 
@@ -15,6 +16,7 @@ class QuickActionCard extends StatelessWidget {
     required this.icon,
     required this.title,
     required this.description,
+    required this.tag,
     required this.onTap,
     required this.accentColor,
   });
@@ -24,83 +26,87 @@ class QuickActionCard extends StatelessWidget {
     final c = context.colors;
     final isDark = c.isDark;
     final accent = accentColor;
+    final cardBg = isDark ? c.surface : Colors.white;
 
     return AnimatedPressScale(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 14.0),
+        padding: const EdgeInsets.all(12.0),
         decoration: BoxDecoration(
-          color: isDark ? c.surface : Colors.white,
+          color: cardBg,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
             color: isDark
                 ? Colors.white.withValues(alpha: 0.08)
-                : Colors.black.withValues(alpha: 0.07),
+                : Colors.black.withValues(alpha: 0.06),
             width: 1.0,
           ),
           boxShadow: [
             BoxShadow(
-              color: c.shadow.withValues(alpha: isDark ? 0.08 : 0.04),
-              blurRadius: 16,
-              spreadRadius: -2,
-              offset: const Offset(0, 6),
-            ),
-            BoxShadow(
-              color: isDark
-                  ? Colors.black.withValues(alpha: 0.12)
-                  : Colors.black.withValues(alpha: 0.03),
-              blurRadius: 6,
-              offset: const Offset(0, 2),
+              color: c.shadow.withValues(alpha: isDark ? 0.08 : 0.03),
+              blurRadius: 10,
+              offset: const Offset(0, 3),
             ),
           ],
         ),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            // Rounded icon container on top left
-            Container(
-              width: 42,
-              height: 42,
-              decoration: BoxDecoration(
-                color: isDark
-                    ? accent.withValues(alpha: 0.15)
-                    : accent.withValues(alpha: 0.12),
-                shape: BoxShape.circle,
-              ),
-              child: Icon(icon, size: 21, color: accent),
+            // Top Row: Icon Container & Corner Micro Tag
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  width: 36,
+                  height: 36,
+                  decoration: BoxDecoration(
+                    color: accent.withValues(alpha: isDark ? 0.18 : 0.10),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Icon(icon, size: 19, color: accent),
+                ),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
+                  decoration: BoxDecoration(
+                    color: accent.withValues(alpha: isDark ? 0.14 : 0.08),
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                  child: Text(
+                    tag.toUpperCase(),
+                    style: TextStyle(
+                      fontSize: 8.5,
+                      fontWeight: FontWeight.w800,
+                      color: accent,
+                      letterSpacing: 0.5,
+                    ),
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 12),
 
-            // Title Text below icon (left aligned)
+            // Title & Description
             Text(
               title,
-              textAlign: TextAlign.start,
-              maxLines: 2,
+              maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
                 fontSize: 13.5,
                 fontWeight: FontWeight.w700,
-                letterSpacing: 0.1,
-                color: isDark
-                    ? Colors.white.withValues(alpha: 0.95)
-                    : Colors.black,
+                letterSpacing: -0.2,
+                color: c.textPrimary,
               ),
             ),
-            const SizedBox(height: 4),
-
-            // Description Text below title (left aligned)
+            const SizedBox(height: 2),
             Text(
               description,
-              textAlign: TextAlign.start,
-              maxLines: 3,
+              maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
-                fontSize: 11.0,
-                color: isDark
-                    ? Colors.white.withValues(alpha: 0.6)
-                    : c.textSecondary,
-                height: 1.2,
+                fontSize: 10.5,
+                fontWeight: FontWeight.w500,
+                color: c.textSecondary,
               ),
             ),
           ],

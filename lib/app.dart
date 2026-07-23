@@ -14,7 +14,6 @@ class CardWalletApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final activeLocale = ref.watch(localeProvider);
 
-    // RTL languages: Arabic and Hebrew — all other languages are LTR
     const rtlLocales = {'ar', 'he'};
     final textDir = rtlLocales.contains(activeLocale)
         ? TextDirection.rtl
@@ -30,7 +29,6 @@ class CardWalletApp extends ConsumerWidget {
       themeMode: ThemeMode.light,
       routerConfig: appRouter,
       builder: (context, child) => Directionality(
-        // Apply correct direction globally across ALL screens
         textDirection: textDir,
         child: AnimatedTheme(
           data: Theme.of(context),

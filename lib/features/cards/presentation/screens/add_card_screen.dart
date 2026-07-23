@@ -511,13 +511,6 @@ class _AddCardScreenState extends ConsumerState<AddCardScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_isEditing ? l10n.editCardTitle : l10n.addCardTitle),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.document_scanner_rounded, color: Colors.amber),
-            onPressed: _scanCardInPlace,
-            tooltip: 'Scan Card with AI Scanner',
-          ),
-        ],
       ),
       body: SafeArea(
         child: Form(
@@ -534,18 +527,7 @@ class _AddCardScreenState extends ConsumerState<AddCardScreen> {
                 expiry: _expiryController.text,
                 bankName: _bankController.text,
               ),
-              const SizedBox(height: 16),
-              OutlinedButton.icon(
-                onPressed: _scanCardInPlace,
-                icon: const Icon(Icons.document_scanner_rounded, color: Colors.amber, size: 20),
-                label: const Text('Scan Card Details with AI Camera', style: TextStyle(fontWeight: FontWeight.bold)),
-                style: OutlinedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-                  side: BorderSide(color: c.primary),
-                ),
-              ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 20),
               _label(context, l10n.cardTypeLabel),
               const SizedBox(height: 8),
               GestureDetector(
