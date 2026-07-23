@@ -1,9 +1,7 @@
-// ignore_for_file: avoid_print
-import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
+   import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 import '../../../core/utils/card_utils.dart';
 import '../domain/entities/card_type.dart';
 
-// ─── Result Model ────────────────────────────────────────────────────────────
 
 class CardOcrResult {
   final String? number;
@@ -30,10 +28,10 @@ class CardOcrResult {
 
   bool get hasAnything =>
       number != null ||
-      expiry != null ||
-      holderName != null ||
-      bankName != null ||
-      cardBrand != null;
+          expiry != null ||
+          holderName != null ||
+          bankName != null ||
+          cardBrand != null;
 
   int get detectedFieldCount {
     int count = 0;
@@ -47,20 +45,17 @@ class CardOcrResult {
   }
 }
 
-// ─── Parser Engine ───────────────────────────────────────────────────────────
 
 class CardOcrParser {
   CardOcrParser._();
 
-  /// Primary entry point using ML Kit's RecognizedText
   static CardOcrResult parseRecognizedText(
-    RecognizedText recognizedText, {
-    String? imagePath,
-  }) {
+      RecognizedText recognizedText, {
+        String? imagePath,
+      }) {
     final rawText = recognizedText.text;
     final blocks = recognizedText.blocks;
 
-    // Collect all lines from blocks
     final lines = <String>[];
     for (final b in blocks) {
       for (final l in b.lines) {
@@ -71,30 +66,31 @@ class CardOcrParser {
 
     final upperText = rawText.toUpperCase();
 
-    // 1. Detect Card Type
     final detectedType = _classifyCardType(upperText);
 
-    // 2. Extract Card Number
-    final number = _extractCardNumber(lines, rawText);
+    final numberExtraction = _extractCardNumberWithSource(lines, rawText);
+    final number = numberExtraction.$1;
+    final numberLineIndex = numberExtraction.$2;
+    final numberDigits = number?.replaceAll(RegExp(r'\D'), '');
 
-    // 3. Extract Expiry Date
-    final expiry = _extractExpiryDate(lines, rawText);
+    final expiry = _extractExpiryDate(lines, rawText, numberDigits);
 
-    // 4. Extract CVV
     final cvv = _extractCvv(lines, rawText);
 
-    // 5. Detect Card Brand/Network
     final brand = _detectBrand(upperText, number);
 
-    // 6. Extract Bank Name
     final bankName = _extractBankName(lines, upperText);
 
-    // 7. Extract Cardholder Name
-    final holderName = _extractHolderName(lines, rawText, number, expiry, bankName);
+    final holderName = _extractHolderName(
+      lines,
+      numberLineIndex,
+      bankName,
+    );
 
-    // Calculate confidence score
-    double conf = 30.0;
-    if (number != null && number.isNotEmpty) conf += 35.0;
+    double conf = 20.0;
+    if (number != null && number.isNotEmpty) {
+      conf += CardUtils.luhnCheck(numberDigits ?? '') ? 40.0 : 15.0;
+    }
     if (expiry != null && expiry.isNotEmpty) conf += 15.0;
     if (holderName != null && holderName.isNotEmpty) conf += 12.0;
     if (bankName != null && bankName.isNotEmpty) conf += 5.0;
@@ -114,7 +110,6 @@ class CardOcrParser {
     );
   }
 
-  /// Fallback plain text parser
   static CardOcrResult parse(String rawText, {String? imagePath}) {
     return parseRecognizedText(
       RecognizedText(text: rawText, blocks: []),
@@ -122,9 +117,6 @@ class CardOcrParser {
     );
   }
 
-  // ──────────────────────────────────────────────────────────────────────────
-  // 1. CARD TYPE CLASSIFIER
-  // ──────────────────────────────────────────────────────────────────────────
 
   static CardType _classifyCardType(String upper) {
     if (_containsAny(upper, ['GIFT CARD', 'GIFTCARD', 'GIFT CERTIFICATE', 'CLAIM CODE', 'AMAZON GIFT', 'APPLE GIFT', 'GOOGLE PLAY GIFT'])) {
@@ -156,10 +148,6 @@ class CardOcrParser {
     return false;
   }
 
-  // ──────────────────────────────────────────────────────────────────────────
-  // 2. CARD NUMBER EXTRACTION
-  // ──────────────────────────────────────────────────────────────────────────
-
   static String _fixOcrDigits(String text) {
     final sb = StringBuffer();
     for (int i = 0; i < text.length; i++) {
@@ -179,67 +167,73 @@ class CardOcrParser {
     return sb.toString();
   }
 
-  static String? _extractCardNumber(List<String> lines, String rawText) {
-    // Strategy 1: Test full raw text with all non-digits stripped (handles multi-line card numbers)
-    final fixedRawText = _fixOcrDigits(rawText);
-    final allDigitsOnly = fixedRawText.replaceAll(RegExp(r'\D'), '');
-
-    // Search for 13 to 19 digit windows in allDigitsOnly
-    for (int len = 16; len >= 13; len--) {
-      for (int i = 0; i <= allDigitsOnly.length - len; i++) {
-        final sub = allDigitsOnly.substring(i, i + len);
-        if (CardUtils.luhnCheck(sub)) {
-          return _formatCardNumber(sub);
+  static (String?, int) _extractCardNumberWithSource(List<String> lines, String rawText) {
+    for (var i = 0; i < lines.length; i++) {
+      final fixed = _fixOcrDigits(lines[i]);
+      final looksGrouped = RegExp(r'^\d{4}[\s-]\d{3,6}[\s-]\d{2,6}([\s-]\d{1,6})?$').hasMatch(fixed.trim());
+      final digitsOnly = fixed.replaceAll(RegExp(r'\D'), '');
+      if (looksGrouped && digitsOnly.length >= 13 && digitsOnly.length <= 19) {
+        if (CardUtils.luhnCheck(digitsOnly)) {
+          return (_formatCardNumber(digitsOnly), i);
         }
       }
     }
 
-    // Strategy 2: Test line by line
-    for (final line in lines) {
-      final fixed = _fixOcrDigits(line);
+    for (var i = 0; i < lines.length; i++) {
+      final fixed = _fixOcrDigits(lines[i]);
       final digitsOnly = fixed.replaceAll(RegExp(r'\D'), '');
       if (digitsOnly.length >= 13 && digitsOnly.length <= 19) {
         if (CardUtils.luhnCheck(digitsOnly)) {
-          return _formatCardNumber(digitsOnly);
+          return (_formatCardNumber(digitsOnly), i);
         }
       }
     }
 
-    // Strategy 3: Group windows across lines
     final digitGroups = <String>[];
-    for (final line in lines) {
-      final fixed = _fixOcrDigits(line);
+    final digitGroupLineIndex = <int>[];
+    for (var i = 0; i < lines.length; i++) {
+      final fixed = _fixOcrDigits(lines[i]);
       final groups = RegExp(r'\b\d{3,6}\b').allMatches(fixed).map((m) => m.group(0)!).toList();
-      digitGroups.addAll(groups);
+      for (final g in groups) {
+        digitGroups.add(g);
+        digitGroupLineIndex.add(i);
+      }
     }
-    for (int i = 0; i < digitGroups.length; i++) {
-      for (int window = 2; window <= 5; window++) {
+    for (var i = 0; i < digitGroups.length; i++) {
+      for (var window = 2; window <= 5; window++) {
         if (i + window <= digitGroups.length) {
           final joined = digitGroups.sublist(i, i + window).join('');
           if (joined.length >= 13 && joined.length <= 19) {
             if (CardUtils.luhnCheck(joined)) {
-              return _formatCardNumber(joined);
+              return (_formatCardNumber(joined), digitGroupLineIndex[i]);
             }
           }
         }
       }
     }
 
-    // Strategy 4 (Fallback): Return first 13-19 digit run even if Luhn fails due to bad OCR reflection
-    if (allDigitsOnly.length >= 13) {
-      final fallbackLen = allDigitsOnly.length >= 16 ? 16 : allDigitsOnly.length.clamp(13, 19);
-      return _formatCardNumber(allDigitsOnly.substring(0, fallbackLen));
+
+    final fixedRawText = _fixOcrDigits(rawText);
+    final allDigitsOnly = fixedRawText.replaceAll(RegExp(r'\D'), '');
+    final candidates = <String>{};
+    for (int len = 19; len >= 13; len--) {
+      for (int i = 0; i <= allDigitsOnly.length - len; i++) {
+        final sub = allDigitsOnly.substring(i, i + len);
+        if (CardUtils.luhnCheck(sub)) candidates.add(sub);
+      }
+      if (candidates.isNotEmpty) break;
+    }
+    if (candidates.length == 1) {
+      return (_formatCardNumber(candidates.first), -1);
     }
 
-    return null;
+    return (null, -1);
   }
 
   static String _formatCardNumber(String digits) {
     if (digits.length == 15) {
-      // AMEX 4-6-5 format
       return '${digits.substring(0, 4)} ${digits.substring(4, 10)} ${digits.substring(10)}';
     }
-    // Standard 4-4-4-4 format
     final sb = StringBuffer();
     for (int i = 0; i < digits.length; i++) {
       if (i > 0 && i % 4 == 0) sb.write(' ');
@@ -248,13 +242,16 @@ class CardOcrParser {
     return sb.toString().trim();
   }
 
-  // ──────────────────────────────────────────────────────────────────────────
-  // 3. EXPIRY DATE EXTRACTION
-  // ──────────────────────────────────────────────────────────────────────────
-
-  static String? _extractExpiryDate(List<String> lines, String rawText) {
+  static String? _extractExpiryDate(List<String> lines, String rawText, String? cardNumberDigits) {
     final cleanText = rawText.replaceAll('\n', ' ');
     for (final line in lines) {
+      final lineDigits = line.replaceAll(RegExp(r'\D'), '');
+      if (cardNumberDigits != null &&
+          lineDigits.isNotEmpty &&
+          cardNumberDigits.contains(lineDigits) &&
+          lineDigits.length >= 8) {
+        continue;
+      }
       final res = _parseExpiryFromText(line);
       if (res != null) return res;
     }
@@ -262,7 +259,6 @@ class CardOcrParser {
   }
 
   static String? _parseExpiryFromText(String text) {
-    // Pattern 1: Standard MM/YY, MM/YYYY, MM-YY, MM.YY, MM\YY with optional labels
     final p1 = RegExp(
       r'(?:VALID|GOOD|THRU|THROUGH|EXPIRES|EXPIRATION|EXP|MONTH/YEAR|UNTIL)?'
       r'\s*[:\-]?\s*\b(0?[1-9]|1[0-2])\s*[\/\.\-\\:\s]\s*([2-4]\d|20[2-4]\d)\b',
@@ -278,7 +274,6 @@ class CardOcrParser {
       }
     }
 
-    // Pattern 2: Compact 4 digits after EXP/THRU label e.g., "EXP 0528" -> "05/28"
     final p2 = RegExp(
       r'(?:VALID|GOOD|THRU|EXPIRES|EXP)\s*[:\-]?\s*\b(0[1-9]|1[0-2])([2-4]\d)\b',
       caseSensitive: false,
@@ -291,10 +286,6 @@ class CardOcrParser {
     return null;
   }
 
-  // ──────────────────────────────────────────────────────────────────────────
-  // 4. CVV EXTRACTION
-  // ──────────────────────────────────────────────────────────────────────────
-
   static String? _extractCvv(List<String> lines, String rawText) {
     final p1 = RegExp(
       r'(?:CVV2?|CVC2?|CID|CSC|SECURITY\s*CODE)\s*[:\-]?\s*(\d{3,4})\b',
@@ -305,7 +296,7 @@ class CardOcrParser {
 
     for (final line in lines) {
       final upper = line.toUpperCase();
-      if (upper.contains('CVV') || upper.contains('CVC') || upper.contains('SECURITY') || upper.contains('SIGNATURE')) {
+      if (upper.contains('CVV') || upper.contains('CVC') || upper.contains('SECURITY')) {
         final m = RegExp(r'\b\d{3,4}\b').firstMatch(line);
         if (m != null) return m.group(0);
       }
@@ -313,10 +304,6 @@ class CardOcrParser {
 
     return null;
   }
-
-  // ──────────────────────────────────────────────────────────────────────────
-  // 5. BRAND / NETWORK DETECTION
-  // ──────────────────────────────────────────────────────────────────────────
 
   static String? _detectBrand(String upper, String? cardNumber) {
     if (upper.contains('AMERICAN EXPRESS') || upper.contains('AMEX')) return 'American Express';
@@ -343,10 +330,6 @@ class CardOcrParser {
     }
     return null;
   }
-
-  // ──────────────────────────────────────────────────────────────────────────
-  // 6. BANK NAME EXTRACTION
-  // ──────────────────────────────────────────────────────────────────────────
 
   static const Map<String, String> _bankDictionary = {
     'STATE BANK OF INDIA': 'State Bank of India',
@@ -401,12 +384,17 @@ class CardOcrParser {
     'MONZO': 'Monzo',
     'N26': 'N26',
     'SANTANDER': 'Santander',
+    'DBS BANK': 'DBS Bank',
+    'DBS': 'DBS Bank',
+    'DEUTSCHE BANK': 'Deutsche Bank',
+    'ING': 'ING',
   };
 
   static String? _extractBankName(List<String> lines, String upperText) {
     final sortedKeys = _bankDictionary.keys.toList()..sort((a, b) => b.length.compareTo(a.length));
     for (final key in sortedKeys) {
-      if (upperText.contains(key)) {
+      final pattern = RegExp(r'(^|[^A-Z])' + RegExp.escape(key) + r'([^A-Z]|$)');
+      if (pattern.hasMatch(upperText)) {
         return _bankDictionary[key];
       }
     }
@@ -424,10 +412,6 @@ class CardOcrParser {
     return null;
   }
 
-  // ──────────────────────────────────────────────────────────────────────────
-  // 7. CARDHOLDER NAME EXTRACTION
-  // ──────────────────────────────────────────────────────────────────────────
-
   static const Set<String> _blacklistWords = {
     'VISA', 'MASTERCARD', 'AMEX', 'AMERICAN', 'EXPRESS', 'DISCOVER', 'RUPAY',
     'MAESTRO', 'DINERS', 'CLUB', 'UNIONPAY', 'JCB', 'ELECTRON',
@@ -443,37 +427,60 @@ class CardOcrParser {
     'ACCOUNT', 'NUMBER', 'NO', 'CUSTOMER', 'SERVICE', 'PHONE', 'CALL',
     'NOT', 'TRANSFERABLE', 'WELCOME', 'INDUSIND', 'RBL', 'FEDERAL', 'CANARA',
     'UNION', 'BANDHAN', 'IDFC', 'STANDARD', 'CHARTERED', 'WELLS', 'FARGO', 'CAPITAL',
+    'DBS', 'DEUTSCHE', 'SANTANDER', 'REVOLUT', 'MONZO',
   };
 
-  static String? _extractHolderName(
-    List<String> lines,
-    String rawText,
-    String? cardNumber,
-    String? expiry,
-    String? bankName,
-  ) {
-    for (final line in lines) {
-      final trimmed = line.trim();
-      // Remove digits and symbols (like dates 05/21, account numbers, etc) so person name remains
-      final lineNoDigits = trimmed.replaceAll(RegExp(r'[\d\/\.\-\:\,\#]'), ' ');
-      final cleanLine = lineNoDigits.replaceAll(RegExp(r"[^A-Za-z\s]"), ' ').replaceAll(RegExp(r'\s+'), ' ').trim();
+  static String? _candidateNameFrom(String line) {
+    final trimmed = line.trim();
+    if (RegExp(r'\d').hasMatch(trimmed)) return null;
 
-      if (cleanLine.length < 3 || cleanLine.length > 36) continue;
+    final cleanLine = trimmed
+        .replaceAll(RegExp(r'[\/\.\-\:\,\#]'), ' ')
+        .replaceAll(RegExp(r"[^A-Za-z\s]"), ' ')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
 
-      final words = cleanLine.toUpperCase().split(' ').where((w) => w.isNotEmpty).toList();
+    if (cleanLine.length < 3 || cleanLine.length > 36) return null;
 
-      // Filter out blacklisted keywords
-      final validNameWords = <String>[];
-      for (final w in words) {
-        if (!_blacklistWords.contains(w) && (w.length >= 2 || w == 'A' || w == 'I')) {
-          validNameWords.add(w);
-        }
+    final words = cleanLine.toUpperCase().split(' ').where((w) => w.isNotEmpty).toList();
+    final validNameWords = <String>[];
+    for (final w in words) {
+      if (!_blacklistWords.contains(w) && (w.length >= 2 || w == 'A' || w == 'I')) {
+        validNameWords.add(w);
       }
+    }
 
-      // Cardholder name must have 2 to 4 valid name words
-      if (validNameWords.length >= 2 && validNameWords.length <= 4) {
-        final formattedName = validNameWords.map((w) => w[0] + w.substring(1).toLowerCase()).join(' ');
-        return formattedName;
+    if (validNameWords.length < 2 || validNameWords.length > 4) return null;
+    if (validNameWords.length < words.length - 1) return null;
+
+    return validNameWords.map((w) => w[0] + w.substring(1).toLowerCase()).join(' ');
+  }
+
+  static String? _extractHolderName(
+      List<String> lines,
+      int numberLineIndex,
+      String? bankName,
+      ) {
+    final ordered = <int>[];
+    if (numberLineIndex >= 0) {
+      for (var offset = 1; offset <= 3; offset++) {
+        final below = numberLineIndex + offset;
+        if (below < lines.length) ordered.add(below);
+      }
+      for (var offset = 1; offset <= 2; offset++) {
+        final above = numberLineIndex - offset;
+        if (above >= 0) ordered.add(above);
+      }
+    }
+    for (var i = 0; i < lines.length; i++) {
+      if (!ordered.contains(i)) ordered.add(i);
+    }
+
+    for (final idx in ordered) {
+      final name = _candidateNameFrom(lines[idx]);
+      if (name != null &&
+          (bankName == null || !name.toUpperCase().contains(bankName.toUpperCase()))) {
+        return name;
       }
     }
 
