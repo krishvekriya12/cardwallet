@@ -27,7 +27,6 @@ void main() async {
     ),
   );
 
-
   final results = await Future.wait([
     ThemePreference.getMode(),
     LockPreference.isEnabled(),
@@ -38,7 +37,6 @@ void main() async {
   final lockEnabled = results[1] as bool;
   final savedLocale = results[2] as String;
   final isPremium = results[3] as bool;
-
   await AdService.init(isPremium: isPremium);
 
   final container = ProviderContainer(

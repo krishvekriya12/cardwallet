@@ -11,7 +11,7 @@ import '../../../../core/backup/backup_service.dart';
 import '../../../../core/theme/app_palette.dart';
 import '../../../cards/domain/entities/card_entity.dart';
 import '../../../cards/presentation/providers/card_providers.dart';
-import 'package:cardwallet/features/transactions/presentation/providers/transaction_providers.dart';
+import '../../../transactions/presentation/providers/transaction_providers.dart';
 import '../../../../l10n/genrated/app_localizations.dart';
 
 class BackupScreen extends ConsumerStatefulWidget {

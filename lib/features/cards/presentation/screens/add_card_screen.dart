@@ -511,6 +511,13 @@ class _AddCardScreenState extends ConsumerState<AddCardScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_isEditing ? l10n.editCardTitle : l10n.addCardTitle),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.qr_code_scanner_rounded),
+            tooltip: 'Scan Card',
+            onPressed: _scanCardInPlace,
+          ),
+        ],
       ),
       body: SafeArea(
         child: Form(

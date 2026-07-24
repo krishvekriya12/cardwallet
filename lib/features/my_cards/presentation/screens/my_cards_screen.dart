@@ -25,20 +25,23 @@ class _MyCardsScreenState extends ConsumerState<MyCardsScreen> {
   Widget build(BuildContext context) {
     final c = context.colors;
     final asyncCards = ref.watch(allCardsProvider);
+    final cards = asyncCards.unwrapPrevious().value;
 
     return Scaffold(
       backgroundColor: c.page,
-      body: asyncCards.when(
-        data: (cards) => _buildContent(context, cards),
-        loading: () => Center(
-          child: ExpressiveLoadingIndicator(
-            color: c.primary,
-            constraints: const BoxConstraints.tightFor(width: 36, height: 36),
-          ),
-        ),
-        error: (e, st) =>
-            Center(child: Text('$e', style: TextStyle(color: c.error))),
-      ),
+      body: cards != null
+          ? _buildContent(context, cards)
+          : asyncCards.when(
+              data: (cards) => _buildContent(context, cards),
+              loading: () => Center(
+                child: ExpressiveLoadingIndicator(
+                  color: c.primary,
+                  constraints: const BoxConstraints.tightFor(width: 36, height: 36),
+                ),
+              ),
+              error: (e, st) =>
+                  Center(child: Text('$e', style: TextStyle(color: c.error))),
+            ),
     );
   }
 

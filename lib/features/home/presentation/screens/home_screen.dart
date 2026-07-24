@@ -14,7 +14,6 @@ import '../../../../l10n/genrated/app_localizations.dart';
 import '../../domain/frequent_brand.dart';
 import '../widgets/brand_grid_item.dart';
 import '../widgets/home_card_carousel.dart';
-import '../widgets/quick_action_card.dart';
 
 void _addManually(BuildContext context) {
   context.push(
@@ -29,16 +28,35 @@ String _greeting(BuildContext context) {
   return l10n.goodEvening;
 }
 
-class HomeScreen extends ConsumerWidget {
+class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends ConsumerState<HomeScreen> {
+  bool _hasAnimated = false;
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(milliseconds: 600), () {
+      if (mounted) {
+        setState(() => _hasAnimated = true);
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final c = context.colors;
     final cardsAsync = ref.watch(allCardsProvider);
     final profile = ref.watch(profileProvider);
-    final cardCount = cardsAsync.value?.length ?? cardsAsync.asData?.value.length ?? 0;
+    final cards = cardsAsync.unwrapPrevious().value;
+    final cardCount = cards?.length ?? 0;
     final l10n = AppLocalizations.of(context)!;
+    final target = _hasAnimated ? 1.0 : null;
 
     return Scaffold(
       body: SafeArea(
@@ -51,33 +69,30 @@ class HomeScreen extends ConsumerWidget {
               name: profile.name,
               photoPath: profile.photoPath,
               count: cardCount,
+              skipTypewriter: _hasAnimated,
             )
-                .animate()
+                .animate(target: target)
                 .fadeIn(duration: 350.ms)
                 .slideY(begin: -0.15, end: 0, curve: Curves.easeOutCubic),
             const SizedBox(height: 4),
-            cardsAsync.when(
-              loading: () => const SizedBox.shrink(),
-              error: (e, st) => const SizedBox.shrink(),
-              data: (cards) => AnimatedSwitcher(
-                duration: const Duration(milliseconds: 400),
-                child: cards.isEmpty
-                    ? const SizedBox.shrink(key: ValueKey('empty'))
-                    : Column(
-                        key: const ValueKey('carousel'),
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 20),
-                            child: HomeCardCarousel(
-                              cards: cards,
-                              onCardTap: (card) => context.push('/card/${card.id}'),
-                            ),
+            AnimatedSize(
+              duration: const Duration(milliseconds: 350),
+              curve: Curves.easeInOutCubic,
+              child: (cards == null || cards.isEmpty)
+                  ? const SizedBox.shrink()
+                  : Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          child: HomeCardCarousel(
+                            cards: cards,
+                            onCardTap: (card) => context.push('/card/${card.id}'),
                           ),
-                          const SizedBox(height: 28),
-                        ],
-                      ),
-              ),
+                        ),
+                        const SizedBox(height: 28),
+                      ],
+                    ),
             ),
             _SectionLabel(title: l10n.addNewCard),
             const SizedBox(height: 14),
@@ -113,8 +128,10 @@ class HomeScreen extends ConsumerWidget {
                   ],
                 ),
               ),
-            ).animate(delay: 120.ms).fadeIn(duration: 350.ms).slideY(
-                begin: 0.2, end: 0),
+            )
+                .animate(delay: _hasAnimated ? 0.ms : 120.ms, target: target)
+                .fadeIn(duration: 350.ms)
+                .slideY(begin: 0.2, end: 0),
             const SizedBox(height: 28),
             _SectionLabel(title: l10n.tools),
             const SizedBox(height: 14),
@@ -135,8 +152,10 @@ class HomeScreen extends ConsumerWidget {
                   accentColor: c.success,
                 ),
               ],
-            ).animate(delay: 200.ms).fadeIn(duration: 350.ms).slideY(
-                begin: 0.2, end: 0),
+            )
+                .animate(delay: _hasAnimated ? 0.ms : 200.ms, target: target)
+                .fadeIn(duration: 350.ms)
+                .slideY(begin: 0.2, end: 0),
             const SizedBox(height: 28),
             _SectionLabel(title: l10n.frequentlyAdded),
             const SizedBox(height: 16),
@@ -164,7 +183,10 @@ class HomeScreen extends ConsumerWidget {
                     ),
                   ),
                 )
-                    .animate(delay: (260 + index * 30).ms)
+                    .animate(
+                      delay: _hasAnimated ? 0.ms : (260 + index * 30).ms,
+                      target: target,
+                    )
                     .fadeIn(duration: 300.ms)
                     .scale(
                       begin: const Offset(0.85, 0.85),
@@ -185,11 +207,13 @@ class _Header extends StatelessWidget {
   final String name;
   final String? photoPath;
   final int count;
+  final bool skipTypewriter;
 
   const _Header({
     required this.name,
     required this.photoPath,
     required this.count,
+    this.skipTypewriter = false,
   });
 
   @override
@@ -220,6 +244,7 @@ class _Header extends StatelessWidget {
                 _TypewriterText(
                   text: _greeting(context),
                   duration: const Duration(milliseconds: 1000),
+                  skipAnimation: skipTypewriter,
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.w800,
@@ -273,11 +298,13 @@ class _TypewriterText extends StatefulWidget {
   final String text;
   final TextStyle style;
   final Duration duration;
+  final bool skipAnimation;
 
   const _TypewriterText({
     required this.text,
     required this.style,
     this.duration = const Duration(milliseconds: 1000),
+    this.skipAnimation = false,
   });
 
   @override
@@ -297,11 +324,14 @@ class _TypewriterTextState extends State<_TypewriterText>
     _controller = AnimationController(
       vsync: this,
       duration: widget.duration,
+      value: widget.skipAnimation ? 1.0 : 0.0,
     );
     _charCount = StepTween(begin: 0, end: _characters.length).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeOut),
     );
-    _controller.forward();
+    if (!widget.skipAnimation) {
+      _controller.forward();
+    }
   }
 
   @override
@@ -313,7 +343,11 @@ class _TypewriterTextState extends State<_TypewriterText>
       _charCount = StepTween(begin: 0, end: _characters.length).animate(
         CurvedAnimation(parent: _controller, curve: Curves.easeOut),
       );
-      _controller.forward(from: 0.0);
+      if (!widget.skipAnimation) {
+        _controller.forward(from: 0.0);
+      } else {
+        _controller.value = 1.0;
+      }
     }
   }
 

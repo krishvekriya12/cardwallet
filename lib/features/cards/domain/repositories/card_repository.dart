@@ -1,4 +1,4 @@
-import 'package:cardwallet/features/cards/domain/entities/card_entity.dart';
+import '../entities/card_entity.dart';
 
 abstract class CardRepository {
   Stream<List<CardEntity>> watchAllCards();

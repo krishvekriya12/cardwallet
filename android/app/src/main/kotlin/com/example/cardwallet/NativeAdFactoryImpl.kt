@@ -5,9 +5,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import com.google.android.gms.ads.nativead.MediaView
-import com.google.android.gms.ads.nativead.NativeAd
-import com.google.android.gms.ads.nativead.NativeAdView
+import com.google.android.libraries.ads.mobile.sdk.nativead.MediaView
+import com.google.android.libraries.ads.mobile.sdk.nativead.NativeAd
+import com.google.android.libraries.ads.mobile.sdk.nativead.NativeAdView
 import io.flutter.plugins.googlemobileads.NativeAdFactory
 
 class NativeAdFactoryImpl(private val layoutInflater: LayoutInflater) : NativeAdFactory {
@@ -55,9 +55,6 @@ class NativeAdFactoryImpl(private val layoutInflater: LayoutInflater) : NativeAd
 
         // 5. Media (Image/Video)
         val mediaView = adView.findViewById<MediaView>(R.id.ad_media)
-        if (mediaView != null) {
-            adView.mediaView = mediaView
-        }
 
         // 6. Star Rating (Blue Stars ★ ★ ★ ★ ☆ matching reference image)
         val starsTextView = adView.findViewById<TextView>(R.id.ad_stars_text)
@@ -73,7 +70,6 @@ class NativeAdFactoryImpl(private val layoutInflater: LayoutInflater) : NativeAd
         }
         adView.starRatingView = starsTextView
 
-        adView.setNativeAd(nativeAd)
         return adView
     }
 }

@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:isolate';
 import 'dart:math';
 import 'dart:typed_data';
 
@@ -38,77 +39,79 @@ class BackupService {
     return maps.map(TransactionEntity.fromMap).toList();
   }
 
+  static Future<Uint8List> _encrypt(Uint8List clearText, String password) {
+    return Isolate.run(() async {
+      final pbkdf2 = Pbkdf2(
+        macAlgorithm: Hmac.sha256(),
+        iterations: _iterations,
+        bits: _keyLengthBits,
+      );
 
+      final secureRandom = Random.secure();
+      final salt = Uint8List.fromList(List.generate(16, (_) => secureRandom.nextInt(256)));
+      final iv = Uint8List.fromList(List.generate(12, (_) => secureRandom.nextInt(256)));
 
-  static Future<Uint8List> _encrypt(Uint8List clearText, String password) async {
-    final pbkdf2 = Pbkdf2(
-      macAlgorithm: Hmac.sha256(),
-      iterations: _iterations,
-      bits: _keyLengthBits,
-    );
+      final secretKey = await pbkdf2.deriveKey(
+        secretKey: SecretKey(utf8.encode(password)),
+        nonce: salt,
+      );
 
-    final secureRandom = Random.secure();
-    final salt = Uint8List.fromList(List.generate(16, (_) => secureRandom.nextInt(256)));
-    final iv = Uint8List.fromList(List.generate(12, (_) => secureRandom.nextInt(256)));
+      final algorithm = AesGcm.with256bits();
+      final secretBox = await algorithm.encrypt(
+        clearText,
+        secretKey: secretKey,
+        nonce: iv,
+      );
 
-    final secretKey = await pbkdf2.deriveKey(
-      secretKey: SecretKey(utf8.encode(password)),
-      nonce: salt,
-    );
+      final builder = BytesBuilder();
+      builder.add(salt);
+      builder.add(iv);
+      builder.add(secretBox.cipherText);
+      builder.add(secretBox.mac.bytes);
 
-    final algorithm = AesGcm.with256bits();
-    final secretBox = await algorithm.encrypt(
-      clearText,
-      secretKey: secretKey,
-      nonce: iv,
-    );
-
-    final builder = BytesBuilder();
-    builder.add(salt);
-    builder.add(iv);
-    builder.add(secretBox.cipherText);
-    builder.add(secretBox.mac.bytes);
-
-    return builder.takeBytes();
+      return builder.takeBytes();
+    });
   }
 
-  static Future<Uint8List> _decrypt(Uint8List encrypted, String password) async {
-    if (encrypted.length < 44) {
-      throw const FormatException('Corrupted or invalid backup file');
-    }
+  static Future<Uint8List> _decrypt(Uint8List encrypted, String password) {
+    return Isolate.run(() async {
+      if (encrypted.length < 44) {
+        throw const FormatException('Corrupted or invalid backup file');
+      }
 
-    final salt = encrypted.sublist(0, 16);
-    final iv = encrypted.sublist(16, 28);
-    final tag = encrypted.sublist(encrypted.length - 16);
-    final cipherText = encrypted.sublist(28, encrypted.length - 16);
+      final salt = encrypted.sublist(0, 16);
+      final iv = encrypted.sublist(16, 28);
+      final tag = encrypted.sublist(encrypted.length - 16);
+      final cipherText = encrypted.sublist(28, encrypted.length - 16);
 
-    final pbkdf2 = Pbkdf2(
-      macAlgorithm: Hmac.sha256(),
-      iterations: _iterations,
-      bits: _keyLengthBits,
-    );
-
-    final secretKey = await pbkdf2.deriveKey(
-      secretKey: SecretKey(utf8.encode(password)),
-      nonce: salt,
-    );
-
-    final algorithm = AesGcm.with256bits();
-    final secretBox = SecretBox(
-      cipherText,
-      nonce: iv,
-      mac: Mac(tag),
-    );
-
-    try {
-      final decrypted = await algorithm.decrypt(
-        secretBox,
-        secretKey: secretKey,
+      final pbkdf2 = Pbkdf2(
+        macAlgorithm: Hmac.sha256(),
+        iterations: _iterations,
+        bits: _keyLengthBits,
       );
-      return Uint8List.fromList(decrypted);
-    } catch (_) {
-      throw IncorrectPasswordException();
-    }
+
+      final secretKey = await pbkdf2.deriveKey(
+        secretKey: SecretKey(utf8.encode(password)),
+        nonce: salt,
+      );
+
+      final algorithm = AesGcm.with256bits();
+      final secretBox = SecretBox(
+        cipherText,
+        nonce: iv,
+        mac: Mac(tag),
+      );
+
+      try {
+        final decrypted = await algorithm.decrypt(
+          secretBox,
+          secretKey: secretKey,
+        );
+        return Uint8List.fromList(decrypted);
+      } catch (_) {
+        throw IncorrectPasswordException();
+      }
+    });
   }
 
   static Future<String> exportBackup(List<CardEntity> cards, String password, {List<TransactionEntity>? transactions}) async {

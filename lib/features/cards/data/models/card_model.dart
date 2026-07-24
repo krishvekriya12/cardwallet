@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:cardwallet/features/cards/domain/entities/card_entity.dart';
+import '../../domain/entities/card_entity.dart';
 
 class CardModel extends CardEntity {
   const CardModel({

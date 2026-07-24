@@ -1,5 +1,5 @@
-import 'package:cardwallet/core/database/app_database.dart';
-import 'package:cardwallet/features/cards/data/models/card_model.dart';
+import '../../../../core/database/app_database.dart';
+import '../models/card_model.dart';
 import 'package:sqflite_sqlcipher/sqflite.dart';
 
 class CardLocalDataSource {

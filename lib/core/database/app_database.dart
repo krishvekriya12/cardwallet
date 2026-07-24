@@ -27,7 +27,7 @@ import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite_sqlcipher/sqflite.dart';
 
-import 'package:cardwallet/core/security/db_passphrase.dart';
+import '../security/db_passphrase.dart';
 
 class AppDatabase {
   AppDatabase._();

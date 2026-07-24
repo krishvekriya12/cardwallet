@@ -48,3 +48,7 @@ android {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    implementation("com.google.android.libraries.ads.mobile.sdk:ads-mobile-sdk:1.1.1")
+}

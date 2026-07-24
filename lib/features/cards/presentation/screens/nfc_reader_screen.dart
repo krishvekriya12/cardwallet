@@ -31,14 +31,19 @@ class _NfcReaderScreenState extends State<NfcReaderScreen> {
   }
 
   Future<void> _init() async {
-    final available = await NfcManager.instance.isAvailable();
-    if (!mounted) return;
-    if (!available) {
+    try {
+      final available = await NfcManager.instance.isAvailable();
+      if (!mounted) return;
+      if (!available) {
+        setState(() => _state = _NfcState.unsupported);
+        return;
+      }
+      setState(() => _state = _NfcState.ready);
+      _startSession();
+    } catch (_) {
+      if (!mounted) return;
       setState(() => _state = _NfcState.unsupported);
-      return;
     }
-    setState(() => _state = _NfcState.ready);
-    _startSession();
   }
 
   Future<void> _startSession() async {
@@ -50,9 +55,11 @@ class _NfcReaderScreenState extends State<NfcReaderScreen> {
         onDiscovered: (tag) async {
           final isoDep = IsoDep.from(tag);
           if (isoDep == null) {
-            await NfcManager.instance.stopSession(
-              errorMessage: l10n.unsupportedCardError,
-            );
+            try {
+              await NfcManager.instance.stopSession(
+                errorMessage: l10n.unsupportedCardError,
+              );
+            } catch (_) {}
             if (mounted) {
               setState(() {
                 _state = _NfcState.failed;
@@ -64,7 +71,9 @@ class _NfcReaderScreenState extends State<NfcReaderScreen> {
 
           try {
             final data = await EmvCardReader.read(isoDep);
-            await NfcManager.instance.stopSession();
+            try {
+              await NfcManager.instance.stopSession();
+            } catch (_) {}
             if (!mounted) return;
             if (data == null || !data.hasAnything) {
               setState(() {
@@ -78,7 +87,9 @@ class _NfcReaderScreenState extends State<NfcReaderScreen> {
               });
             }
           } catch (e) {
-            await NfcManager.instance.stopSession(errorMessage: l10n.nfcReadFailedDesc);
+            try {
+              await NfcManager.instance.stopSession(errorMessage: l10n.nfcReadFailedDesc);
+            } catch (_) {}
             if (!mounted) return;
             setState(() {
               _state = _NfcState.failed;
@@ -98,7 +109,9 @@ class _NfcReaderScreenState extends State<NfcReaderScreen> {
 
   @override
   void dispose() {
-    NfcManager.instance.stopSession();
+    try {
+      NfcManager.instance.stopSession();
+    } catch (_) {}
     super.dispose();
   }
 
