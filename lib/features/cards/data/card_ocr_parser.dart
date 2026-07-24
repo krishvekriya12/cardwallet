@@ -1,4 +1,4 @@
-   import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
+import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 import '../../../core/utils/card_utils.dart';
 import '../domain/entities/card_type.dart';
 
